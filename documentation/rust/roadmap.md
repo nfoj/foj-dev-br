@@ -36,11 +36,53 @@
 
     a. Variables, constants and data types;
 
-        
-
+        - print, comments and placeholders;
+        - variables and mutability;
+        - data types;
+        - functions;
 
     b. Control flow constructs;
     c. Functions and method syntax;
     d. Pattern matching and destructuring.
 
-    
+
+    - Comments
+
+        Line comments: start with // and extend to the end of the line.
+        Block comments: enclosed within /* and */, spanning multiple lines.
+
+        ```
+            // line;
+
+            /* block; */
+
+        ```
+
+
+    - Print
+
+        print!: print text without line breacks; 
+        println!: print text with line breaks;
+
+
+        ```
+            print!("Hello, Maria!");
+            println!("Hello, Carlos!");
+        
+        ```
+        
+    - Placeholders
+
+        {}: inserts the value of the next argument without any formatting;
+        {#?}: formats the value for debugging purposes;
+        {:.n}: formats numbers with "n" decimal places.
+
+ 
+        ```
+           
+
+            print!("Hello, Maria!");
+            println!("Hello, Carlos!");
+        
+        ```
+
