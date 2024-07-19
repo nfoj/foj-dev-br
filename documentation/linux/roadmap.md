@@ -1,17 +1,29 @@
-# Linux - LPIC-1
+# Arch Linux - LPIC-1
 
-1. System architecture:
+101.1 Lesson 1
 
-    1.1 ls
+1. Introduction
 
-        ls -a   >   list files (. and ..)
-        ls -A   >   list files 
-        ls -l   >   list files deitails 
-        ls -i   >   list files and inode
-        ls -m   >   list files separate ,
-        ls -n   >   
-        ls -p   >   list files types
-        ls -lh  >   list files deitails and size
-  
+1.1 Device Inspection in Linux
+
+    - lspci: show all devices currently connected to the PCI bus;
+    - lsusb: list USB devices currently connected to the machine.
+
+    ```
+    lspic
+    00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Renoir/Cezanne Root Complex
+    00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Renoir/Cezanne IOMMU
+
+
+    lsusb
+    Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+    Bus 001 Device 002: ID 8087:0029 Intel Corp. AX200 Bluetooth
+
+    ```
+
+> [!IMPORTANT]
+> Arch Linux, does not have the ubs package. 
+> Installation (root): pacman -Fy lsusb
+
 
 
