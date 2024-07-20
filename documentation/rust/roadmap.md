@@ -74,16 +74,35 @@
     - Placeholders
 
         {}: inserts the value of the next argument without any formatting;
-        {#?}: formats the value for debugging purposes;
         {:.n}: formats numbers with "n" decimal places.
 
- 
-        ```
-           
 
-            print!("Hello, Maria!");
-            println!("Hello, Carlos!");
-        
+        ```
+            let a = "Alice";
+
+            // {}
+            println!("My name is {}", name);
+            // My name is Alice
+    
+
+            //{...}
+            println!("My name is {name}");
+            // My name is Alice
+
+
+            
+            let pi = 3.14159;
+
+            //{}
+            println!("Pi is {}", pi);
+            // Pi is 3.14159
+
+            
+            //{:.n}
+            pritnln!("Pi is {:.2}", pi);
+            // Pi is 3.14
+            
+
         ```
     
     > [!IMPORTANT]
