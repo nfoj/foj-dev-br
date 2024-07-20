@@ -70,27 +70,31 @@ pub fn vcdtypes () {
 
     // i = positive e negative values
     
-    //i8 = -128 - 127
-    println!("i8 ({} - {})", std::i8::MIN, std::i8::MAX);
+    //i8 = 0 - 255
+    println!("i8 ({})", std::i8::MIN, std::i8::MAX);
     println!("------------------------------");
 
 
-    //i16 =  -32.768 - 32.767
-    println!("i16 ({} - {})", std::i16::MIN, std::i16::MAX);
+    //i16 =  0 - 65.535
+    let number_i16: i16 = 65;  
+    println!("u8 (0 - 65.535) = {}", number_i16);
     println!("------------------------------");
 
 
     //i32 = 0 - 4.294.967.295 
-    println!("i32 ({} - {})", std::i32::MIN, std::i32::MAX);
+    let number_i32: i32 = 4;  
+    println!("u32 (0 - 4.294.967.295) = {}", number_i32);
     println!("------------------------------");
 
 
     //i64 = 0 - 18.446.744.073.709.551.615
-    println!("u64 ({} - {})", std::i64::MIN, std::i64::MAX);
+    let number_i64: i64 = 18;  
+    println!("u64 (0 - 18.446.744.073.709.551.615){}", number_i64);
     println!("------------------------------");
 
 
     let a: char = 'a';
     println!("{}", a);
-    
+     println!("Tamanho de u8: {} bytes", std::mem::size_of::<u8>());
+ println!("Intervalo de valores que cabem em u8: de 0 a {}", std::u8::MAX);
 }

@@ -70,7 +70,14 @@
             println!("Hello, Carlos!");
         
         ```
-        
+
+
+    - Break line
+
+        !!!!!!!!!
+
+
+
     - Placeholders
 
         {}: inserts the value of the next argument without any formatting;
@@ -107,3 +114,71 @@
     
     > [!IMPORTANT]
     > For more information access: <https://doc.rust-lang.org/std/fmt/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
