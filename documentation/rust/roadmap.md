@@ -74,8 +74,15 @@
 
     - Break line
 
-        !!!!!!!!!
+        \n: should be used to insert a line break.
+        
 
+        '''
+
+            println!("What is you name? \nMy name is Maria!");
+            println!("1 + 1 = \n2"); 
+
+        '''
 
 
     - Placeholders
@@ -85,6 +92,7 @@
 
 
         ```
+
             let a = "Alice";
 
             // {}
@@ -97,7 +105,6 @@
             // My name is Alice
 
 
-            
             let pi = 3.14159;
 
             //{}
@@ -109,21 +116,56 @@
             pritnln!("Pi is {:.2}", pi);
             // Pi is 3.14
             
-
         ```
     
     > [!IMPORTANT]
     > For more information access: <https://doc.rust-lang.org/std/fmt/>
 
 
+    - Variables
+
+        Variable are reserved memory spaces for storing information;
+
+        let name = value;
+       
+        let name = "Alice";
+        let number = 1;
+        let letter = 'a';
+        let price = 12.4;
+ 
+    - Types
+
+        Primitives: u, i, f, char, bool;
+    
+        
+        u: positive values
+
+        '''
+
+            // u8 = 0 - 255
+            let number_u8: u8 = 255;
+            prinln!("{}", number_u8);
+            
+            // u16 = 0 - 65.535
+            let number_u16: u16 = 65.535;
+            prinln!("{}", number_u16);
+            
+            // u32 = 0 - 4.294.967.295
+            let number_u32: u32 = 24.294.967.295;
+            prinln!("{}", number_u32);
+        
+            // u64 = 0 - 18.446.744.073.709.551.615
+            let number_u64: u64 = 18.446.744.073.709.551.615;
+            prinln!("{}", number_u64);
+        
+
+        '''
+
+    > [!IMPORTANT]
+    > 
 
 
-
-
-
-
-
-
+    
 
 
 

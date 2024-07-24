@@ -1,4 +1,5 @@
 pub fn vcdtypes() {
+    
     // Comments
 
     // 1 Line
@@ -7,17 +8,20 @@ pub fn vcdtypes() {
      * 2 or more lines
      */
 
+
     // Print
     println!("-----------------------------------");
     print!("Hello, Maria! ... ");
     println!("Hello, Carlos!");
     println!("-----------------------------------");
 
+
     // \n = break line
 
     println!("Hello, Maria! \nGood morning!");
     print!("1 + 1 = \n2");
     println!("\n-----------------------------------");
+
 
     // Placeholders = {}, {#} and {:.4}
 
@@ -33,7 +37,22 @@ pub fn vcdtypes() {
     println!("Pi to 2 decimal places: {:.2}", pi);
     println!("------------------------------");
 
+    
     // Variables
+    
+    let name = "Alice";
+    println!("What is your name: {}", name);
+
+    let num = 24;
+    println!("What number did you choose? {}", num);
+
+    let letter =  'a';
+    println!("Whats is the firts letter that comes to your mind? {}", letter);
+    
+    let ok = true; 
+    println!("One plus one equals two? {}", ok);
+    println!("------------------------------");
+
 
     // Type Primitive
     // u = positive values
@@ -76,8 +95,28 @@ pub fn vcdtypes() {
     println!("u64 ({} - {})", std::i64::MIN, std::i64::MAX);
     println!("------------------------------");
 
+
+    // 
+
+
+
+
+
+
+
     let a: char = 'a';
     println!("{}", a);
 
     println!("case!");
+
+
+
+
+
+
+
+
+
+
+
 }
