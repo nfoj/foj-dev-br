@@ -133,6 +133,8 @@
         let letter = 'a';
         let price = 12.4;
  
+
+
     - Types
 
         Primitives: u, i, f, char, bool;

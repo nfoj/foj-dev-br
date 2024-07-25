@@ -42,41 +42,58 @@ pub fn vcdtypes() {
     
     let name = "Alice";
     println!("What is your name: {}", name);
+    println!("------------------------------");
 
     let num = 24;
     println!("What number did you choose? {}", num);
+    println!("------------------------------");
 
     let letter =  'a';
     println!("Whats is the firts letter that comes to your mind? {}", letter);
-    
+    println!("------------------------------");
+   
     let ok = true; 
     println!("One plus one equals two? {}", ok);
     println!("------------------------------");
 
 
+    // Variables and Mutability
+    
+    // ERROR!
+    //let abc = "ABC";
+    //abc = "DEF"; 
+    //println!("{}", abc);
+    //println!("------------------------------");
+
+    // CORRECT
+    let mut efg = "efg"; // Add = mut
+    efg = "123"; 
+
+    println!("{}", efg);
+    println!("------------------------------");
+
+
     // Type Primitive
+    
     // u = positive values
 
-    //u8 = 0 - 255
-    let number_u8: u8 = 255;
-    println!("u8 (0 - 255) = {}", number_u8);
+    //u8
+    println!("u8 ({} - {})", std::u8::MIN, std::u8::MAX);
     println!("------------------------------");
 
-    //u16 =  0 - 65.535
-    let number_u16: u16 = 65_535;
-    println!("u8 (0 - 65.535) = {}", number_u16);
+    //u16
+    println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);
     println!("------------------------------");
 
-    //u32 = 0 - 4.294.967.295
-    let number_u32: u32 = 4_294_967_295;
-    println!("u32 (0 - 4.294.967.295) = {}", number_u32);
+    //u32
+    println!("u32 ({} - {})", std::u32::MIN, std::u32::MAX);
     println!("------------------------------");
 
-    //u64 = 0 - 18.446.744.073.709.551.615
-    let number_u64: u64 = 18_446_744_073_709_551_615;
-    println!("u64 (0 - 18.446.744.073.709.551.615){}", number_u64);
+    //u64
+    println!("u64 ({} - {})", std::u64::MIN, std::u64::MAX);
     println!("------------------------------");
 
+    
     // i = positive e negative values
 
     //i8 = -128 - 127
@@ -96,27 +113,29 @@ pub fn vcdtypes() {
     println!("------------------------------");
 
 
-    // 
+    // f = floating number values
+    
+    //f32
+    println!("f32 ({} - {})", std::f32::MIN, std::f32::MAX);
+    println!("------------------------------");
 
+    
+    //f64
+    println!("f64 ({} - {})", std::f64::MIN, std::f64::MAX);
+    println!("------------------------------");
 
-
-
-
-
-
+  
+    // Char = a character
+ 
     let a: char = 'a';
     println!("{}", a);
-
-    println!("case!");
-
-
-
-
-
-
-
-
-
+    println!("------------------------------");
 
 
 }
+
+
+    fn sum (u8, u8) -> u8 {
+        
+
+    }
