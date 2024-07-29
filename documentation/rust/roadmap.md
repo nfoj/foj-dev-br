@@ -115,7 +115,7 @@
             //{:.n}
             pritnln!("Pi is {:.2}", pi);
             // Pi is 3.14
-            
+
         ```
     
     > [!IMPORTANT]
@@ -132,7 +132,69 @@
         let number = 1;
         let letter = 'a';
         let price = 12.4;
- 
+
+    
+        ```
+            
+            let name = "Alice";
+            println!("What is your name: {}", name);
+            println!("------------------------------");
+
+            let num = 24;
+            println!("What number did you choose? {}", num);
+            println!("------------------------------");
+
+            let letter = 'a';
+            println!("Whats is the firts letter that comes to your mind? {}", letter);
+            println!("------------------------------");
+   
+            let ok = true; 
+            println!("One plus one equals two? {}", ok);
+            println!("------------------------------");
+
+        ```
+
+
+    - Variables and Mutability
+
+        Add 'mut' after let to change the value of a variable.
+
+        let name mut = "Jonas";
+        let age mut = 40;
+        let city = "Mexico";
+        let pet = "Cat"; 
+        
+
+    > [!WARNING]  
+    > ERRO!.
+
+
+        ```
+
+            let name = "Alice";
+            println!("What is your name: {}", name);
+            
+            <!-- Erro -->
+            name = "Jonas";
+            pritnln!("What is your name: {}", name);
+
+        ```
+
+        
+    > [!WARNING]  
+    > Correct!
+
+     ```
+    
+            <-- Add: mut -->
+            let mut name = "Alice";
+            println!("What is your name: {}", name);
+            
+            <!-- Correct -->
+            name = "Jonas";
+            pritnln!("What is your name: {}", name);
+
+        ```
 
 
     - Types
@@ -144,27 +206,30 @@
 
         '''
 
-            // u8 = 0 - 255
+            <!-- u8 = 0 - 255 -->
             let number_u8: u8 = 255;
             prinln!("{}", number_u8);
             
-            // u16 = 0 - 65.535
+            <!-- u16 = 0 - 65.535 -->
             let number_u16: u16 = 65.535;
             prinln!("{}", number_u16);
             
-            // u32 = 0 - 4.294.967.295
+            <!-- u32 = 0 - 4.294.967.295 -->
             let number_u32: u32 = 24.294.967.295;
             prinln!("{}", number_u32);
         
-            // u64 = 0 - 18.446.744.073.709.551.615
+            <!-- u64 = 0 - 18.446.744.073.709.551.615 -->
             let number_u64: u64 = 18.446.744.073.709.551.615;
-            prinln!("{}", number_u64);
-        
+            prinln!("{}", number_u64);        
 
         '''
 
-    > [!IMPORTANT]
-    > 
+    > [!TIP]
+    > Use the command: 'such' to print the size of a variable:
+    > println!("u8 ({} - ())", std::u8::MIN, std::u8::MAX);
+    > println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);
+
+
 
 
     
