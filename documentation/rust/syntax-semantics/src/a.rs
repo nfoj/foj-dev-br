@@ -117,8 +117,7 @@ pub fn vcdtypes() {
     
     //f32
     println!("f32 ({} - {})", std::f32::MIN, std::f32::MAX);
-    println!("------------------------------");
-
+    println!("------------------------------");  
     
     //f64
     println!("f64 ({} - {})", std::f64::MIN, std::f64::MAX);
@@ -130,7 +129,6 @@ pub fn vcdtypes() {
     let a: char = 'a';
     println!("{}", a);
     println!("------------------------------");
-
 
 }
 
