@@ -42,7 +42,9 @@
         - functions;
 
     b. Control flow constructs;
+    
     c. Functions and method syntax;
+    
     d. Pattern matching and destructuring.
 
 
@@ -77,12 +79,12 @@
         \n: should be used to insert a line break.
         
 
-        '''
+        ```
 
             println!("What is you name? \nMy name is Maria!");
             println!("1 + 1 = \n2"); 
 
-        '''
+        ```
 
 
     - Placeholders
@@ -100,19 +102,19 @@
             // My name is Alice
     
 
-            //{...}
+            // {...}
             println!("My name is {name}");
             // My name is Alice
 
 
             let pi = 3.14159;
 
-            //{}
+            // {}
             println!("Pi is {}", pi);
             // Pi is 3.14159
 
             
-            //{:.n}
+            // {:.n}
             pritnln!("Pi is {:.2}", pi);
             // Pi is 3.14
 
@@ -125,13 +127,6 @@
     - Variables
 
         Variable are reserved memory spaces for storing information;
-
-        let name = value;
-       
-        let name = "Alice";
-        let number = 1;
-        let letter = 'a';
-        let price = 12.4;
 
     
         ```
@@ -159,14 +154,14 @@
 
         Add 'mut' after let to change the value of a variable.
 
-        let name mut = "Jonas";
-        let age mut = 40;
-        let city = "Mexico";
-        let pet = "Cat"; 
+        - let mut name = "Jonas";
+        - let mut age = 40;
+        - let mut city = "Mexico";
+        - let mut pet = "Cat"; 
         
 
     > [!WARNING]  
-    > ERRO!.
+    > Erro!
 
 
         ```
@@ -174,27 +169,67 @@
             let name = "Alice";
             println!("What is your name: {}", name);
             
-            <!-- Erro -->
+            // Erro
             name = "Jonas";
             pritnln!("What is your name: {}", name);
 
         ```
-
         
     > [!WARNING]  
     > Correct!
 
+
      ```
     
-            <-- Add: mut -->
+            // Add: mut
             let mut name = "Alice";
             println!("What is your name: {}", name);
             
-            <!-- Correct -->
+            // Correct
             name = "Jonas";
             pritnln!("What is your name: {}", name);
 
         ```
+
+    - Constant
+
+        - A constant cannot be changed once it's been assigned a value;
+        - Constants should be declared in uppercase and have an explicit type.
+
+
+        ```
+
+            // const
+            const POINTS = 3;
+            println!("{}", POINTS);
+
+
+            // Erro!
+            POINTS = 4;
+            println!("{}", POINTS);
+
+        ```
+    
+
+    - Shadowing
+
+        Shadowing a variable by declaring a new one with the same name;
+
+        ```
+
+            // shadowing
+            let food = "bread";
+            println!("{}", food);
+            
+            let food = "milk";
+            println!("{}", food);
+
+            let food = "pizza";
+            println!("{}", food);
+
+        ```
+
+
 
 
     - Types
@@ -206,19 +241,19 @@
 
         '''
 
-            <!-- u8 = 0 - 255 -->
+            // u8 = 0 - 255
             let number_u8: u8 = 255;
             prinln!("{}", number_u8);
             
-            <!-- u16 = 0 - 65.535 -->
+            // u16 = 0 - 65.535
             let number_u16: u16 = 65.535;
             prinln!("{}", number_u16);
             
-            <!-- u32 = 0 - 4.294.967.295 -->
+            // u32 = 0 - 4.294.967.295
             let number_u32: u32 = 24.294.967.295;
             prinln!("{}", number_u32);
         
-            <!-- u64 = 0 - 18.446.744.073.709.551.615 -->
+            // u64 = 0 - 18.446.744.073.709.551.615 
             let number_u64: u64 = 18.446.744.073.709.551.615;
             prinln!("{}", number_u64);        
 

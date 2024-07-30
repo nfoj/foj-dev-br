@@ -72,6 +72,37 @@ pub fn vcdtypes() {
     println!("------------------------------");
 
 
+    // Constant
+    const TWO: i8 = 2;
+    println!("{}", TWO);
+    println!("------------------------------");
+    
+    
+    // Shadowing
+    let food = "bread";
+    println!("{}", food);
+
+
+    let food = "milk";
+    println!("{}", food);
+
+
+    let food = "pizza";
+    println!("{}", food);
+    println!("------------------------------");
+    
+    // Scope
+    let pet = "cat";
+    println!("{}", pet);
+    {
+        let pet = "dog";
+        println!("{}", pet);
+    }
+    println!("{}", pet);
+    println!("------------------------------");
+
+
+    
     // Type Primitive
     
     // u = positive values
@@ -129,7 +160,9 @@ pub fn vcdtypes() {
     println!("{}", a);
     println!("------------------------------");
 
+   
     
+
 
 
 }
