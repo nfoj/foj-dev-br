@@ -180,7 +180,6 @@
 
 
      ```
-    
             // Add: mut
             let mut name = "Alice";
             println!("What is your name: {}", name);
@@ -229,97 +228,152 @@
 
         ```
 
+    - Scope
 
+        When a block of code is enclosed within curly braces {}, it enters a new scope, which is nested within the main program's scope.
+
+        ```
+
+        // scope
+        let x = 1;
+        println!("{}", x);
+
+        {
+            
+            let x = 2;
+            println!("{}", x);
+
+        }
+    
+        println!("{}", x);
+
+        ```
 
 
     - Types
 
         Primitives: u, i, f, char, bool;
     
-        
-        u: positive values
+        u: positive values.
 
-        '''
+        ```
 
             // u8 = 0 - 255
-            let number_u8: u8 = 255;
-            prinln!("{}", number_u8);
-            
-            // u16 = 0 - 65.535
-            let number_u16: u16 = 65.535;
-            prinln!("{}", number_u16);
-            
-            // u32 = 0 - 4.294.967.295
-            let number_u32: u32 = 24.294.967.295;
-            prinln!("{}", number_u32);
-        
-            // u64 = 0 - 18.446.744.073.709.551.615 
-            let number_u64: u64 = 18.446.744.073.709.551.615;
-            prinln!("{}", number_u64);        
+            println!("u8 ({} - {})", std::u8::MIN, std::u8::MAX);
+                        
+            let number_u8: u8 =  255;
+            println!("{}", number_u8);
 
-        '''
+
+            // u16 = 0 - 65.535
+            println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);    
+ 
+            let number_u16: u16 =  255;
+            println!("{}", number_u16);
+
+
+            // u32 = 0 - 4.294.967.295
+            println!("u32 ({} - {})", std::u32::MIN, std::u32::MAX);
+ 
+            let number_u32: u32 =  255;
+            println!("{}", number_u32);
+
+
+            // u64 = 0 - 18.446.744.073.709.551.615 
+            println!("u64 ({} - {})", std::u64::MIN, std::u64::MAX);
+ 
+            let number_u64: u64 =  255;
+            println!("{}", number_u64);
+
+
+
+        ```
 
     > [!TIP]
-    > Use the command: 'such' to print the size of a variable:
+    > Use the command: 'std::type::MIN or MAX' to print the size of a variable:
     > println!("u8 ({} - ())", std::u8::MIN, std::u8::MAX);
     > println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);
 
 
+        i: positve e negative values.
+
+        ```
+
+            // i8 = -128 - 127
+            println!("i8 ({} - {})", std::i8::MIN, std::i8::MAX);
+ 
+            let number_i8: i8 =  127;
+            println!("{}", number_i8);
+
+
+            // i16 = 0 - 65535
+            println!("i16 ({} - {})", std::i16::MIN, std::i16::MAX);
+ 
+            let number_i16: i16 =  127;
+            println!("{}", number_i16);
+
+
+            // i32 = -2147483648 - 2147483647
+            println!("i32 ({} - {})", std::i32::MIN, std::i32::MAX);
+ 
+            let number_i32: i32 =  127;
+            println!("{}", number_i32);
+
+
+            // i64 = -9223372036854775808 - 922337203685477580 
+            println!("i64 ({} - {})", std::i64::MIN, std::i64::MAX);
+ 
+            let number_i64: i64 =  127;
+            println!("{}", number_i64);
 
 
     
+        ```
+
+        f: positive and negative decimal numbers.
 
 
+        ```
+
+            // f32 = -340282350000000000000000000000000000000 - 34028235000000000000000000000000000000
+            println!("f32 ({} - {})", std::f32::MIN, std::f32::MAX);
+ 
+            let number_f32: f32 =  179.76;
+            println!("{}", number_f32);
 
 
+            // f64 = -17976931348623157000 ... - 17976931348623157000 ...
+            println!("f64 ({} - {})", std::f64::MIN, std::f64::MAX);
+ 
+            let number_f64: f64 =  179.76;
+            println!("{}", number_f64);
 
 
+        ```
+
+        char: holds only one Unicode character (use 'value').
 
 
+        ```
+
+            let character: char = 'a';
+            println!("{}", character);
+            
+            let symbol: char = ' '
+            println!("{}", symbol);
+
+        ```
+
+        
+        bool: true or false;
+
+        
+        ```
+
+            let  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        ```
 
 
 

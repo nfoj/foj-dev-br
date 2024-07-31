@@ -102,6 +102,17 @@ pub fn vcdtypes() {
     println!("------------------------------");
 
 
+    // scope
+    let x = 1;
+    println!("{}", x);
+
+    {
+        let x = 4;
+        println!("{}", x);
+    }
+
+    println!("{}", x);
+
     
     // Type Primitive
     
@@ -160,7 +171,9 @@ pub fn vcdtypes() {
     println!("{}", a);
     println!("------------------------------");
 
-   
+    
+    let symbol: char = '';
+    println!("{}", symbol)
     
 
 
