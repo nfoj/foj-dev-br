@@ -169,12 +169,35 @@ pub fn vcdtypes() {
  
     let a: char = 'a';
     println!("{}", a);
+        
+    let symbol: char = '';
+    println!("{}", symbol);
     println!("------------------------------");
 
     
-    let symbol: char = '';
-    println!("{}", symbol)
+    // Bool = true or false
     
+    let checked: bool =  true;
+    println!("the data was checked? {}", checked);
+    println!("------------------------------");
+
+
+    
+    // Type Compound 
+    
+    // Tuples
+    let data_types: (u8, char, f32, i64) = (2, 'a', 5.4, 28);
+    println!("{:?}", data_types);
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -120,8 +120,8 @@
 
         ```
     
-    > [!IMPORTANT]
-    > For more information access: <https://doc.rust-lang.org/std/fmt/>
+> [!IMPORTANT]
+> For more information access: <https://doc.rust-lang.org/std/fmt/>
 
 
     - Variables
@@ -160,8 +160,8 @@
         - let mut pet = "Cat"; 
         
 
-    > [!WARNING]  
-    > Erro!
+> [!WARNING]  
+> Erro!
 
 
         ```
@@ -175,11 +175,11 @@
 
         ```
         
-    > [!WARNING]  
-    > Correct!
+> [!WARNING]  
+> Correct!
 
 
-     ```
+        ```
             // Add: mut
             let mut name = "Alice";
             println!("What is your name: {}", name);
@@ -286,13 +286,21 @@
             println!("{}", number_u64);
 
 
+            // u128 = 0 -  
+            println!("u128 ({} - {})", std::u128::MIN, std::u128::MAX);
+ 
+            let number_u128: u128 =  255;
+            println!("{}", number_u128);
+
 
         ```
 
-    > [!TIP]
-    > Use the command: 'std::type::MIN or MAX' to print the size of a variable:
-    > println!("u8 ({} - ())", std::u8::MIN, std::u8::MAX);
-    > println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);
+
+> [!TIP]
+> Use the command: 'std::type::MIN or MAX' to print the size of a variable:
+> println!("u8 ({} - ())", std::u8::MIN, std::u8::MAX);
+> println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);
+
 
 
         i: positve e negative values.
@@ -327,8 +335,20 @@
             println!("{}", number_i64);
 
 
+            // i128 =  
+            println!("i128 ({} - {})", std::i128::MIN, std::i128::MAX);
+ 
+            let number_i128: i128 =  127;
+            println!("{}", number_i128);
+
     
         ```
+
+> [!IMPORTANT]  
+> Rust offers additional data types: usize and isize. Refer to the documentation for details.
+> These types automatically adjust to the system's architecture (32-bit or 64-bit).
+
+
 
         f: positive and negative decimal numbers.
 
@@ -370,13 +390,25 @@
         
         ```
 
-            let  
+            let checked: bool = true;
+            println!("The data was checked? {}", checked);
+            
+
+        ```
+
+        Compound: tuples and array
+
+
+        tuples: allow you to group values of various data types together.
 
 
         ```
 
+            let data_types: (u8, char, f32, i64) = (2, 'a', 5.4, 28);
+            println!("{:?}", data_types);
+    
 
+        ```
 
-
-
+        
 
