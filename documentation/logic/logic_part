@@ -51,3 +51,69 @@ programa {
   }
 }
 
+
+
+media {
+
+  real nota1, nota2, nota3, media
+
+
+  funcao inicio() {
+    
+    escreva("Nota 1 = ", nota1)
+    leia(nota1)
+
+    escreva("Nota 2 = ", nota2)
+    leia(nota2)
+
+    escreva("Nota 3 = ", nota3)
+    leia(nota3)
+
+    media = (nota1 + nota2 + nota3)/3
+
+    se (media < 7) {
+      escreva("Aluno reprovado")
+    }
+
+    senao {
+      escreva("Aluno aprovado!")
+    }
+
+  }
+}
+
+
+
+programa {
+
+  real nota1, nota2, nota3, media
+
+
+  funcao inicio() {
+    
+    escreva("Nota 1 = ", nota1)
+    leia(nota1)
+
+    escreva("Nota 2 = ", nota2)
+    leia(nota2)
+
+    escreva("Nota 3 = ", nota3)
+    leia(nota3)
+
+    media = (nota1 + nota2 + nota3) /3
+
+    se (media <= 5) {
+      escreva("Aluno reprovado")
+    }
+
+    senao se (media == 6) {
+      escreva("Voce esta recuperacao")
+    }
+
+    senao {
+      escreva("Aluno aprovado!")
+    }
+
+  }
+}
+
