@@ -45,6 +45,10 @@
     - Docker Engine
 
 
+> [!IMPORTANT]  
+> Acess: https://hub.docker.com/
+
+
 ## Docker Basics
 
 
@@ -127,9 +131,26 @@
     - bash: terminal.
 
 
+    ```
+        
+        sudo docker -t=0i ef9bced584b5
+        docker rm ef9bced584b5  
+    
+    
+     ```
+
+    - -t=0: stop instantly
+    - rm: remove
 
 
+    Docker Port Mapping
 
+    ```
+
+        sudo docker run dockersample/static-site
+    
+
+    ```
 
 
 
