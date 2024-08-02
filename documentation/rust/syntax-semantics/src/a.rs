@@ -190,9 +190,20 @@ pub fn vcdtypes() {
     println!("{:?}", data_types);
 
 
+    let person = ("Gregorio", 60, 1.82);
+    let (x, y, z) = person;
+    println!("Name = {x}, Age = {y}, Height = {z}");
+    println!("------------------------------");
 
 
 
+    // Array
+    let list: [u8; 3] = [1, 5, 9];
+    println!("{:?}", list);
+    
+    let list_icons: [char; 4] = ['', '', '', ''];
+    println!("{:?}", list_icons);
+    println!("------------------------------");
 
 
 

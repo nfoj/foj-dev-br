@@ -408,7 +408,24 @@
             println!("{:?}", data_types);
     
 
+            let person = ("Gregor", 64, 1.82);
+            let (x, y, z) = person;
+            println!("My name is {x}, i'm {y} years old and my height is {z}");
+
+
         ```
 
-        
+        array: a statically sized list of a single data type
+
+
+        ```
+
+            let list: [u8; 3] = [1, 5, 9];
+            println!("{:?}", list);
+
+            let list_icons: [char; 6] = [``, ``, ``, ``, ``, ``];
+            println!("{:?}", list_icons);
+
+
+        ```
 
