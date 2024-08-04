@@ -2,52 +2,71 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="programação, linguagem, desenvolvimento">
-    <meta name="author" content="nfoj">
-    <title>Ínicio</title>
-    <meta name="Descrição"
-        content="Olá, essa página foi feita com o intuito de documentar estudos, tomando como base: livros, vídeos, roadmaps e outros materiais.">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <script src="js/index.js" defer></script>
+    <title>Document</title>
 </head>
 
 <body>
+    <div class="pagina">
 
-    <header>
+        <!-- MENU LATERAL -->
+        <div class="left-sidebar" id="sidebar">
 
-        <h1>FOJ</h1>
-        <p>Estudante em desenvolvimento</p>
+            <!-- LOGO DO TOPO -->
+            <a class="menu-logo" href="#">
+                <i class="mdi mdi-code-not-equal-variant"></i>
+                ABC Front
+            </a>
 
-    </header>
+            <!-- CONTEUDO DO CENTRO DO MENU -->
+            <div class="conteudo-sidebar">
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item" href="#">Item</a>
+                <a class="menu-item bottom" href="#">
+                    Item em baixo
+                </a>
+            </div>
+        </div>
 
-    <main>
+        <!-- MIOLO DA APLICAÇÃO -->
+        <section class="w-100">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="menuBtn" class="active" href="#">
+                            <i class="mdi mdi-menu"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="mdi mdi-school"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h2> Assista no Youtube</h2>
+            <p>Assista eu fazendo este projeto</p>
 
-        <h3>Estudos</h3>
-        <ul>
-            <li><a>Rust</a></li>
-            <li><a>LPIC-1</a></li>
-        </ul>
+        </section>
 
+        <!-- OVERLAY MOBILE -->
+        <div class="overlay hidden" id="overlay"></div>
 
-        <h3>Referências</h3>
-        <ul>
-            <li><a>Rust - Book</a></li>
-            <li><a>LPIC-1 (Parte 1)</a></li>
-        </ul>
-
-
-        <h3>Mídias Sociais</h3>
-        <ul>
-            <li><a>Git</a></li>
-        </ul>
-
-    </main>
-
-
+    </div>
 
 </body>
 
