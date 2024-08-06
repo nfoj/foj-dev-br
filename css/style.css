@@ -1,11 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* https://materialdesignicons.com/cdn/1.6.50-dev/ */
 
+:root {
+        
+  --color-rosewater: #f5e0dc;
+  --color-flamingo: #f2cdcd;
+  --color-pink: #f5c2e7;
+  --color-mauve: #cba6f7;
+  --color-red: #f38ba8;
+  --color-maroon: #eba0ac;
+  --color-peach: #fab387;
+  --color-yellow: #f9e2af;
+  --color-green: #a6e3a1;
+  --color-teal: #94e2d5;
+  --color-sky: #89dceb;
+  --color-sapphire: #74c7ec;
+  --color-blue: #89b4fa;
+  --color-lavender: #b4befe;
+  --color-text: #cdd6f4;
+  --color-base: #1e1e2e;
+  --color-mantle: #181825;
+  --color-crust: #11111b;
+
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-crust);
 }
 
 /* scrollbar */
@@ -40,14 +63,14 @@ body {
 #sidebar {
   min-width: 230px;
   max-width: 230px;
-  background-color: white;
+  background-color: var(--color-crust);
   transition: all 0.3s;
   height: 100vh;
   margin-left: -230px;
 
   /* top layer */
   z-index: 3;
-  border-right: 1px solid #f2f2f2;
+  border-right: 1px solid var(--color-base);
 }
 
 #sidebar.active {
@@ -56,29 +79,29 @@ body {
 
 .menu-logo {
   display: block;
-  background: white;
+  background: var(--color-crust);
   padding: 19px;
   text-decoration: none;
   font-size: 16px;
   text-align: center;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 2px solid var(--color-base);
   font-weight: bold;
-  color: #04aa6d;
+  color: var(--color-blue);
 }
 
 .menu-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: var(--color-crust);
   padding: 16px 20px 16px 20px;
   text-decoration: none;
-  color: gray;
-  border-bottom: 1px solid #f2f2f2;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-base);
 }
 
 .menu-item:hover {
-  background: #f7f7f7;
+  background: var(--color-blue);
 }
 
 .menu-item:nth-last-child(2) {
@@ -89,7 +112,7 @@ body {
   min-width: 190px;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--color-blue);
 }
 
 .menu-item::after {
@@ -119,37 +142,42 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  border: 1px solid var(--color-base);
+  background-color: var(--color-crust);
 }
 
 li {
   float: left;
 }
 
+
+/* Icons */
 li a {
   display: block;
-  color: #666;
+  color: var(--color-text);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+
+/* Hover Icons */
 li a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: var(--color-red);
 }
 
+
 li a.active {
-  color: #04aa6d;
+  color: var(--color-blue);
 }
 
 #menuBtn {
   font-size: 24px;
 }
 
-h2, p {
-  margin: 20px;
-  color: #666;
+h1, h2, h3, h4, p {
+  margin: 32px;
+  color: var(--color-text);
 }
 
 @media (max-width: 580px) {
