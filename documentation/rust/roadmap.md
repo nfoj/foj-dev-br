@@ -39,7 +39,6 @@
         - print, comments and placeholders;
         - variables and mutability;
         - data types;
-        - functions;
 
     b. Control flow constructs;
     
@@ -401,7 +400,16 @@
 
         ```
 
+        str: text!
+
+        ```
+
+        let first_name: &str = "Roberto";
+        println!("{}", first_name);
         
+
+        ```
+       
         bool: true or false;
 
         
@@ -412,6 +420,7 @@
             
 
         ```
+
 
         Compound: tuples and array
 
@@ -445,6 +454,20 @@
 
 
         ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     - Functions
 
