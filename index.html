@@ -6,74 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
     <script src="js/index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="pagina">
 
-        <!-- MENU LATERAL -->
-        <div class="left-sidebar" id="sidebar">
-
-            <!-- LOGO DO TOPO -->
-            <a class="menu-logo" href="#">
-                <i class="mdi mdi-code-not-equal-variant"></i>
-                FOJ
-            </a>
-
-            <!-- CONTEUDO DO CENTRO DO MENU -->
-            <div class="conteudo-sidebar">
-                <a class="menu-item" href="#">Docker</a>
-                <a class="menu-item" href="#">Linux</a>
-                <a class="menu-item" href="#">PostgreSQL</a>
-                <a class="menu-item" href="#">Rust</a>
-                <a class="menu-item bottom" href="#">
-                    Copyright
-                </a>
-            </div>
-        </div>
-
-        <!-- MIOLO DA APLICAÇÃO -->
-        <section class="w-100">
-            <nav>
-                <ul>
-                    <li>
-                        <a id="menuBtn" class="active" href="#">
-                            <i class="mdi mdi-menu"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="mdi mdi-school"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <i class="mdi mdi-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <h1>Estudante em Desenvolvimento</h1>
-            <p>Essa página é dedicada a documentar textos e organizar ideias que podem facilitar o entendimento de
-                alguns conteúdos.</p>
-
-            <p>Docker</p>
-            <p>Linux</p>
-
-
-
-
-        </section>
-
-
-        <!-- OVERLAY MOBILE -->
-        <div class="overlay hidden" id="overlay"></div>
-
+    <div class="btn">
+        <span class="fas fa-bars"></span>
     </div>
+
+    <aside class="sidebar">
+        <div class="text"> Side bar</div>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li>
+                <a href="#" class="feat-btn">Features
+                    <span class="fa-solid fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="serv-btn">Service
+                    <span class="fa-solid fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Features</a></li>
+        </ul>
+    </aside>
 
 
 </body>

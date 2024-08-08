@@ -1,16 +1,12 @@
-//ITENS
-const menuBtn = document.getElementById("menuBtn");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
+$('.btn').click(function () {
+    $(this).toggleClass("click");
+    $('.sidebar').toggleClass("show");
+});
 
-//CLICOU NO MENU
-menuBtn.onclick = function () {
-    sidebar.classList.toggle("active");
-    overlay.classList.toggle("hidden");
-};
+$('.feat-btn').click(function () {
+    $('aside ul .feat-show').toggleClass("show")
+});
 
-//CLICOU NO OVERLAY
-overlay.onclick = function () {
-    overlay.classList.toggle("hidden");
-    sidebar.classList.toggle("active");
-};
+$('.serv-btn').click(function () {
+    $('aside ul .serv-show').toggleClass("show1")
+});
