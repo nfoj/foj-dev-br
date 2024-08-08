@@ -163,6 +163,12 @@ pub fn vcdtypes() {
     println!("{}", symbol);
     println!("------------------------------");
 
+    // str
+
+    let first_name: &str = "Roberto!";
+    println!("{}", first_name);
+    println!("------------------------------");
+
     // Bool = true or false
 
     let checked: bool = true;
