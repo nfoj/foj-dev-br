@@ -37,7 +37,7 @@
     height: 45px;
     width: 45px;
     text-align: center;
-    background-color: #1b1b1b;
+    background-color: var(--color-crust);
     border-radius: 4px;
     cursor: pointer;
     transition: left 0.4s ease;
@@ -48,7 +48,7 @@
 }
 
 .btn span {
-    color: white;
+    color: var(--color-text);
     font-size: 28px;
     line-height: 45px;
 }
@@ -59,11 +59,12 @@
 }
 
 .sidebar {
+    float: left; /* Test! */
     position: fixed;
     width: 250px;
     height: 100%;
     left: -250px;
-    background-color: #1b1b1b;
+    background-color: var(--color-crust);
     transition: left 0.4s ease;
 }
 
@@ -71,18 +72,24 @@
     left: 0;
 }
 
+.sidebar img {
+    padding-top: 2rem;
+}
+
+
+/* Em caso tirar a logo e colocar texto! */
 .sidebar .text {
-    color: white;
+    color: var(--color-text);
     font-size: 24px;
     font-weight: 600;
     line-height: 64px;
     text-align: center;
-    background-color: #1b1b1b;
+    background-color: var(--color-crust);
     letter-spacing: 1px;
 }
 
 aside ul {
-    background-color: #1b1b1b;
+    background-color: var(--color-crust);
     height: 100%;
     width: 100%;
     list-style: none;
@@ -90,17 +97,17 @@ aside ul {
 
 aside ul li {
     line-height: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--color-base);
 }
 
 
 aside ul li:last-child{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);   
+    border-bottom: 1px solid var(--color-base);   
 }
 
 aside ul li a {
     position: relative  ;
-    color: white;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 16px;
     padding-left: 32px;
@@ -111,9 +118,9 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    color: cyan;
-    background-color: #1e1e1e;
-    border-left-color: cyan;
+    color: var(--color-blue);
+    background-color: var(--color-crust);
+    border-left-color: var(--color-blue);
 
 }
 
@@ -123,23 +130,23 @@ aside ul ul {
 }
 
 
-aside ul .feat-show.show{
+aside ul .linux-show.show{
     display: block;
 }
 
 
-aside ul .serv-show.show1{
+aside ul .rust-show.show1{
     display: block;
 }
 
 aside ul ul li {
-    line-height: 42px;
+    line-height: 60px;
     border-bottom: none;
 }
 
 aside ul ul li a {
     font-size: 16px;
-    color: #e6e6e6;
+    color: var(--color-text);
     padding-left: 80px;
 }
 
@@ -148,4 +155,15 @@ aside ul li a span {
     top: 50%;
     right: 20px;
     font-size: 22px;
+}
+
+
+/* Main */
+
+.content {
+    overflow: hidden; /* Clearfix */
+  }
+  
+h1 {
+    margin-left: 256px;
 }

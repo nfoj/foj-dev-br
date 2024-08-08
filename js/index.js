@@ -3,10 +3,10 @@ $('.btn').click(function () {
     $('.sidebar').toggleClass("show");
 });
 
-$('.feat-btn').click(function () {
-    $('aside ul .feat-show').toggleClass("show")
+$('.linux-btn').click(function () {
+    $('aside ul .linux-show').toggleClass("show")
 });
 
-$('.serv-btn').click(function () {
-    $('aside ul .serv-show').toggleClass("show1")
+$('.rust-btn').click(function () {
+    $('aside ul .rust-show').toggleClass("show1")
 });
