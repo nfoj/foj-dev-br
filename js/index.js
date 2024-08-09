@@ -1,12 +1,16 @@
-$('.btn').click(function () {
-    $(this).toggleClass("click");
-    $('.sidebar').toggleClass("show");
-});
+//ITENS
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-$('.linux-btn').click(function () {
-    $('aside ul .linux-show').toggleClass("show")
-});
+//CLICOU NO MENU
+menuBtn.onclick = function () {
+    sidebar.classList.toggle("active");
+    overlay.classList.toggle("hidden");
+};
 
-$('.rust-btn').click(function () {
-    $('aside ul .rust-show').toggleClass("show1")
-});
+//CLICOU NO OVERLAY
+overlay.onclick = function () {
+    overlay.classList.toggle("hidden");
+    sidebar.classList.toggle("active");
+};
