@@ -185,13 +185,24 @@ header li a.active {
   height: 100vh;
 }
 
-h1,h2, h3, h4, p{
+h1,h2, h3, h4, p, table, thead, tr, th, tbody, td{
   margin: 20px;
   color: var(--color-text);
 }
 
 main li {
-  margin: 20px 20px 20px 40px;
+  margin: 20px 20px 20px 60px;
   color: var(--color-text);
   list-style: circle;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+th, td {
+  border: 1px dashed var(--color-text);
+  padding: 8px;
+  text-align: left;
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>FOJ</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a id="menuBtn" class="active" href="#">
+                        <i class="fa-solid fa-burger"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/nfoj/foj-dev-br" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pagina">
+
+        <div class="left-sidebar" id="sidebar">
+
+            <a class="menu-logo" href="#">
+                <img src="/img/logo.svg" alt="">
+            </a>
+
+            <div class="conteudo-sidebar">
+                <a class="menu-item" href="/index.html">Home</a>
+                <a class="menu-item" href="#">Introdução</a>
+                <a class="menu-item" href="#"></a>
+                <a class="menu-item" href="#"></a>
+                <a class="menu-item" href="#"></a>
+                <a class="menu-item bottom" href="#"></a>
+            </div>
+        </div>
+
+        <!-- MIOLO DA APLICAÇÃO -->
+        <main class="w-100">
+            <h2>LPIC-1</h2>
+
+            <h3>1. Introdução</h3>
+            <h4>1.1 Bios</h4>
+            <p>- Bios - Basic input/output system:</p>
+            <ul>
+                <li>Sistem boot process: Loads the operating system stored on the hard drive or other
+                    storage device;</li>
+                <li>POST (Power-On Self-Test): Checks RAM memory, processor, storage devices, and other
+                    components;</li>
+                <li>BIOS/UEFI setup: Allows you to set the time, date, boot order, and other options.
+                </li>
+            </ul>
+
+            <p>- UEFI: Unified extensible firmware interface (Bios + Upgrades):</p>
+            <ul>
+                <li>Ethernet network configuration;</li>
+                <li>Fast boot;</li>
+                <li>UEFI Shell.</li>
+            </ul>
+
+        </main>
+
+        <!-- OVERLAY MOBILE -->
+        <div class="overlay hidden" id="overlay"></div>
+
+    </div>
+</body>
+
+</html>
