@@ -2,46 +2,38 @@
 
 
 - Install (Arch Linux)
-
-```
-
+    
+    //  Install PostgreSQL 
     sudo pacman -S postgresql
 
-```
-
-- Check version 
-
-```
-
+    // Check version 
     postgres --version
 
-```
+    // Initialize PostgreSQL’s data directory
+    initdb --locale en_US.UTF-8 -D /var/lib/postgres/data
 
-- Confirm psql is not running
-
-```
-
+    // Start the PostgreSQL
+    sudo systemctl start postgresql
     sudo systemctl status postgresql
+    sudo systemctl enable postgresql
 
-```
+    // Log
+    sudo -u postgres psql
 
-- Login as the postgresql user 
+    // Create a new user 
+    postgres=# CREATE USER <username> WITH ENCRYPTED PASSWORD ‘<password>’;
 
-```
-    
-    // Arch Linux
-    sudo su - postgres
-    
-```
+    //Create a new database
+    CREATE DATABASE <dbname>;
 
-- Exit
+    // All permissions to the desired user on the newly created database
+    postgres=# GRANT ALL PRIVILEGES ON DATABASE <dbname> TO username;
 
-```
-    
-    // Arch
-    exit
+    // Unistallations
+    sudo pacman -Rcns postgresql  
 
-```
+
+
 
 
 - Install - Page Admin4
