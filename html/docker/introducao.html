@@ -18,7 +18,7 @@
             <ul>
                 <li>
                     <a id="menuBtn" class="active" href="#">
-                        <i class="fa-solid fa-burger"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </a>
                 </li>
                 <li>
@@ -41,8 +41,7 @@
 
             <div class="conteudo-sidebar">
                 <a class="menu-item" href="/index.html">Home</a>
-                <a class="menu-item" href="#">Introdução</a>
-                <a class="menu-item" href="#"></a>
+                <a class="menu-item" href="basico-docker.html">O Básico de Docker</a>
                 <a class="menu-item" href="#"></a>
                 <a class="menu-item" href="#"></a>
                 <a class="menu-item bottom" href="#"></a>
@@ -52,11 +51,41 @@
         <!-- MIOLO DA APLICAÇÃO -->
         <main class="w-100">
             <h2>Docker</h2>
+
+            <h4>O que são Contêineres?</h4>
+            <p>
+                Docker é uma plataforma de código aberto que utiliza a virtualização em nível de sistema operacional
+                para
+                criar e gerenciar contêineres.
+            </p>
+
+            <p>
+                Pense em contêineres como pacotes isolados que possuem tudo que é necessário para executar uma
+                aplicação: código, runtime, ferramentas do sistema, bibliotecas e
+                configurações.
+            </p>
+            <br>
+            <h4>Porque usar Contêineres</h4>
+
             <ul>
-                <li>O que são Contêineres?</li>
-                <li>Qual a necessidade de usar Contêineres?</li>
-                <li>Bare Metal vs Máquina Virtual vs Contêineres;</li>
-                <li>Docker e OCI.</li>
+                <li>
+                    Isolamento: Cada contêiner é um ambiente isolado, evitando conflitos entre diferentes aplicações.
+                </li>
+
+                <li>
+                    Eficiência: Os contêineres compartilham o kernel do sistema operacional host, tornando-os mais leves
+                    e rápidos que máquinas virtuais tradicionais.
+                </li>
+
+                <li>
+                    compatibilidade: Você pode executar o mesmo contêiner em diferentes ambientes (desenvolvimento,
+                    teste,produção) sem problemas.
+                </li>
+
+                <li>
+                    Escalabilidade: É fácil criar múltiplas instâncias de um contêiner para lidar com altas demandas.
+                </li>
+
             </ul>
 
         </main>

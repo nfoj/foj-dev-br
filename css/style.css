@@ -181,13 +181,16 @@ header li a.active {
 .pagina {
   background-color: var(--color-crust);
   display: flex;
-  align-items: stretch;
   height: 100vh;
 }
 
 h1,h2, h3, h4, p, table, thead, tr, th, tbody, td{
   margin: 20px;
   color: var(--color-text);
+}
+
+a {
+  color: var(--color-yellow);
 }
 
 main li {
@@ -205,4 +208,12 @@ th, td {
   border: 1px dashed var(--color-text);
   padding: 8px;
   text-align: left;
+}
+
+code {
+  background-color: var(--color-base);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+  color: var(--color-text);
 }
