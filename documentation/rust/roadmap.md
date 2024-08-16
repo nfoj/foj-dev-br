@@ -47,6 +47,8 @@
     d. Pattern matching and destructuring.
 
 
+    a. Variables, constants and data types.
+
     - Comments
 
         Line comments: start with // and extend to the end of the line.
@@ -456,17 +458,7 @@
         ```
 
 
-
-
-
-
-
-
-
-
-
-
-
+    C. Functions and Modules
 
 
     - Functions
@@ -489,6 +481,14 @@
                 a + b
             }
 
+
+            // No use function!
+            #[allow(dead_code)]
+            fn subtration (x: i8, y:i8) -> i8 {
+                x - y
+            }    
+    
            
         ```
 
+    

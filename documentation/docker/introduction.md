@@ -51,7 +51,6 @@
 
 ## Docker Basics
 
-
     docker container run: create e run a new container from an image
 
     ```
@@ -106,7 +105,6 @@
 > [!NOTE]  
 > Example: Ubuntu
     
-
     Docker Ubuntu (Iterative)
     
     ```
@@ -136,21 +134,35 @@
         sudo docker -t=0i ef9bced584b5
         docker rm ef9bced584b5  
     
+    ```          
     
-     ```
-
     - -t=0: stop instantly
     - rm: remove
 
 
-    Docker Port Mapping
+## Images
 
-    ```
+  List images
 
-        sudo docker run dockersample/static-site
-    
+  ```
+    sudo docker images
 
-    ```
+  ```
+
+  Inspect - Informations deitals
 
 
+  ```
+    //sudo docker inspect <id>
+    sudo docker inspect d2c94e258dc
 
+  ```
+
+  History - Layers
+
+
+  ```
+    //sudo docker history <id>
+    sudo docker history d2c94e258dc
+
+  ```
