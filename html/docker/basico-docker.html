@@ -13,66 +13,53 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="menuBtn" class="active" href="#">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/nfoj/foj-dev-br" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <button class="button right-button" onclick="openRightMenu()">&#9776;</button>
     </header>
 
-    <div class="pagina">
-
-        <div class="left-sidebar" id="sidebar">
-
-            <a class="menu-logo" href="#">
-                <img src="/img/logo.svg" alt="">
-            </a>
-
-            <div class="conteudo-sidebar">
-                <a class="menu-item" href="/index.html">Home</a>
-                <a class="menu-item" href="/html/docker/introducao.html">Introdução</a>
-                <a class="menu-item bottom" href="#"></a>
-            </div>
-        </div>
-
-        <!-- MIOLO DA APLICAÇÃO -->
-        <main class="w-100">
-            <h2>O Básico de Docker</h2>
-
-            <h4>Docker Hub</h4>
-            <p>
-                O docker hub é um repositório de imanges docker, que vai sendo alimentado pela comunidade, aonde pode-se
-                encontrar diversar imagens para suas aplicações e aonde pode dar seus primeiros passos.
-            </p>
-
-            <p>Acesse: <a href="https://hub.docker.com/" target="_blank">Docker Hub</a></p>
-
-            <p>
-                Já instalou tudo? Vamos começar os primeiros comandos ... Sempre que precisar ou esquecer algo só voltar
-                aqui e olhar.
-            </p>
-
-            <p>Docker container run: cria e executa um novo contêiner a partir de uma imagem.</p>
-
-            <code>sudo docker run hello-world</code>
-
-        </main>
-
-        <!-- OVERLAY MOBILE -->
-        <div class="overlay hidden" id="overlay"></div>
-
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">× Close</button>
+        <a class="menu-logo" href="#">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <a class="menu-item" href="html/docker/introducao.html">LINK</a>
+        <a class="menu-item" href="html/hackerrank/introducao.html">LINK</a>
+        <a class="menu-item" href="html/linux/introducao.html">LINK</a>
+        <a class="menu-item" href="#">LINK</a>
+        <a class="menu-item" href="#">LINK</a>
     </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" onclick="closeRightMenu()">× Close</button>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+
+    <main class="container">
+        <h2>O Básico de Docker</h2>
+
+        <h4>Docker Hub</h4>
+        <p>
+            O docker hub é um repositório de imanges docker, que vai sendo alimentado pela comunidade, aonde pode-se
+            encontrar diversar imagens para suas aplicações e aonde pode dar seus primeiros passos.
+        </p>
+
+        <p>Acesse: <a href="https://hub.docker.com/" target="_blank">Docker Hub</a></p>
+
+        <p>
+            Já instalou tudo? Vamos começar os primeiros comandos ... Sempre que precisar ou esquecer algo só voltar
+            aqui e olhar.
+        </p>
+
+        <p>Docker container run: cria e executa um novo contêiner a partir de uma imagem.</p>
+
+        <pre class="code"><code>sudo docker run hello-world</code></pre>
+
+    </main>
+
 </body>
 
 </html>

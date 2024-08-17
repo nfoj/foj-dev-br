@@ -1,16 +1,15 @@
-//ITENS
-const menuBtn = document.getElementById("menuBtn");
-const sidebar = document.getElementById("sidebar");
-const overlay = document.getElementById("overlay");
+function openLeftMenu() {
+    document.getElementById("leftMenu").classList.add("open");
+}
 
-//CLICOU NO MENU
-menuBtn.onclick = function () {
-    sidebar.classList.toggle("active");
-    overlay.classList.toggle("hidden");
-};
+function closeLeftMenu() {
+    document.getElementById("leftMenu").classList.remove("open");
+}
 
-//CLICOU NO OVERLAY
-overlay.onclick = function () {
-    overlay.classList.toggle("hidden");
-    sidebar.classList.toggle("active");
-};
+function openRightMenu() {
+    document.getElementById("rightMenu").classList.add("open");
+}
+
+function closeRightMenu() {
+    document.getElementById("rightMenu").classList.remove("open");
+}

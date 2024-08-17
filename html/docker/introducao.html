@@ -13,87 +13,64 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="menuBtn" class="active" href="#">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/nfoj/foj-dev-br" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <button class="button right-button" onclick="openRightMenu()">&#9776;</button>
     </header>
 
-    <div class="pagina">
-
-        <div class="left-sidebar" id="sidebar">
-
-            <a class="menu-logo" href="#">
-                <img src="/img/logo.svg" alt="">
-            </a>
-
-            <div class="conteudo-sidebar">
-                <a class="menu-item" href="/index.html">Home</a>
-                <a class="menu-item" href="basico-docker.html">O Básico de Docker</a>
-                <a class="menu-item" href="#"></a>
-                <a class="menu-item" href="#"></a>
-                <a class="menu-item bottom" href="#"></a>
-            </div>
-        </div>
-
-        <!-- MIOLO DA APLICAÇÃO -->
-        <main class="w-100">
-            <h2>Docker</h2>
-
-            <h4>O que são Contêineres?</h4>
-            <p>
-                Docker é uma plataforma de código aberto que utiliza a virtualização em nível de sistema operacional
-                para
-                criar e gerenciar contêineres.
-            </p>
-
-            <p>
-                Pense em contêineres como pacotes isolados que possuem tudo que é necessário para executar uma
-                aplicação: código, runtime, ferramentas do sistema, bibliotecas e
-                configurações.
-            </p>
-            <br>
-            <h4>Porque usar Contêineres</h4>
-
-            <ul>
-                <li>
-                    Isolamento: Cada contêiner é um ambiente isolado, evitando conflitos entre diferentes aplicações.
-                </li>
-
-                <li>
-                    Eficiência: Os contêineres compartilham o kernel do sistema operacional host, tornando-os mais leves
-                    e rápidos que máquinas virtuais tradicionais.
-                </li>
-
-                <li>
-                    compatibilidade: Você pode executar o mesmo contêiner em diferentes ambientes (desenvolvimento,
-                    teste,produção) sem problemas.
-                </li>
-
-                <li>
-                    Escalabilidade: É fácil criar múltiplas instâncias de um contêiner para lidar com altas demandas.
-                </li>
-
-            </ul>
-
-        </main>
-
-        <!-- OVERLAY MOBILE -->
-        <div class="overlay hidden" id="overlay"></div>
-
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">× Close</button>
+        <a class="menu-logo" href="#">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <a class="menu-item" href="/html/docker/basico-docker.html">Docker</a>
+        <a class="menu-item" href="html/hackerrank/introducao.html">LINK</a>
+        <a class="menu-item" href="html/linux/introducao.html">LINK</a>
+        <a class="menu-item" href="#">LINK</a>
+        <a class="menu-item" href="#">LINK</a>
     </div>
+
+
+    <main class="container">
+        <h2>Docker</h2>
+
+        <h4>O que são Contêineres?</h4>
+        <p>
+            Docker é uma plataforma de código aberto que utiliza a virtualização em nível de sistema operacional
+            para
+            criar e gerenciar contêineres.
+        </p>
+
+        <p>
+            Pense em contêineres como pacotes isolados que possuem tudo que é necessário para executar uma
+            aplicação: código, runtime, ferramentas do sistema, bibliotecas e
+            configurações.
+        </p>
+        <br>
+        <h4>Porque usar Contêineres</h4>
+
+        <ul>
+            <li>
+                Isolamento: Cada contêiner é um ambiente isolado, evitando conflitos entre diferentes aplicações.
+            </li>
+
+            <li>
+                Eficiência: Os contêineres compartilham o kernel do sistema operacional host, tornando-os mais leves
+                e rápidos que máquinas virtuais tradicionais.
+            </li>
+
+            <li>
+                compatibilidade: Você pode executar o mesmo contêiner em diferentes ambientes (desenvolvimento,
+                teste,produção) sem problemas.
+            </li>
+
+            <li>
+                Escalabilidade: É fácil criar múltiplas instâncias de um contêiner para lidar com altas demandas.
+            </li>
+
+        </ul>
+
+    </main>
 </body>
 
 </html>

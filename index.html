@@ -12,59 +12,40 @@
 </head>
 
 <body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a id="menuBtn" class="active" href="#">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/nfoj/foj-dev-br" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <i class="fa-brands fa-github"></i>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
     </header>
 
-    <div class="pagina">
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
+        <a class="menu-item" href="html/docker/introducao.html">Docker</a>
+        <a class="menu-item" href="html/hackerrank/introducao.html">Harckerrank</a>
+        <a class="menu-item" href="html/linux/introducao.html">Linux</a>
+        <a class="menu-item" href="#">PostgreSQL</a>
+        <a class="menu-item" href="#">Rust</a>
+    </div>
 
-        <div class="left-sidebar" id="sidebar">
-
-            <a class="menu-logo" href="#">
-                <img src="img/logo.svg" alt="">
-            </a>
-
-            <div class="conteudo-sidebar">
-                <a class="menu-item" href="html/docker/introducao.html">Docker</a>
-                <a class="menu-item" href="html/hackerrank/introducao.html">Harckerrank</a>
-                <a class="menu-item" href="html/linux/introducao.html">Linux</a>
-                <a class="menu-item" href="#">PostgreSQL</a>
-                <a class="menu-item" href="#">Rust</a>
-                <a class="menu-item bottom" href="#"></a>
-            </div>
-        </div>
-
-        <!-- MIOLO DA APLICAÇÃO -->
-        <main class="w-100">
-            <h2>Seja Bem vindo!</h2>
-            <p>Esse pequeno projeto nasce com o intuito de compartilhar conhecimentos dentro da programação, mas de uma
-                forma simples, fácil e mesmo sem conhecimento algum, possamos juntos conversar.</p>
-
-            <p>Os textos vão ser escritos e postados previamente na página do Github, assim você pode ajudar melhorando
-                aquilo que vai sendo escrito aos pouquinhos</p>
-
-            <p>"A felicidade que vive no ato de compartilhar algo com o outro!". (Monja Coen)</p>
-        </main>
-
-        <!-- OVERLAY MOBILE -->
-        <div class="overlay hidden" id="overlay"></div>
-
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
 
     </div>
+
+    <main class="container">
+        <h2>Seja Bem vindo!</h2>
+        <p>Esse pequeno projeto nasce com o intuito de compartilhar conhecimentos dentro da programação, mas de uma
+            forma simples, fácil e mesmo sem conhecimento algum, possamos juntos conversar.</p>
+
+        <p>Os textos vão ser escritos e postados previamente na página do Github, assim você pode ajudar melhorando
+            aquilo que vai sendo escrito aos pouquinhos</p>
+
+        <p>"A felicidade que vive no ato de compartilhar algo com o outro!". (Monja Coen)</p>
+    </main>
+
+
 </body>
+
 
 </html>
