@@ -35,7 +35,9 @@
     la -al
     drwx------ 1 user user  280 Aug 16 06:31 .
     drwxr-xr-x 1 root root    8 Jul 28 00:00 ..
-  
+
+    // Formats the output file size
+    ls -lh <name>
   ```
 
 - Clear screen: clear or ctrl + l
