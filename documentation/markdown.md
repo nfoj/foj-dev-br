@@ -17,3 +17,9 @@
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+
+
+
+# Trilha
+
+1. HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags
