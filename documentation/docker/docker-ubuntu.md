@@ -1,5 +1,27 @@
 # Docker Ubuntu
 
+- Docker Ubuntu (Iterative)
+
+    ```
+        sudo docker pull ubuntu
+        sudo docker run -it ubuntu bash
+        sudo docker stop ef9bced584b5
+        sudo docker start ef9bced584b5
+        sudo docker exec -iti ef9bced584b5
+
+        or
+
+        sudo docker run -it ubuntu bash
+        sudo docker stop ef9bced584b5
+        sudo docker start ef9bced584b5
+        sudo docker exec -iti ef9bced584b5
+    
+    ```
+
+    - i: Ensures that you can provide input to the container;
+    - t: Allocates a pseudo-TTY;
+    - bash: terminal.
+
 ## Connect Internet
 
 

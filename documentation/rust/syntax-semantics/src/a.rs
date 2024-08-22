@@ -111,7 +111,6 @@ pub fn vcdtypes() {
 
     //u8
     println!("u8 ({} - {})", std::u8::MIN, std::u8::MAX);
-
     println!("------------------------------");
 
     //u16
@@ -195,6 +194,5 @@ pub fn vcdtypes() {
     println!("------------------------------");
 
     println!("Hello worasdasdld!!");
-
     println!("hello world!");
 }
