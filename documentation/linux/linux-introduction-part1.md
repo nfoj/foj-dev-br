@@ -85,7 +85,7 @@
   
   ```
 
-- Create directories: dir
+- Create directories: mkdir
   
   ```
     mdkir <name>

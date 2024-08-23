@@ -54,8 +54,7 @@
 
         <h4>Comandos:</h4>
 
-        <pre>
-        <code>
+        <pre><code>
  sudo docker pull ubuntu
  sudo docker run -it ubuntu bash
  sudo docker stop ef9bced584b5
@@ -68,8 +67,39 @@
  sudo docker stop ef9bced584b5
  sudo docker start ef9bced584b5
  sudo docker exec -iti ef9bced584b5
-        </code>
-        </pre>
+        </code></pre>
+
+        <ul>
+            <li>i: assegura que você possa interagir com o container;</li>
+            <li>t: aloca um pseudo-TTY (Terminal);</li>
+            <li>bash: terminal.</li>
+        </ul>
+
+        <h4>Atualiza, conecta e verifica a internet</h4>
+        <pre><code>
+ apt-get update
+ apt-get install iputils-ping curl net-tools
+ apt-get install iproute2
+        </code></pre>
+
+        <h4>Checa os pacotes</h4>
+        <pre><code>
+ which ping
+ which curl
+ which ifconfig
+ which ip
+        </code></pre>
+
+        <h4>Checagem do Ping</h4>
+        <pre><code>
+ curl -I https://www.google.com
+        </code></pre>
+
+        <h4>Instalação de Programas</h4>
+        <pre><code>
+ apt-get install neovim
+        </code></pre>
+
 
 
     </main>

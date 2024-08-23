@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>FOJ</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <a href="https://github.com/nfoj/foj-dev-br" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/index.html">Linux - Parte 2</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+        <h2>Linux - Introdução - Parte 1</h2>
+
+        <h4>Mostra Diretório Atual</h4>
+        <pre><code>
+ // Entrada
+ pwd
+ 
+ // Saída
+ /home/user
+        </code></pre>
+
+        <h4>Tab: autocompleta</h4>
+        <pre><code>
+ tab + "name"
+        </code></pre>
+
+        <h4>Lista arquivos e diretórios</h4>
+        <pre><code>
+ ls 
+
+ ls *
+
+ ls -a
+
+ la -al
+
+ // Formata a saída com tamanho dos arquivos
+ ls -lh "name"
+        </code></pre>
+
+        <h4>Limpa a tela: clear or ctrl + l</h4>
+        <pre><code>
+ clear
+ ctrl + l
+        </code></pre>
+
+        <h4>Help: "command" --help or man</h4>
+        <pre><code>
+ // Entrada
+ ls --help
+
+ // Saída
+ Usage: ls [OPTION]... [FILE]...
+ List information about the FILEs (the current directory by default).
+ Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+        
+ Mandatory arguments to long options are mandatory for short options too.
+ -a, --all                  do not ignore entries starting with .
+ -A, --almost-all           do not list implied . and ..
+ --author               with -l, print the author of each file         
+        </code></pre>
+
+        <h4>FHS: Hierarquia de Sistemas de Arquivos (Filesystem Hierarchy Standard): cd </h4>
+        <pre><code>
+ // Entrada
+ cd
+
+ // Saída
+ home/user
+        
+ // Entrada
+ cd .config
+
+ // Saída
+ alacritty  dconf  gtk-3.0
+        
+ // Entrada
+ cd /etc/alsa/
+ 
+ // Saída
+ conf.d
+        
+ // retorna
+ cd -
+ 
+ // Saída
+ cd /etc
+        
+ // próximo 
+ cd ../.config/ 
+        </code></pre>
+
+        <h4>Cria diretórios: mkdir</h4>
+        <pre><code>
+ // Cria diretórios
+ mdkir "nome"
+
+ // Cria mais de um diretório
+ mdkir "nome"
+
+ // nome + espaço
+ mkdir "name"\ "nome"
+              
+ // Cria diretórios um dentro do outro
+ mkdir -p dir/dir/dir1/dir2  
+            
+ // Cria diretórios ocultos
+ mdkir ."nome" 
+        </code></pre>
+
+        <h4>Cria arquivos: touch ou ></h4>
+        <pre><code>
+touch "nome"
+touch Texto.txt
+                
+> "nome"
+> Texto.txt
+            
+// Cria multiplos arquivos
+touch "nome_01" "nome_02" "nome_03"
+            
+// Cria arquivos ocultos
+touch ."nome"
+        </code></pre>
+
+        <h4>Remove: rm "nome" ou rm -r "nome" ou rm -rf "nome"</h4>
+        <pre><code>
+ // remove arquivos
+ rm "nome"
+
+ // remove diretórios 
+ rm -r 
+
+ // deleta todos arquivos e links
+ rm -rf
+        </code></pre>
+
+        <h4>Cópia arquivos ou diretórios: cp</h4>
+        <pre><code>
+ cp "nome" path
+
+ // cp todos
+ cp -r * path
+ cp -r * ../dir2/dir3
+        </code></pre>
+
+        <h4>Globbing (Manipulação de arquivos): *, ? and []</h4>
+        <pre><code>
+ // *: substitui por qualquer possiblidade
+ ls arq* 
+ ls *1*
+          
+ // ? = substitui caracteres
+ ls arq1?
+ ls arq??
+        
+ // [] = seleciona um intervalo
+ ls arq[1-5]
+ ls *[1-5]
+ ls arq[1,2,5]
+ ls ???[1-5]
+ ls ???[1-5]*
+ ls [A,a]rq[1-5]
+        </code></pre>
+
+        <h4>Histórico</h4>
+        <pre><code>
+ history
+        </code></pre>
+
+
+    </main>
+
+
+</body>
+
+</html>
