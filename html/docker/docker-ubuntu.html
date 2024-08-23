@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>FOJ</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <a href="https://github.com/nfoj/foj-dev-br" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
+        <a class="menu-item" href="/index.html">Home</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+        <h2>Docker - Ubuntu</h2>
+        <h3></h3>
+
+        <h4>O que é Ubuntu?</h4>
+
+        <p>Ubuntu é um sistema operacional Linux popular, gratuito e fácil de usar, ideal para quem busca um sistema
+            operacional completo e personalizável.</p>
+
+        <h4>Acesse:</h4>
+        <ul>
+            <li><a href="https://hub.docker.com/">Docker Hub.</a></li>
+        </ul>
+
+        <h4>O que é da para fazer?</h4>
+        <ul>
+            <li>Aprenda Linux;</li>
+            <li>Desenvolva e teste software;</li>
+            <li>Implante aplicações;</li>
+            <li>Crie servidores;</li>
+            <li>Automatize tarefas.</li>
+        </ul>
+
+        <h5>Comandos:</h5>
+
+        <pre>
+        <code>
+    sudo docker pull ubuntu
+    sudo docker run -it ubuntu bash
+    sudo docker stop ef9bced584b5
+    sudo docker start ef9bced584b5
+    sudo docker exec -iti ef9bced584b5
+    
+    or
+    
+    sudo docker run -it ubuntu bash
+    sudo docker stop ef9bced584b5
+    sudo docker start ef9bced584b5
+    sudo docker exec -iti ef9bced584b5
+        </code>
+        </pre>
+
+
+    </main>
+
+
+</body>
+
+
+</html>
