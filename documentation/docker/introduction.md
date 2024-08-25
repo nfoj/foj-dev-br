@@ -102,44 +102,6 @@
     ```
 
 
-> [!NOTE]  
-> Example: Ubuntu
-    
-    Docker Ubuntu (Iterative)
-    
-    ```
-
-        sudo docker pull ubuntu
-        sudo docker run -it ubuntu bash
-        sudo docker stop ef9bced584b5 
-        sudo docker start ef9bced584b5
-        sudo docker exec -iti ef9bced584b5
-   
-        or
-
-        sudo docker run -it ubuntu bash
-        sudo docker stop ef9bced584b5
-        sudo docker start ef9bced584b5
-        sudo docker exec -iti ef9bced584b5 
-
-    ```
-
-    - i: Ensures that you can provide input to the container;
-    - t: Allocates a pseudo-TTY;
-    - bash: terminal.
-
-
-    ```
-        
-        sudo docker -t=0i ef9bced584b5
-        docker rm ef9bced584b5  
-    
-    ```          
-    
-    - -t=0: stop instantly
-    - rm: remove
-
-
 ## Images
 
   List images
@@ -166,3 +128,10 @@
     sudo docker history d2c94e258dc
 
   ```
+ 
+  Remove
+
+  ```
+    docker system prune -a
+    
+  ``` 
