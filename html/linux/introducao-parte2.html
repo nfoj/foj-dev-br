@@ -21,7 +21,7 @@
        <div class="sidebar left-menu" id="leftMenu">
               <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
               <a class="menu-item" href="/index.html">Home</a>
-              <a class="menu-item" href="/index.html">Linux - Parte 2</a>
+              <a class="menu-item" href="/html/linux/introducao-parte1.html">Linux - Parte 1</a>
        </div>
 
        <div class="sidebar right-menu" id="rightMenu">
@@ -93,13 +93,13 @@
 
               <h4>Pesquisa arquivos: find</h4>
               <pre><code>
- find / -name *.conf
+ find / -nome *.conf
 
  // Super usuário
- sudo find / -name *.conf
+ sudo find / -nome *.conf
                  
  // maxdeath (conta diretórios) "nome"
- find /etc -maxdepth 2 -name *.conf    
+ find /etc -maxdepth 2 -nome *.conf    
                  
  // Tempo - Minutos
  find . -amin -5
@@ -123,10 +123,50 @@
  grep ssh services >> text.txt 
                  
  // Mais de um comendando: |
- cat /etc/passwd | grep <name> > list.txt
+ cat /etc/passwd | grep "nome" > list.txt
               </code></pre>
 
 
+              <h4>Sort: sort</h4>
+              <pre><code>
+ cat /etc/passwd
+ cat text.txt | sort
+ cat text.txt | sort > list.txt
+              </code></pre>
+
+
+              <h4>Filtro: cut -d </h4>
+              <pre><code>
+ //cut -d " " -f"número da coluna" "nome"
+ cut -d " " -f1 list.txt
+                        
+ cat list.txt | cut -d " " -f1 
+ cat list.txt | cut -d " " -f1- 
+ cat list.txt | cut -d " " -f1-2 > text1.txt
+ cat list.txt | cut -d " " -f1,4- > text2.txt
+              </code></pre>
+
+
+              <h4>Expresão: -E</h4>
+              <pre><code>
+ // ^ início do arquivo
+ cat "nome" | grep -E "^A"
+
+ // $ final do arquivo
+ cat "nome" | grep -E "a$"
+
+ // Inicio e final
+ cat "nome" | grep -E "^a$"
+
+ // case-insensitive
+ cat "nome" | grep -iE "a"
+
+ // . : todos arquivos
+ cat "nome" | grep -iE "^.at"
+
+ // [abc] [124]
+ cat "nome" | grep -iE "^[20]..
+              </code></pre>
 
        </main>
 
