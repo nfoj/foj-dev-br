@@ -66,7 +66,7 @@
           
   ```
 
-- Searh files: find: find
+- Searh files: find
 
   ```
     find / -name *.conf
