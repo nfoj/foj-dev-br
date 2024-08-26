@@ -1,6 +1,6 @@
 pub fn fmsyntax() {
     // functions
-    let sum: u8 = sum(1, 2);
+    let sum: u8 = sum(3, 2);
     println!("1 + 2 = {}", sum);
     println!("----------------------------------");
 

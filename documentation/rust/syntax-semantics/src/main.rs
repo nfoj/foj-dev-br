@@ -1,10 +1,11 @@
-mod a;
-mod b;
-mod c;
+//mod a;
+//mod b;
+//mod c;
+mod hr;
 
 fn main() {
-    println!("Variables, constants and data types:");
-    a::vcdtypes();
-    b::cfconstructs();
-    c::fmsyntax();
+    //a::vcdtypes();
+    //b::cfconstructs();
+    //c::fmsyntax();
+    hr::hackerrank();
 }
