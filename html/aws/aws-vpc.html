@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
-    <title>FOJ</title>
+    <title>AWS - VPC</title>
 </head>
 
 <body>
@@ -21,8 +21,7 @@
     <div class="sidebar left-menu" id="leftMenu">
         <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
         <a class="menu-item" href="/index.html">Home</a>
-        <a class="menu-item" href="/html/docker/docker-ubuntu.html">Docker - Ubuntu</a>
-        <a class="menu-item" href="/html/docker/docker-postgresql.html">Docker - PostgreSQL</a>
+        <a class="menu-item" href="/html/aws/aws-cloud.html">Docker - Cloud</a>
 
     </div>
 
@@ -33,35 +32,27 @@
     </div>
 
     <main class="container">
-        <h2>Docker</h2>
+        <h2>AWS VPC (Virtual Private Cloud)</h2>
         <h3>Introdução</h3>
 
-        <h4>O que é Docker?</h4>
+        <h4>O que é?</h4>
 
-        <p><strong>Docker</strong> é uma plataforma de desenvolvimento e distribuição de aplicativos que utiliza o
-            conceito de
-            containerização;</p>
+        <p>Serviço de rede privada virtual que permite que você lance recursos da AWS em uma rede virtual isolada
+            definida por você. </p>
 
+        <p>Seção Isolada Logicamente pode executar recursos da AWS em uma rede virtual que você mesmo define.</p>
 
-        <p>Um <strong>container</strong> é um ambiente isolado e portátil que contém tudo o que um aplicativo precisa
-            para funcionar, incluindo código, bibliotecas e dependências;</p>
-
-
-        <h4>Para que usar?</h4>
-
+        <h4>Controle sobre seus recursos de rede virtual:</h4>
         <ul>
-            <li>Executar um container Ubuntu;</li>
-            <li>Criar um ambiente PostgreSQL;</li>
-            <li>Usar uma imagem Docker do WordPress.</li>
+            <li>Seleção do intervalo de endereços IP;</li>
+            <li>Criação de sub-redes;</li>
+            <li>Configuração de tabelas de rotas de gateway de rede.</li>
         </ul>
-        <p>...</p>
 
-        <h4>Acesse:</h4>
-        <ul>
-            <li><a href="https://www.docker.com/">Docker;</a></li>
-            <li><a href="https://docs.docker.com/get-started/">Documentação;</a></li>
-            <li><a href="https://hub.docker.com/">Docker Hub.</a></li>
-        </ul>
+        <p>Permite que você personalize a configuração de sua rede VPC.</p>
+        <p>Múltiplas camadas de segurança.</p>
+        <p>Resumo: uma rede principal e sub-redes dentro dela, que podem ser configuradas.</p>
+
     </main>
 
 

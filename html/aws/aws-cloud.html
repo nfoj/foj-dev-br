@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>AWS - Cloud</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()">&#9776;</button>
+        <a href="https://github.com/nfoj/foj-dev-br" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">X Close</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/aws/aws-vpc.html">AWS - VPC</a>
+
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+        <h2>AWS - Cloud</h2>
+        <h3>Introdução</h3>
+
+        <h4>O que é AWS Cloud?</h4>
+
+        <p>A AWS Cloud é uma plataforma de computação em nuvem fornecida pela Amazon Web Services
+            (AWS).
+        </p>
+
+        <h4>Modelos:</h4>
+
+        <h4>Tradicional IT</h4>
+
+        <p>Seu gerenciamento:</p>
+
+        <ul>
+            <li>Aplicações;</li>
+            <li>Dados;</li>
+            <li>Tempo de execução;</li>
+            <li>Middleware;</li>
+            <li>Sistema operacional;</li>
+            <li>Virtualização;</li>
+            <li>Servidores;</li>
+            <li>Armazenamento;</li>
+            <li>Rede.</li>
+        </ul>
+
+        <h4>IaaS (Infraestrutura como Serviço)</h4>
+
+        <p>Seu gerenciamento:</p>
+
+        <ul>
+            <li>Aplicações;</li>
+            <li>Dados;</li>
+            <li>Tempo de execução;</li>
+            <li>Middleware;</li>
+        </ul>
+
+        <p>Fornecido como serviço:</p>
+
+        <ul>
+            <li>Sistema operacional;</li>
+            <li>Virtualização;</li>
+            <li>Servidores;</li>
+            <li>Armazenamento;</li>
+            <li>Rede.</li>
+        </ul>
+
+        <p>Mais flexibilidade quanto à configuração de rede e armazenamento:</p>
+
+        <ul>
+            <li>Gerencia aspectos de segurança;</li>
+            <li>Configura controles de acesso.</li>
+        </ul>
+
+        <p>Exemplos:</p>
+
+        <ul>
+            <li>AWS EC2;</li>
+            <li>AWS Elastic Block Storage (EBS);</li>
+            <li>AWS Virtual Private Cloud (VPC).</li>
+        </ul>
+
+        <h4>PaaS (Plataforma como Serviço)</h4>
+
+        <p>Seu gerenciamento:</p>
+
+        <ul>
+            <li>Aplicações;</li>
+            <li>Dados;</li>
+        </ul>
+
+        <p>Fornecido como serviço:</p>
+
+        <ul>
+            <li>Tempo de execução;</li>
+            <li>Middleware;</li>
+            <li>Sistema operacional;</li>
+            <li>Virtualização;</li>
+            <li>Servidores;</li>
+            <li>Armazenamento;</li>
+            <li>Rede.</li>
+        </ul>
+
+        <p>Observações:</p>
+
+        <ul>
+            <li>Não gerencia a infraestrutura subjacente;</li>
+            <li>A AWS gerencia o sistema operacional: aplicação de patches de banco de dados, configuração de firewall e
+                recuperação de desastres;</li>
+            <li>O cliente gerencia o código e os dados.</li>
+        </ul>
+
+        <p>Exemplos:</p>
+
+        <ul>
+            <li>AWS Lambda;</li>
+            <li>AWS Relational Database Service (RDS);</li>
+            <li>AWS Elastic Beanstalk.</li>
+        </ul>
+
+        <h4>SaaS (Software como Serviço)</h4>
+
+        <p>Fornecido como serviço:</p>
+
+        <ul>
+            <li>Aplicações;</li>
+            <li>Dados;</li>
+            <li>Tempo de execução;</li>
+            <li>Middleware;</li>
+            <li>Sistema operacional;</li>
+            <li>Virtualização;</li>
+            <li>Servidores;</li>
+            <li>Armazenamento;</li>
+            <li>Rede.</li>
+        </ul>
+
+        <p>Observações:</p>
+
+        <ul>
+            <li>Hospedagem centralizada;</li>
+            <li>Modelo de assinatura ou pagamento por uso;</li>
+            <li>Acessado através de um navegador, aplicativo móvel ou API (Interface de Programação de Aplicativos);
+            </li>
+            <li>Não há necessidade de gerenciar a infraestrutura subjacente que suporta o serviço.</li>
+        </ul>
+
+        <p>Exemplos:</p>
+
+        <ul>
+            <li>AWS Trusted Advisor;</li>
+            <li>AWS Shield;</li>
+            <li>AWS Chime.</li>
+        </ul>
+
+        <h4>Cloud</h4>
+
+        <ul>
+            <li>Cloud;</li>
+            <li>Híbrida;</li>
+            <li>Nuvem privada.</li>
+        </ul>
+
+        <h4>Clássico</h4>
+
+        <p>Segurança</p>
+
+        <ul>
+            <li>Firewalls;</li>
+            <li>ACLs;</li>
+            <li>Administração.</li>
+        </ul>
+
+        <p>Redes</p>
+
+        <ul>
+            <li>Roteador;</li>
+            <li>Pipeline de rede;</li>
+            <li>Switch.</li>
+        </ul>
+
+        <p>CPU</p>
+
+        <ul>
+            <li>Servidores locais.</li>
+        </ul>
+
+        <p>Armazenamento</p>
+
+        <ul>
+            <li>DAS (Direct Attached Storage);</li>
+            <li>SAN (Storage Area Network);</li>
+            <li>NAS (Network Attached Storage);</li>
+            <li>RDBMS (Relational Database Management System).</li>
+        </ul>
+
+        <h4>AWS</h4>
+
+        <p>Segurança</p>
+
+        <ul>
+            <li>Grupos de segurança;</li>
+            <li>ACLs de rede;</li>
+            <li>IAM (Identity and Access Management).</li>
+        </ul>
+
+        <p>Redes</p>
+
+        <ul>
+            <li>Balanceamento de carga elástico;</li>
+            <li>Amazon VPC (Virtual Private Cloud).</li>
+        </ul>
+
+        <p>CPU</p>
+
+        <ul>
+            <li>AMI (Amazon Machine Image) > AWS EC2.</li>
+        </ul>
+
+        <p>Armazenamento</p>
+
+        <ul>
+            <li>EBS (Elastic Block Storage);</li>
+            <li>EFS (Elastic File System);</li>
+            <li>S3 (Simple Storage Service);</li>
+            <li>RDS (Relational Database Service).</li>
+        </ul>
+
+        <p>Modelo de Responsabilidade Compartilhada da AWS</p>
+
+        <ul>
+            <li>Cliente;</li>
+            <li>AWS.</li>
+        </ul>
+
+
+        <h4>Infraestrutura</h4>
+
+        <p>Região (Zonas de Disponibilidade)</p>
+
+        <p>Área geográfica</p>
+
+        <ul>
+            <li>A replicação de dados entre regiões é controlada pelo consumidor;</li>
+            <li>A comunicação entre regiões utiliza a infraestrutura de rede de backbone da AWS;</li>
+        </ul>
+
+        <p>Observação:</p>
+
+        <ul>
+            <li>A região fornece redundância completa e conectividade à rede;</li>
+            <li>A região normalmente consiste de duas ou mais Zonas de Disponibilidade.</li>
+        </ul>
+
+        <p>Resumo:</p>
+
+        <ul>
+            <li>Região: São Paulo, Virgínia, ...</li>
+            <li>Existe comunicação, mas você a configura;</li>
+            <li>Cada região é interdependente, funcionam de forma diferente;</li>
+            <li>Cada região possui um conjunto de data centers.</li>
+        </ul>
+
+        <p>Como escolher uma região</p>
+
+        <ul>
+            <li>Governança de dados: Os dados podem sair do país?</li>
+            <li>Proximidade dos clientes (latência);</li>
+            <li>Serviços disponíveis na região;</li>
+            <li>Custos (variam por região).</li>
+        </ul>
+
+        <p>Uma Zona de Disponibilidade é um local discreto dentro de uma região que compreende um ou mais data centers,
+            projetados para fornecer tolerância a falhas e redundância.</p>
+
+        <ul>
+            <li>Elasticidade e escalabilidade;</li>
+            <li>Tolerância a falhas;</li>
+            <li>Alta disponibilidade.</li>
+        </ul>
+
+        <p>Uma única instância de produto pode ser replicada em várias Zonas de Disponibilidade.</p>
+        <!--
+        
+         <h4>Acesse:</h4>
+        <ul>
+            <li><a href="https://www.docker.com/">Docker;</a></li>
+            <li><a href="https://docs.docker.com/get-started/">Documentação;</a></li>
+            <li><a href="https://hub.docker.com/">Docker Hub.</a></li>
+        </ul>
+        
+        -->
+
+    </main>
+
+
+</body>
+
+
+</html>
