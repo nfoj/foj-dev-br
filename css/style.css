@@ -162,3 +162,10 @@ pre {
   color: var(--color-flamingo);
   background-color: var(--color-base);
 }
+
+table, th, td {
+  border: 1px solid var(--color-text);
+  border-collapse: collapse;
+  padding: 0rem 1rem;
+  text-align: left;
+}

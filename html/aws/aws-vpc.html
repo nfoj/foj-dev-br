@@ -53,6 +53,138 @@
         <p>Múltiplas camadas de segurança.</p>
         <p>Resumo: uma rede principal e sub-redes dentro dela, que podem ser configuradas.</p>
 
+        <h4>Tabela de Rotas</h4>
+
+        <p>Um conjunto de regras ou rotas que direcionam o tráfego de rede do seu subnet.</p>
+
+        <ul>
+            <li>Cada rota tem uma origem e um destino;</li>
+            <li>Toda tabela tem uma rota local para comunicação dentro do VPC;</li>
+            <li>Cada subnet deve estar associada a uma tabela de roteamento (máximo).</li>
+        </ul>
+
+        <table>
+            <tr>
+                <td>Destino</td>
+                <td>Destino</td>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+        </table>
+
+        <p>Resumo: uma tabela de roteamento é como um Waze para a internet.</p>
+
+        <h4>Subnets</h4>
+
+        <p>Subnets Públicos: Precisa ser publicamente acessível. Exemplo: o site de uma loja;</p>
+        <p>Subnets Privados: Deve ser acessível apenas da rede privada, como um banco de dados.</p>
+
+        <h4>Subnets</h4>
+        <table>
+            <tr>
+                <th>Endereço IP</th>
+                <th>Reservado para</th>
+            </tr>
+            <tr>
+                <td>10.0.0.0</td>
+                <td>Endereço de rede</td>
+            </tr>
+            <tr>
+                <td>10.0.0.1</td>
+                <td>Comunicação interna</td>
+            </tr>
+            <tr>
+                <td>10.0.0.2</td>
+                <td>Resolução do Sistema de Nomes de Domínio (DNS)</td>
+            </tr>
+            <tr>
+                <td>10.0.0.3</td>
+                <td>Uso futuro</td>
+            </tr>
+            <tr>
+                <td>10.0.0.255</td>
+                <td>Endereço de broadcast de rede</td>
+            </tr>
+        </table>
+
+        <h4>VPC 10.0.0.0/16</h4>
+
+        <ul>
+            <li>Subnet 1 (10.0.0.0/24) - 251 Endereços IP</li>
+            <li>Subnet 2 (10.0.2.0/24) - 251 Endereços IP</li>
+            <li>Subnet 3 (10.0.3.0/24) - 251 Endereços IP</li>
+            <li>Subnet 4 (10.0.1.0/24) - 251 Endereços IP</li>
+        </ul>
+
+        <h4>Internet Gateway (IGW)</h4>
+
+        <p>Permite tráfego público da internet para o seu VPC.</p>
+
+        <p>Resumo: Atua como um gateway, permitindo o tráfego da internet pública para o seu VPC.</p>
+
+        <h4>Tabela de Rotas - Pública</h4>
+
+        <table>
+            <tr>
+                <td>Destino</td>
+                <td>Descrição</td>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>igw-id</td>
+            </tr>
+        </table>
+
+        <p>Internet > IGW > Tabela de Rotas > Subnets (Pública)</p>
+
+        <h4>NAT</h4>
+
+        <p>Diferente de um gateway, o NAT recebe dados de entrada da internet, mas não envia ativamente dados de saída
+            para a internet, a menos que seja em resposta a uma solicitação de entrada.</p>
+
+        <h4>Tabela de Rotas - Pública</h4>
+
+        <table>
+            <tr>
+                <td>Destino</td>
+                <td>Descrição</td>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>igw-id</td>
+            </tr>
+        </table>
+
+
+        <h4>Tabela de Rotas - Privada</h4>
+
+        <table>
+            <tr>
+                <td>Destino</td>
+                <td>Descrição</td>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>nat-gwid</td>
+            </tr>
+        </table>
+
+
+
     </main>
 
 
