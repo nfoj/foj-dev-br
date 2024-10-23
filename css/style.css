@@ -1,0 +1,180 @@
+:root {
+  
+  --color-base: #fff;
+  --color-side: #181825;
+  --color-text: #11111b;
+ 
+  
+  --color-rosewater: #f5e0dc;
+  --color-flamingo: #f2cdcd;
+  --color-pink: #f5c2e7;
+  --color-mauve: #cba6f7;
+  --color-red: #f38ba8;
+  --color-maroon: #eba0ac;
+  --color-peach: #fab387;
+  --color-yellow: #f9e2af;
+  --color-green: #a6e3a1;
+  --color-teal: #94e2d5;
+  --color-sky: #89dceb;
+  --color-sapphire: #74c7ec;
+  --color-blue: #89b4fa;
+  --color-lavender: #b4befe;
+  --color-text: #cdd6f4;
+  --color-mantle: #181825;
+  --color-crust: #11111b;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-base);
+  margin: 0rem;
+  padding: 0rem;
+
+}
+
+/* Page content styles */
+.header {
+  background-color: var(--color-side);
+  height: 3rem;
+}
+
+
+/* Buttom */
+.header .button {
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: 2rem;
+  border: none;
+  color: var(--color-yellow);
+  background: var(--color-side);
+}
+
+
+.header .left-button {
+  float: left;
+}
+
+
+.header .right-button {
+  float: right;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: var(--color-side);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 10px;
+  display: none;
+}
+
+
+.sidebar a,
+.sidebar button {
+  text-decoration: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--color-text);
+  background: var(---color-side);
+}
+
+
+.sidebar a:hover,
+.sidebar button:hover {
+  background-color: var(--color-blue);
+}
+
+
+.sidebar .closebtn {
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  color: var(--color-mantle);
+  background: var(--color-red);
+  border: none;
+}
+
+
+/* Left menu specific styles */
+.left-menu {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+
+.left-menu.open {
+  display: block;
+  transform: translateX(0);
+}
+
+
+/* Right menu specific styles */
+.right-menu {
+  right: 0;
+  transform: translateX(100%);
+}
+
+
+.right-menu.open {
+  display: block;
+  transform: translateX(0);
+}
+
+
+i {
+  padding: 0.8rem 0rem 0rem 1rem;
+  font-size: 24px;
+  color: #a6e3a1;
+  background: none;  
+}
+
+
+.container {
+  color: var(--color-mantle);
+  margin: 0 auto;
+  padding: 2rem 4rem 2rem 4rem;
+  text-align: left;
+  max-width:780px;
+}
+
+
+.container li {
+  list-style-type: square;
+}
+
+
+.container li a {
+  color: var(--color-mantle);
+  text-decoration: none;
+}
+
+pre {
+  display: block;
+  text-align: left;
+  max-width: 920px;
+  margin: 1em 0px;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--color-flamingo);
+  background-color: var(--color-base);
+}
+
+table, th, td {
+  border: 1px solid var(--color-mantle);
+  border-collapse: collapse;
+  padding: 0rem 1rem;
+  text-align: left;
+}
