@@ -189,7 +189,7 @@ table, th, td {
 
 
 foot {
-  margin: 2rem;
+  margin: 0 auto;
   max-width:780px;
   text-align: left;
 }
