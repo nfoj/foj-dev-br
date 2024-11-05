@@ -6,8 +6,9 @@
   --color-base: #fff;
   --color-side: #181825;
   --color-text: #11111b;
- 
+  --color-text-code: #cdd6f4;
   
+
   --color-rosewater: #f5e0dc;
   --color-flamingo: #f2cdcd;
   --color-pink: #f5c2e7;
@@ -22,7 +23,6 @@
   --color-sapphire: #74c7ec;
   --color-blue: #89b4fa;
   --color-lavender: #b4befe;
-  --color-text: #cdd6f4;
   --color-mantle: #181825;
   --color-crust: #11111b;
 }
@@ -204,21 +204,33 @@ i {
 
 pre {
   display: block;
-  text-align: left;
-  max-width: 920px;
-  margin: 1em 0px;
+  font-family: monospace;
+  unicode-bidi: isolate;
+  white-space: pre;
+  margin: 1rem 0rem;
   padding: 1rem;
-  border-radius: 8px;
-  color: var(--color-flamingo);
-  background-color: var(--color-base);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+  background-color: var(--color-side);
+}
+
+
+code {
+  color: var(--color-text-code);
 }
 
 
 table, th, td {
-  border: 1px solid var(--color-mantle);
+  border: 1px solid red;
   border-collapse: collapse;
   padding: 0rem 1rem;
   text-align: left;
+}
+
+
+.rust-play:hover {
+  color: var(--color-maroon);
 }
 
 

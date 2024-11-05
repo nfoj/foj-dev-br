@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <script src="/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
-    <title>FOJ</title>
+    <title>Rust - Print</title>
 </head>
 
 <body>
@@ -39,13 +39,147 @@
             <a href=""></a>
         </div>
 
-        <h1>Rust</h1>
+        <h1>Rust {Print!}</h1>
 
-        <p>
-            Rust é uma linguagem de programação sistêmica de alto nível, conhecida por sua segurança de memória,
-            concorrência sem dados de corrida e desempenho. Ela foi projetada para criar software confiável e eficiente,
-            especialmente para sistemas embarcados e aplicativos de alta performance.
+        <span class="post-italic">
+            Em Rust, a impressão de dados na tela é realizada principalmente através da macro println!, que permite
+            formatar a saída de forma customizada utilizando placeholders. Os placeholders são representados por chaves
+            {} e servem para inserir valores de variáveis ou expressões diretamente na string a ser impressa. Para
+            tornar o código mais legível e compreensível, utilizamos comentários, que são linhas de texto ignoradas pelo
+            compilador e servem para explicar o propósito de cada parte do código.
+        </span>
+
+        <span class="post-data">
+            Novembro - 01/2024
+        </span>
+
+        <h3>Comentários, print e placeholders</h3>
+
+        <h4>a. Comentários</h4>
+
+        <ul>
+            <li>// : usado para comentários com apenas 1 linha;</li>
+            <li>/* */ : usado para comentários que ocupem mais de uma linha.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // Essa linha é um comentário
+
+
+        /* 
+            ...
+            Esse comentário está num bloco!
+            ...
+        */
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=22c323c5fe15975689ff8012bb0090c5"
+                class="rust-play" target="_blank">Acesse</a>
         </p>
+
+        <h4>b. Print</h4>
+
+        <ul>
+            <li>print! : imprime texto sem quebra de linha;</li>
+            <li>println! : imprime texto com quebra de linha;</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // Não quebra linha!
+        print!("Hello, world!");
+                
+
+        //Quebra linha!
+        println!("Olá, Maria!");
+        println!("Olá, Carlos!");
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=9bd44af6f3131785768fd58ed3afe5dc"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>c. Quebra de Linha</h4>
+
+        <ul>
+            <li>\n : quebra linha</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+  
+        println!("Qual o seu nome?\nMeu nome é Thays!");
+        println!("1 + 1 =\n2");
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=5b9590a38b00475ee08ee43fe5d019b6"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>d. Placeholder</h4>
+
+        <ul>
+            <li>{ }, {n}, {:n}, {:.n} : espaço reservado para texto ou código.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        //
+        let name = "Alice";
+
+        // {}
+        println!("My name is {}", name);
+        // My name is Alice
+
+
+        // {...}
+        println!("My name is {name}");
+        // My name is Alice
+  
+
+        // {:.n} // Pi = 3.14159
+        pritnln!("Pi is {:.2}", pi);
+        // Pi is 3.14
+
+
+        // {:?}
+        let a = 10;
+        println!("{:?}", a);
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=bac67cd1cd19d763e875683a3eea78c7"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <!--
 
         <h2>Post:</h2>
 
@@ -55,8 +189,10 @@
                 -
                 <a class="postlist-link" href="rust-print.html">Rust {Print!}</a>
             </li>
-
         </ul>
+
+        -->
+
     </main>
 
 </body>
