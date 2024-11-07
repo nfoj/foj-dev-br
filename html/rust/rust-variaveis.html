@@ -1,0 +1,296 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>Rust - Variáveis</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj/foj-dev-br" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/rust/rust-intro.html">Introdução</a>
+        <a class="menu-item" href="/html/rust/rust-print.html">Print</a>
+
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <div class="post-tag">
+            <a href="/html/rust/rust-intro.html">RUST</a>
+            >
+            <a href="/html/rust/rust-print.html">RUST{PRINT!}</a>
+            >
+            <a href="/html/rust/rust-print.html">RUST{VARIÁVEIS!}</a>
+        </div>
+
+        <h1>Rust {Variáveis!}</h1>
+
+        <span class="post-italic">
+            Variáveis são como pequenas caixas dentro de um programa onde você armazena dados. Pense nelas como etiqueta
+            que você coloca em objetos para identificá-los e usa-los. Cada caixa contém um tipo específico de dado,
+            como um número, uma palavra ou um valor lógico sendo eles verdadeiro ou falso. Em Rust, as variáveis são
+            imutáveis por padrão, o que significa que seu valor não pode ser alterado após a inicialização. Essa
+            característica promove a segurança e a previsibilidade do código.
+        </span>
+
+        <span class="post-data">
+            Novembro - 07/2024
+        </span>
+
+        <h3>Variáveis, mutabilidade, constante, sombreamento e escopo</h3>
+
+        <h4>a. Variáveis</h4>
+
+        <ul>
+            <li>let nome = valor;</li>
+            <li>let : deve ser usado antes de cada variável;</li>
+            <li>nome : deve ser usado para nomear;</li>
+            <li>= valor : você deve definir o valor.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+      // Variaveis
+      // let nome = "valor";
+
+      let name = "Alice";
+      println!("Qual o seu nome: {}", name);
+      println!("------------------------------");
+    
+      let num = 24;
+      println!("Qual número você escolheu? {}", num);
+      println!("------------------------------");
+    
+      let letter = 'a';
+      println!("Qual é a primeira letra que vem à sua mente? {}", letter);
+      println!("------------------------------");
+    
+      let ok = true;
+      println!("1 + 1 é igual a dois? {}", ok);
+      println!("------------------------------");
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=8433dc0e04c73205f692933d53514b12"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>b. Mutabilidade</h4>
+
+        <ul>
+            <li>let mut name = valor;</li>
+            <li>Adicione 'mut' após 'let' para alterar o valor de uma variável.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // Variaveis
+        // let nome = "valor";
+  
+        let mut name = "Alice";
+        println!("Qual o seu nome: {}", name);
+        println!("------------------------------");
+      
+        name = "Carlos";
+        println!("Qual o seu nome: {}", name);
+        println!("------------------------------");
+      
+
+        let mut num = 24;
+        println!("Qual número você escolheu? {}", num);
+        println!("------------------------------");
+      
+        num = 12;
+        println!("Qual número você escolheu? {}", num);
+        println!("------------------------------");
+      
+
+        let mut letter = 'a';
+        println!("Qual é a primeira letra que vem à sua mente? {}", letter);
+        println!("------------------------------");
+      
+        letter = 'b';
+        println!("Qual é a primeira letra que vem à sua mente? {}", letter);
+        println!("------------------------------");
+      
+
+        let mut ok = true;
+        println!("1 + 1 é igual a dois? {}", ok);
+        println!("------------------------------");
+
+        ok = false;
+        println!("1 + 1 é igual a dois? {}", ok);
+        println!("------------------------------");
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=754508656df7f52a6c5fc0e1477c6d70"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>c. Constante</h4>
+
+        <ul>
+            <li>const NOME : tipo = valor;</li>
+            <li>Uma constante não pode ser alterada depois de receber um valor;</li>
+            <li>As constantes devem ser declaradas em maiúsculas e ter um tipo explícito.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+  
+        // const
+        // const NOME : TIPO = valor;
+
+        const NUM : u8 = 1;
+        println!("{}", NUM);
+        println!("------------------------------");
+        
+        // Erro
+        let const NUM : u8 = 4;
+        println!("{}", NUM);
+        println!("------------------------------");
+        
+        // Erro
+        const mut NUM : u8 = 5;
+        println!("{}", NUM);
+        println!("------------------------------");
+        teste = 10;
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=158be2176437ce2fbac6d8a42642a132"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>d. Sombreamento</h4>
+
+        <ul>
+            <li>let nome = "Alice";</li>
+            <li>let nome = "Carlos";</li>
+            <li>O sombreamento de uma variável é feito declarando uma nova com o mesmo nome.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // shadowing
+    
+        let comida = "pão";
+        println!("{}", comida);
+        println!("------------------------------");
+    
+        let comida = "leite";
+        println!("{}", comida);
+        println!("------------------------------");
+        
+        let comida = "pizza";
+        println!("{}", comida);
+        println!("------------------------------");
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f6032af138a4d4d8e74725a4609bec1e"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+
+        <h4>e. Escopo</h4>
+
+        <ul>
+            <li>Quando um bloco de código é colocado entre chaves {}, ele entra em um novo escopo, que é aninhado dentro
+                do escopo do programa principal.</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // scope
+        let x = 1;
+        println!("{}", x);
+        println!("------------------------------");
+    
+        {
+
+          let x = 2;
+          println!("{}", x);
+          // resultado = 2
+          println!("------------------------------");
+        
+        }
+    
+        println!("{}", x);
+        println!("------------------------------");
+        
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=c07b6b72157f3f3c3fc3ab5e7df376a7"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h2>Post:</h2>
+
+        <!--
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2024-10-01">2024-10</time>
+                -
+                <a class="postlist-link" href="rust-print.html">Rust {Variáveis!}</a>
+            </li>
+        </ul>
+        
+        -->
+
+
+    </main>
+
+</body>
+
+
+<!--// https://notapplicable.dev/-->

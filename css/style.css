@@ -37,14 +37,13 @@ body {
 
 }
 
-/* Page content styles */
+
 .header {
   background-color: var(--color-side);
   height: 3rem;
 }
 
 
-/* Buttom */
 .header .button {
   border: none;
   color: var(--color-yellow);
@@ -62,7 +61,6 @@ body {
 }
 
 
-/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
@@ -84,8 +82,8 @@ body {
   display: block;
   cursor: pointer;
   transition: background-color 0.2s;
-  color: var(--color-text);
-  background: var(---color-side);
+  color: var(--color-text-code);
+  background: var(--color-crust);
 }
 
 
@@ -182,22 +180,29 @@ i {
 }
 
 
+.post-tag {
+  font-size: 0.7rem;
+}
+
+
 .post-italic {
   font-style: italic;
   font-weight: 200;
   display: block;
 }
 
+
 .postlist-link {
   text-decoration:underline;
 }
+
 
 .postlist-link:hover {
   color: var(--color-peach);
 }
 
-.post-data {
-  display: block;
+
+.postlist-date {
   padding-top: 1rem;
 } 
 
