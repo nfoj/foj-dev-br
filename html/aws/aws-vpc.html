@@ -1,0 +1,151 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>AWS - Cloud</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
+        <a class="menu-item" href="/index.html">Home</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <h1>AWS - VPC</h1>
+
+        <span class="post-italic">
+            Amazon Virtual Private Cloud (VPC) é um serviço da AWS que permite você criar uma rede virtual isolada
+            dentro da nuvem da AWS. É como ter seu próprio data center virtual, mas com a escalabilidade e a
+            flexibilidade da nuvem. Com a VPC, você tem controle total sobre seu ambiente de rede, incluindo endereços
+            IP, tabelas de rotas e grupos de segurança. Isso significa que você pode configurar sua rede da mesma forma
+            que faria em um data center físico, mas com muito mais agilidade e sem a necessidade de gerenciar a
+            infraestrutura subjacente.
+        </span>
+
+        <span class="post-data">
+            Novembro - XX/2024
+        </span>
+
+        <h4>Seção Lógica Isolada</h4>
+
+        <p>Pode executar recursos da AWS em uma rede virtual definida por você mesmo.</p>
+
+        <ul>
+            <li>Controle sobre seus recursos de rede virtual:</li>
+            <ul>
+                <li>Seleção do intervalo de endereços IP;</li>
+                <li>Criação de subnets;</li>
+                <li>Configuração de tabelas de rotas de gateway de rede.</li>
+            </ul>
+            <li>Permite que você personalize a configuração de sua rede VPC.</li>
+            <li>Múltiplas camadas de segurança.</li>
+        </ul>
+
+        <p>Resumo: uma rede principal e subnets dentro dela, que podem ser configuradas.</p>
+
+        <h4>Route Table</h4>
+
+        <ul>
+            <li>Um conjunto de regras ou rotas que direcionam o tráfego de rede do seu subnet.</li>
+
+            <ul>
+                <li>Each route has an origin and a destination;</li>
+                <li>Every table has a local route to communicate within the VPC;</li>
+                <li>Each subnet must be associated with one route table (maximum).</li>
+            </ul>
+        </ul>
+
+        <table>
+            <tr>
+                <th>Destino</th>
+                <th>Destino</th>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+        </table>
+
+        <p>Resumo: uma tabela de rotas é como um Waze para a internet.</p>
+
+        <h4>Subnets</h4>
+
+        <ul>
+            <li>Subnets Públicas: Precisam ser acessíveis publicamente. Exemplo: o site de uma loja;</li>
+            <li>Subnets Privadas: Devem ser acessíveis apenas a partir da rede privada, como um banco de dados.</li>
+        </ul>
+
+        <h2>Tabela de Endereço IP e Bloco CIDR (10.0.0.0/24)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endereço IP</th>
+                    <th>Descrição (Reservado)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.0.0.0</td>
+                    <td>Endereço de rede</td>
+                </tr>
+                <tr>
+                    <td>10.0.0.1</td>
+                    <td>Comunicação interna</td>
+                </tr>
+                <tr>
+                    <td>10.0.0.2</td>
+                    <td>Resolução de Sistema de Nomes de Domínio (DNS)</td>
+                </tr>
+                <tr>
+                    <td>10.0.0.3</td>
+                    <td>Uso futuro</td>
+                </tr>
+                <tr>
+                    <td>10.0.0.255</td>
+                    <td>Endereço de broadcast da rede</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!--
+
+        <h2>Post:</h2>
+
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2024-10-01">2024-11</time>
+                -
+                <a class="postlist-link" href="rust-print.html">Rust {Print!}</a>
+            </li>
+
+        </ul>
+
+        -->
+
+    </main>
+
+</body>
+
+
+<!--// https://notapplicable.dev/-->
