@@ -189,6 +189,7 @@ i {
   font-style: italic;
   font-weight: 200;
   display: block;
+  margin-bottom: 1rem;
 }
 
 
@@ -200,11 +201,6 @@ i {
 .postlist-link:hover {
   color: var(--color-peach);
 }
-
-
-.postlist-date {
-  padding-top: 1rem;
-} 
 
 
 pre {

@@ -1,0 +1,260 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>AWS - Cloud</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
+        <a class="menu-item" href="/index.html">Home</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <h1>AWS</h1>
+
+        <span class="post-italic">
+            A Amazon Web Services (AWS) é a plataforma de computação em nuvem mais abrangente e amplamente adotada do
+            mundo. Ela oferece uma vasta gama de serviços de nuvem, desde computação e armazenamento até bancos de
+            dados, análise de dados, aprendizado de máquina e muito mais. Com a AWS, empresas de todos os tamanhos podem
+            implantar aplicativos e armazenar dados na nuvem de forma rápida, escalável e econômica. A AWS proporciona
+            flexibilidade para ajustar os recursos conforme a demanda, eliminando a necessidade de grandes investimentos
+            em infraestrutura física. Além disso, a plataforma oferece alta disponibilidade e segurança, garantindo a
+            continuidade dos negócios e a proteção dos dados.
+        </span>
+
+        <span class="post-data">
+            Novembro - XX/2024
+        </span>
+
+        <h3>Introdução</h3>
+
+        <h4>Modelos:</h4>
+
+        <ul>
+            <li>Tradicional IT;</li>
+            <li>IaaS;</li>
+            <li>PaaS;</li>
+            <li>SaaS.</li>
+        </ul>
+
+        <h4>a. Tradicional IT</h4>
+
+        <ul>
+            <li>Seu gerenciamento:</li>
+            <ul>
+                <li>Aplicações;</li>
+                <li>Dados;</li>
+                <li>Tempo de Execução;</li>
+                <li>Middleware;</li>
+                <li>Sistema Operacional;</li>
+                <li>Virtualização;</li>
+                <li>Servidores;</li>
+                <li>Armazenamento;</li>
+                <li>Rede.</li>
+            </ul>
+        </ul>
+
+        <h4>b. IaaS (Infraestrutura como Serviço)</h4>
+
+        <ul>
+            <li>Seu gerenciamento:</li>
+            <ul>
+                <li>Aplicações;</li>
+                <li>Dados;</li>
+                <li>Tempo de Execução;</li>
+                <li>Middleware;</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Serviço da AWS:</li>
+            <ul>
+                <li>Sistema Operacional;</li>
+                <li>Virtualização;</li>
+                <li>Servidores;</li>
+                <li>Armazenamento;</li>
+                <li>Rede.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Detalhes:</li>
+            <ul>
+                <li>Mais flexibilidade em relação à configuração de rede e armazenamento;</li>
+                <li>Gerencia aspectos de segurança;</li>
+                <li>Configura controles de acesso.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Exemplos:</li>
+            <ul>
+                <li>EC2;</li>
+                <li>Elastic Block Storage (EBS);</li>
+                <li>Virtual Private Cloud (VPC).</li>
+            </ul>
+        </ul>
+
+        <h4>c. PaaS (Plataforma como Serviço)</h4>
+
+        <ul>
+            <li>Seu gerenciamento:</li>
+            <ul>
+                <li>Aplicações;</li>
+                <li>Dados;</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Serviço da AWS:</li>
+            <ul>
+                <li>Tempo de Execução;</li>
+                <li>Middleware;</li>
+                <li>Sistema Operacional;</li>
+                <li>Virtualização;</li>
+                <li>Servidores;</li>
+                <li>Armazenamento;</li>
+                <li>Rede.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Detalhes:</li>
+            <ul>
+                <li>Não gerencia a infraestrutura subjacente;</li>
+                <li>A AWS gerencia o sistema operacional: aplicação de patches de banco de dados, configuração de
+                    firewall e recuperação de desastres;</li>
+                <li>O cliente gerencia o código e os dados.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Exemplos:</li>
+            <ul>
+                <li>Lambda;</li>
+                <li>Relational Database Service (RDS);</li>
+                <li>Elastic Beanstalk.</li>
+            </ul>
+        </ul>
+
+        <h4>d. SaaS (Software como Serviço)</h4>
+
+        <ul>
+            <li>Serviço da AWS:</li>
+            <ul>
+                <li>Aplicações;</li>
+                <li>Dados;</li>
+                <li>Tempo de Execução;</li>
+                <li>Middleware;</li>
+                <li>Sistema Operacional;</li>
+                <li>Virtualização;</li>
+                <li>Servidores;</li>
+                <li>Armazenamento;</li>
+                <li>Rede.</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Detalhes:</li>
+            <ul>
+                <li>Hospedagem centralizada</li>
+                <li>Modelo de assinatura ou pagamento por uso</li>
+                <li>Acessado por meio de um navegador, aplicativo móvel ou API (Interface de Programação de Aplicativos)
+                </li>
+                <li>Não há necessidade de gerenciar a infraestrutura subjacente que suporta o serviço</li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>Exemplos:</li>
+            <ul>
+                <li>Trusted Advisior;</li>
+                <li>Shield;</li>
+                <li>Chime.</li>
+            </ul>
+        </ul>
+
+        <h3>Infraestrutura</h3>
+
+        <p>Geographical Area</p>
+
+        <ul>
+            <li>A replicação de dados entre regiões é controlada pelo consumidor;</li>
+            <li>A comunicação entre regiões usa a infraestrutura de rede de backbone da AWS;</li>
+            <li>A região fornece redundância total e conectividade com a rede A região normalmente consiste em duas ou
+                mais zonas de disponibilidade.</li>
+        </ul>
+
+        <ul>
+            <li>Resumo:</li>
+            <ul>
+                <li>Região: São Paulo, Virgínia, ...</li>
+                <li>A comunicação existe, mas você a configura;</li>
+                <li>Cada região é interdependente, elas funcionam de maneira diferente;</li>
+                <li>Cada região tem um conjunto de data centers.</li>
+            </ul>
+        </ul>
+
+        <p>Como escolher a região?</p>
+
+        <ul>
+            <li>Governança de dados: os dados podem sair do país?</li>
+            <li>Proximidade com os clientes (latência);</li>
+            <li>Serviços disponíveis na região (custos variam de acordo com a região).</li>
+        </ul>
+
+        <p>
+            Uma zona de disponibilidade é um local discreto dentro de uma região que compreende um ou mais data centers,
+            projetado para fornecer tolerância a falhas e redundância.
+        </p>
+
+        <ul>
+            <li>Elasticidade e escalabilidade;</li>
+            <li>Tolerância a falhas;</li>
+            <li>Alta disponibilidade.</li>
+        </ul>
+
+        <p>Uma única instância de produto pode ser replicada em várias zonas de disponibilidade.</p>
+
+        <!--
+
+        <h2>Post:</h2>
+
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2024-10-01">2024-11</time>
+                -
+                <a class="postlist-link" href="rust-print.html">Rust {Print!}</a>
+            </li>
+
+        </ul>
+
+        -->
+
+    </main>
+
+</body>
+
+
+<!--// https://notapplicable.dev/-->
