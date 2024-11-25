@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Let's Echo</h1>
+        <h1>HackerRank - Looping and Skipping</h1>
 
         <span class="post-data">
             Novembro - 22/2024
@@ -39,7 +39,7 @@
 
         <h3>Problem:</h3>
 
-        <h4>Write a bash script that prints the string "HELLO".</h4>
+        <h4>Your task is to use for loops to display only odd natural numbers from 1 to 99.</h4>
 
         <h4># Input</h4>
 
@@ -47,76 +47,112 @@
             <li>-</li>
         </ul>
 
-        <h4># Output</h4>
+        <h4># output</h4>
 
         <ul>
-            <li>Hello</li>
+            <li>1</li>
+            <li>3</li>
+            <li>5</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>99</li>
         </ul>
 
-        <h4># Solution</h4>
+        <h4># Output</h4>
 
         <pre>
             <code>
-    echo Hello       </code>
+    for i in {1..99..2}; do 
+        echo "$i"
+    done </code>
         </pre>
 
-        <h4># Solution</h4>
+
+        <h4># Output</h4>
+        <pre>
+            <code>
+    for ((i=1; i<=99; i=i+2)); do
+        echo "$i"
+    done </code>
+        </pre>
+
+        <h4># Output</h4>
 
         <pre>
             <code>
-    message='HELLO'
-    echo "$message"       </code>
+    seq 1 2 99 </code>
         </pre>
 
         <h4># Comments</h4>
 
         <pre>
             <code>
-    # echo + text
-    echo Example
-
-    # Output
-    Example
+    # Loop in Bash
     
+    for item in [list]
+    do 
+        [command]
+    done
+
     --------------------------
     
-    # echo + " " > Does not appear
-    echo "Example"
+    for i in ABC DEF GHI JLM
+    do
+        echo "List: $i"
+    done
 
     # output
-    Example
-    
+    List: ABC
+    List: DEF
+    List: GHI
+    List: JLM
+
     --------------------------
     
-    # echo + " " > appear
-    echo "\"Example\""
+    for i in {0..3}
+    do
+        echo "Num: $i"
+    done
 
     # output
-    "Example"
+    Num: 0
+    Num: 1
+    Num: 2
+    Num: 3
     
     --------------------------
     
-    # variable
-    variable=Example
-
-    # echo + text
-    echo "Small test: $variable"
+    for i in {0..20..5}
+    do
+        echo "Num: "
+    done
 
     # output
-    Small test: Example
-
+    Num: 0
+    Num: 5
+    Num: 10
+    Num: 15
+    Num: 20
+    
     --------------------------
     
-    \a: Alert (historically known as BEL). This generates the default alert sound.
-    \b: Backspace.
-    \c: Abort current output.
-    \e: Escape.
-    \f: Form feed.
-    \n: Newline.
-    \r: Carriage return.
-    \t: Horizontal tab.
-    \v: Vertical tab.
-    \\: Backslash. </code>
+    for f in file_{1..3}; do
+        for j in server{1..3}; do
+            echo "Copying file $f to serve $j";
+        done;
+    done
+
+    # output
+    Copying file file_1 to server server_1
+    Copying file file_1 to server server_2
+    Copying file file_1 to server server_3
+    Copying file file_2 to server server_1
+    Copying file file_2 to server server_2
+    Copying file file_2 to server server_3
+    Copying file file_3 to server server_1
+    Copying file file_3 to server server_2
+    Copying file file_3 to server server_3</code>
         </pre>
 
         <h2>Post:</h2>
@@ -125,8 +161,7 @@
             <li>
                 <time class="postlist-date" datetime="2024-10-01">2024-11</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/hackerrank-linux-loop-and-skip.html">HackerRank -
-                    Looping and Skipping</a>
+                <a class="postlist-link" href="rust-print.html">Rust {Print!}</a>
             </li>
 
         </ul>
