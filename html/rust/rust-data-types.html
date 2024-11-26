@@ -1,0 +1,409 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>Rust - Tipos de Dados</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj/foj-dev-br" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/rust/rust-intro.html">Introdução</a>
+        <a class="menu-item" href="/html/rust/rust-print.html">Print</a>
+        <a class="menu-item" href="/html/rust/rust-variaveis.html">Variáveis</a>
+
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+    </div>
+
+    <main class="container">
+
+        <div class="post-tag">
+            <a href="/html/rust/rust-intro.html">RUST</a>
+            >
+            <a href="/html/rust/rust-print.html">RUST{PRINT!}</a>
+            >
+            <a href="/html/rust/rust-print.html">RUST{VARIÁVEIS!}</a>
+        </div>
+
+        <h1>Rust {Tipo de Dados!}</h1>
+
+        <span class="post-italic">
+            Os tipos de dados em Rust podem ser divididos em escalares (inteiros, ponto flutuante, booleanos e
+            caracteres) e compostos (tuplas, arrays, structs, enums, slices, strings e ponteiros). Cada tipo possui suas
+            particularidades e é utilizado para representar diferentes tipos de dados em um programa. A escolha do tipo
+            de dado adequado é fundamental para escrever código seguro, eficiente e expressivo em Rust.
+        </span>
+
+        <span class="post-data">
+            Novembro - 26/2024
+        </span>
+
+        <h3>Escalares</h3>
+
+        <h4>a. u: apenas valores positivos</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let num : u8 = 10;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>u8 = 0 - 255;</li>
+            <li>u16 = 0 - 65.535;</li>
+            <li>u32 = 0 - 4.294.967.295;</li>
+            <li>u64 = 0 - 18.446.744.073.709.551.615;</li>
+            <li>u128 = 0 - ...;</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // u8 = 0 - 255
+        println!("u8 ({} - {})", std::u8::MIN, std::u8::MAX);
+                            
+        let number_u8: u8 =  255;
+        println!("{}", number_u8);
+      
+
+        // u16 = 0 - 65.535
+        println!("u16 ({} - {})", std::u16::MIN, std::u16::MAX);    
+      
+        let number_u16: u16 =  255;
+        println!("{}", number_u16);
+      
+      
+        // u32 = 0 - 4.294.967.295
+        println!("u32 ({} - {})", std::u32::MIN, std::u32::MAX);
+      
+        let number_u32: u32 =  255;
+        println!("{}", number_u32);
+      
+      
+        // u64 = 0 - 18.446.744.073.709.551.615 
+        println!("u64 ({} - {})", std::u64::MIN, std::u64::MAX);
+      
+        let number_u64: u64 =  255;
+        println!("{}", number_u64);
+      
+      
+        // u128 = 0 - ...
+        println!("u128 ({} - {})", std::u128::MIN, std::u128::MAX);
+      
+        let number_u128: u128 =  255;
+        println!("{}", number_u128);      
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f8c915cb36d134d85013f18aa520fde1"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>b. i: valores positivos e negativos</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let num : i8 = 0;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>i8 = -128 - 127;</li>
+            <li>i16 = -32768 - 32767;</li>
+            <li>i32 = -2147483648 - 2147483647;</li>
+            <li>i64 = -9223372036854775808 - 9223372036854775807;</li>
+            <li>i128 = - 1 ... - 1 ...;</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // i8 = -128 - 127
+        println!("i8 ({} - {})", std::i8::MIN, std::i8::MAX);
+      
+        let number_i8: i8 =  127;
+        println!("{}", number_i8);
+      
+      
+        // i16 = -32768 - 32767
+        println!("i16 ({} - {})", std::i16::MIN, std::i16::MAX);
+      
+        let number_i16: i16 =  127;
+        println!("{}", number_i16);
+      
+      
+        // i32 = -2147483648 - 2147483647
+        println!("i32 ({} - {})", std::i32::MIN, std::i32::MAX);
+      
+        let number_i32: i32 =  127;
+        println!("{}", number_i32);
+      
+      
+        // i64 = -9223372036854775808 - 922337203685477580 
+        println!("i64 ({} - {})", std::i64::MIN, std::i64::MAX);
+      
+        let number_i64: i64 =  127;
+        println!("{}", number_i64);
+      
+      
+        // i128 =  -170141183460469231731687303715884105728 - 170141183460469231731687303715884105727
+        println!("i128 ({} - {})", std::i128::MIN, std::i128::MAX);
+      
+        let number_i128: i128 =  127;
+        println!("{}", number_i128);
+              
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=ffed3ba8a169a073e1c3d38cc1fb737e"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>c. f: valores postivos e negativos com virgula</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let num : f32 = 1.2;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>f32 = -34028235 ... - 34028235 ...;</li>
+            <li>f64 = -17976931 ... - 17976931 ...;</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        // f32 = -34028235 ... - 34028235 ...
+        println!("f32 ({} - {})", std::f32::MIN, std::f32::MAX);
+      
+        let number_f32: f32 =  179.76;
+        println!("{}", number_f32);
+      
+      
+        // f64 = -17976931348623157000 ... - 17976931348623157000 ...
+        println!("f64 ({} - {})", std::f64::MIN, std::f64::MAX);
+      
+        let number_f64: f64 =  179.76;
+        println!("{}", number_f64);
+                    
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=d514176b3e1cfcdef9272062baef928c"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>d. char: apenas 1 caractere</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let num : char = 'A';</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>'A', '1', '...';</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        let character: char = 'a';
+        println!("{}", character);
+               
+        let symbol: char = '🦥';
+        println!("{}", symbol);
+                    
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=1e353beaa1e003763cdaefb8561bb441"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>e. string: texto</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let texto : &str = "Alice";</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>'ABCDE...', '12345...', '...';</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        let first_name: &str = "Roberto";
+        println!("{}", first_name);
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=9e0a82d5683ad460d0fa481034e8b655"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>f. bool : verdadeiro ou falso;</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+            <li>let texto : bool = true;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li>true ou false;</li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        let checked: bool = true;
+        println!("Os dados foram checados? {}", checked);
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=80500468d6b978efa4b490eaa8d0b0c3"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h3>Compostos</h3>
+
+        <h4>a. tuplas: permitem agrupar valores de vários tipos de dados.</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li></li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        let data_types: (u8, char, f32, i64) = (2, 'a', 5.4, 28);
+        println!("{:?}", data_types);
+        
+        let person = ("Gregor", 64, 1.82);
+        let (x, y, z) = person;
+        println!("My name is {x}, i'm {y} years old and my height is {z}");
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f8c915cb36d134d85013f18aa520fde1"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h4>b. array: uma lista de tamanho estático de um único tipo de dados.</h4>
+
+        <ul>
+            <li>let nome : tipo = valor;</li>
+        </ul>
+
+        <p>Valores:</p>
+
+        <ul>
+            <li></li>
+        </ul>
+
+        <p>Exemplo:</p>
+
+        <pre>
+            <code>
+    fn main () {
+
+        let list: [u8; 3] = [1, 5, 9];
+        println!("{:?}", list);
+      
+        let list_icons: [char; 6] = [``, ``, ``, ``, ``, ``];
+        println!("{:?}", list_icons);
+
+    }       </code>
+        </pre>
+
+        <p>Rust Playground:
+            <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f8c915cb36d134d85013f18aa520fde1"
+                class="rust-play" target="_blank">Acesse</a>
+        </p>
+
+        <h2>Post:</h2>
+
+        <!--
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2024-10-01">2024-10</time>
+                -
+                <a class="postlist-link" href="rust-print.html">Rust {Variáveis!}</a>
+            </li>
+        </ul>
+        
+        -->
+
+    </main>
+
+</body>
+
+
+<!--// https://notapplicable.dev/-->
