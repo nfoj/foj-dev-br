@@ -193,6 +193,16 @@ i {
 }
 
 
+.easy-link {
+  color: var(--color-green);
+}
+
+
+.easy-link:hover {
+  color: var(--color-green);
+}
+
+
 .postlist-link {
   text-decoration:underline;
 }

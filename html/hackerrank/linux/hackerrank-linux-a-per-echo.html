@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Let's Echo</h1>
+        <h1>HackerRank - A Personalized Echo</h1>
 
         <span class="post-data">
             Novembro - 22/2024
@@ -39,63 +39,54 @@
 
         <h3>Problem:</h3>
 
-        <h4>Write a bash script that prints the string "HELLO".</h4>
+        <h4>Write a Bash script which accepts name as input and displays the greeting "Welcome (name)".</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>-</li>
+            <li>Dan</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>Hello</li>
+            <li>Welcome Dan</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    echo Hello       </code>
-        </pre>
-
-        <h4># Solution</h4>
-
-        <pre>
-            <code>
-    message='HELLO'
-    echo "$message"       </code>
+    read name
+    echo "Welcome $name"</code>
         </pre>
 
         <h4># Comments</h4>
 
         <pre>
-            <code>
+            <code> 
+    # variable
+    variable=Example
+
     # echo + text
-    echo Example
-
-    # Output
-    Example
-    
-    --------------------------
-    
-    # echo + " " > Does not appear
-    echo "Example"
+    echo "Small test: $variable"
 
     # output
-    Example
-    
+    Small test: Example
+
     --------------------------
-    
-    # echo + " " > appear
-    echo "\"Example\""
+                
+    # read
+    read text
+
+    # echo
+    echo "Welcome $text"
 
     # output
-    "Example"
-
+    Welcome text
+  
     --------------------------
-    
+
     \a: Alert (historically known as BEL). This generates the default alert sound.
     \b: Backspace.
     \c: Abort current output.
