@@ -240,6 +240,10 @@ table, th, td {
 }
 
 
+.obs {
+  color: var(--color-blue)
+}
+
 .rust-play:hover {
   color: var(--color-maroon);
 }

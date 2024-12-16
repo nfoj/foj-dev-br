@@ -20,6 +20,7 @@
     <div class="sidebar left-menu" id="leftMenu">
         <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/aws/aws-vpc.html">VPC</a>
     </div>
 
     <div class="sidebar right-menu" id="rightMenu">
@@ -43,7 +44,7 @@
         </span>
 
         <span class="post-data">
-            Novembro - XX/2024
+            Dezembro - 14/2024
         </span>
 
         <h3>Introdução</h3>
@@ -60,7 +61,7 @@
         <h4>a. Tradicional IT</h4>
 
         <ul>
-            <li>Seu gerenciamento:</li>
+            <li>Seu Gerenciamento:</li>
             <ul>
                 <li>Aplicações;</li>
                 <li>Dados;</li>
@@ -77,7 +78,7 @@
         <h4>b. IaaS (Infraestrutura como Serviço)</h4>
 
         <ul>
-            <li>Seu gerenciamento:</li>
+            <li>Seu Gerenciamento:</li>
             <ul>
                 <li>Aplicações;</li>
                 <li>Dados;</li>
@@ -118,10 +119,10 @@
         <h4>c. PaaS (Plataforma como Serviço)</h4>
 
         <ul>
-            <li>Seu gerenciamento:</li>
+            <li>Seu Gerenciamento:</li>
             <ul>
                 <li>Aplicações;</li>
-                <li>Dados;</li>
+                <li>Dados.</li>
             </ul>
         </ul>
 
@@ -177,11 +178,12 @@
         <ul>
             <li>Detalhes:</li>
             <ul>
-                <li>Hospedagem centralizada</li>
-                <li>Modelo de assinatura ou pagamento por uso</li>
-                <li>Acessado por meio de um navegador, aplicativo móvel ou API (Interface de Programação de Aplicativos)
+                <li>Hospedagem centralizada;</li>
+                <li>Modelo de assinatura ou pagamento por uso;</li>
+                <li>Acessado por meio de um navegador, aplicativo móvel ou API (Interface de Programação de
+                    Aplicativos);
                 </li>
-                <li>Não há necessidade de gerenciar a infraestrutura subjacente que suporta o serviço</li>
+                <li>Não há necessidade de gerenciar a infraestrutura subjacente que suporta o serviço.</li>
             </ul>
         </ul>
 
@@ -196,35 +198,27 @@
 
         <h3>Infraestrutura</h3>
 
-        <p>Geographical Area</p>
+        <h4>Região</h4>
 
         <ul>
-            <li>A replicação de dados entre regiões é controlada pelo consumidor;</li>
+            <li>A replicação de dados entre regiões (São Paulo, etc) é controlada pelo consumidor;</li>
             <li>A comunicação entre regiões usa a infraestrutura de rede de backbone da AWS;</li>
-            <li>A região fornece redundância total e conectividade com a rede A região normalmente consiste em duas ou
-                mais zonas de disponibilidade.</li>
+            <li>A região fornece redundância total e conectividade com a rede.</li>
+            <li>A região normalmente consiste em duas ou mais zonas de disponibilidade.</li>
         </ul>
 
-        <ul>
-            <li>Resumo:</li>
-            <ul>
-                <li>Região: São Paulo, Virgínia, ...</li>
-                <li>A comunicação existe, mas você a configura;</li>
-                <li>Cada região é interdependente, elas funcionam de maneira diferente;</li>
-                <li>Cada região tem um conjunto de data centers.</li>
-            </ul>
-        </ul>
-
-        <p>Como escolher a região?</p>
+        <h4>Como escolher a região?</h4>
 
         <ul>
             <li>Governança de dados: os dados podem sair do país?</li>
             <li>Proximidade com os clientes (latência);</li>
+            <li>Nem todo produto está disponível em todas as regiões;</li>
             <li>Serviços disponíveis na região (custos variam de acordo com a região).</li>
         </ul>
 
+        <h4>Zona de Disponibilidade</h4>
         <p>
-            Uma zona de disponibilidade é um local discreto dentro de uma região que compreende um ou mais data centers,
+            Uma local discreto dentro de uma região que compreende um ou mais data centers,
             projetado para fornecer tolerância a falhas e redundância.
         </p>
 

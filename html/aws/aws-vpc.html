@@ -20,6 +20,7 @@
     <div class="sidebar left-menu" id="leftMenu">
         <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/aws/aws-cloud.html">AWS</a>
     </div>
 
     <div class="sidebar right-menu" id="rightMenu">
@@ -42,12 +43,15 @@
         </span>
 
         <span class="post-data">
-            Novembro - XX/2024
+            Dezembro - 16/2024
         </span>
 
-        <h4>Seção Lógica Isolada</h4>
+        <h3>Seção Lógica Isolada</h3>
 
-        <p>Pode executar recursos da AWS em uma rede virtual definida por você mesmo.</p>
+        <p>
+            Pode executar recursos da AWS em uma rede virtual definida por você mesmo, sendo uma rede principal e
+            subnets dentro dela, que podem ser configuradas.
+        </p>
 
         <ul>
             <li>Controle sobre seus recursos de rede virtual:</li>
@@ -60,18 +64,14 @@
             <li>Múltiplas camadas de segurança.</li>
         </ul>
 
-        <p>Resumo: uma rede principal e subnets dentro dela, que podem ser configuradas.</p>
+        <h3>Route Table</h3>
 
-        <h4>Route Table</h4>
+        <p>Um conjunto de regras ou rotas que direcionam o tráfego de rede do seu subnet.</p>
 
         <ul>
-            <li>Um conjunto de regras ou rotas que direcionam o tráfego de rede do seu subnet.</li>
-
-            <ul>
-                <li>Each route has an origin and a destination;</li>
-                <li>Every table has a local route to communicate within the VPC;</li>
-                <li>Each subnet must be associated with one route table (maximum).</li>
-            </ul>
+            <li>Cada rota tem uma origem e um destino;</li>
+            <li>Cada tabela tem uma rota local para comunicação dentro do VPC;</li>
+            <li>Cada sub-rede deve estar associada a no máximo uma tabela de rotas.</li>
         </ul>
 
         <table>
@@ -85,16 +85,18 @@
             </tr>
         </table>
 
-        <p>Resumo: uma tabela de rotas é como um Waze para a internet.</p>
+        <p class="obs"><strong>Obs:</strong> uma tabela de rotas é como um Waze para a internet.</p>
 
-        <h4>Subnets</h4>
+        <h3>Subnets</h3>
 
         <ul>
-            <li>Subnets Públicas: Precisam ser acessíveis publicamente. Exemplo: o site de uma loja;</li>
-            <li>Subnets Privadas: Devem ser acessíveis apenas a partir da rede privada, como um banco de dados.</li>
+            <li><strong>Subnets Públicas:</strong> precisam ser acessíveis publicamente. Exemplo: o site de uma loja;
+            </li>
+            <li><strong>Subnets Privadas:</strong> devem ser acessíveis apenas a partir da rede privada, como um banco
+                de dados.</li>
         </ul>
 
-        <h2>Tabela de Endereço IP e Bloco CIDR (10.0.0.0/24)</h2>
+        <h4>Tabela de Endereço IP e Bloco CIDR (10.0.0.0/24)</h4>
         <table>
             <thead>
                 <tr>
@@ -126,6 +128,32 @@
             </tbody>
         </table>
 
+        <p>Exemplo:</p>
+
+        <table>
+            <tr>
+                <th>VPC</th>
+                <th>Sub-redes</th>
+                <th>Endereços de IP</th>
+            </tr>
+            <tr>
+                <td rowspan="4">10.0.0.0/16</td>
+                <td>10.0.0.0/24</td>
+                <td>251</td>
+            </tr>
+            <tr>
+                <td>10.0.1.0/24</td>
+                <td>251</td>
+            </tr>
+            <tr>
+                <td>10.0.2.0/24</td>
+                <td>251</td>
+            </tr>
+            <tr>
+                <td>10.0.3.0/24</td>
+                <td>251</td>
+            </tr>
+        </table>
 
         <!--
 
