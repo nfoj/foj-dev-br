@@ -97,6 +97,7 @@
         </ul>
 
         <h4>Tabela de Endereço IP e Bloco CIDR (10.0.0.0/24)</h4>
+
         <table>
             <thead>
                 <tr>
@@ -154,6 +155,81 @@
                 <td>251</td>
             </tr>
         </table>
+
+
+        <h3>Internet Gateway (IGW)</h3>
+
+        <p>Atua como um gateway, permitindo o tráfego da internet pública para sua VPC</p>
+
+        <p>Exemplo:</p>
+
+        <table>
+            <tr>
+                <th colspan="2">Tabela de Roteamento</th>
+            </tr>
+            <tr>
+                <th>Destino</th>
+                <th>Destino</th>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>igw-id</td>
+            </tr>
+        </table>
+
+        <p>Internet > Gateway de Internet (IGW) > Tabela de Roteamento > Sub-redes (Públicas)</p>
+
+
+        <h3>Network Address Translation (NAT)</h3>
+
+        <p>Diferentemente de um gateway, o NAT recebe dados de entrada da internet, mas não envia ativamente dados de
+            saída para a internet, a menos que seja em resposta a uma solicitação de entrada.</p>
+
+
+        <p>Exemplo:</p>
+
+        <table>
+            <tr>
+                <th colspan="2">Tabela de Roteamento (Pública)</th>
+            </tr>
+            <tr>
+                <th>Destino</th>
+                <th>Destino</th>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>igw-id</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <tr>
+                <th colspan="2">Tabela de Roteamento (Privada)</th>
+            </tr>
+            <tr>
+                <th>Destino</th>
+                <th>Destino</th>
+            </tr>
+            <tr>
+                <td>10.0.0.0/16</td>
+                <td>Local</td>
+            </tr>
+            <tr>
+                <td>0.0.0.0/0</td>
+                <td>nat-gwid</td>
+            </tr>
+        </table>
+
 
         <!--
 
