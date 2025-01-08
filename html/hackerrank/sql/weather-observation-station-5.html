@@ -29,7 +29,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Title</h1>
+        <h1>HackerRank - Weather Observation Station 5</h1>
 
         <span class="post-data">
             Janeiro - 11/2025
@@ -37,40 +37,70 @@
 
         <h3>Problem:</h3>
 
-        <h4>.</h4>
+        <h4>Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.</h4>
+
+        <h4>The STATION table is described as follows:</h4>
+
+        <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>VARCHAR2(21)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>VARCHAR2(2)</td>
+            </tr>
+            <tr>
+                <td>LAT_N</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>LAT_W</td>
+                <td>NUMBER</td>
+            </tr>
+        </tbody>
+        </table>
+
+        <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
 
         <h4># Input</h4>
 
         <ul>
-            <li>-</li>
+            <li>For example, CITY has four entries: DEF, ABC, PQRS and WXY.</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>-</li>
+            <li>ABC 3</li>
+            <li>PQRS 4</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-           </code>
+SELECT CITY, LEGTH(CITY) FROM STATION ORDER BY LEGTH(CITY), CITY ASC LIMIT 1;
+SELECT CITY, LEGTH(CITY) FROM STATION ORDER BY LEGTH(CITY) DESC, CITY ASC LIMIT 1;</code>
         </pre>
 
-        <h4># Solution</h4>
+        <h4># Solution_01</h4>
 
         <pre>
             <code>
-
-           </code>
-        </pre>
-
-        <h4># Comments</h4>
-
-        <pre>
-            <code>
-     </code>
+SELECT CITY, LENGTH(CITY) FROM STATION WHERE LENGTH(CITY) = (SELECT MIN(LENGTH(CITY)) FROM STATION) ORDER BY CITY ASC LIMIT 1;
+SELECT CITY, LENGTH(CITY) FROM STATION WHERE LENGTH(CITY) = (SELECT MAX(LENGTH(CITY)) FROM STATION) ORDER BY CITY ASC LIMIT 1;</code>
         </pre>
 
         <h2>Post:</h2>
@@ -79,7 +109,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-01">2025-01</time>
                 -
-                <a class="postlist-link" href="">HackerRank - </a>
+                <a class="postlist-link" href="">HackerRank - Weather Observation Station 5</a>
             </li>
 
         </ul>
@@ -87,6 +117,3 @@
     </main>
 
 </body>
-
-
-<!--// https://notapplicable.dev/ -->

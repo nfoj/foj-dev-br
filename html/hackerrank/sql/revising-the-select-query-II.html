@@ -29,7 +29,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Title</h1>
+        <h1>HackerRank - Revising the Select Query II</h1>
 
         <span class="post-data">
             Janeiro - 11/2025
@@ -37,40 +37,49 @@
 
         <h3>Problem:</h3>
 
-        <h4>.</h4>
+        <h4>Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.</h4>
 
-        <h4># Input</h4>
+        <h4>The CITY table is described as follows:</h4>
 
-        <ul>
-            <li>-</li>
-        </ul>
-
-        <h4># Output</h4>
-
-        <ul>
-            <li>-</li>
-        </ul>
+         <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>VARCHAR2(17)</td>
+            </tr>
+            <tr>
+                <td>COUNTRYCODE</td>
+                <td>VARCHAR2(3)</td>
+            </tr>
+            <tr>
+                <td>DISTRICT</td>
+                <td>VARCHAR2(20)</td>
+            </tr>
+            <tr>
+                <td>POPULATION</td>
+                <td>NUMBER</td>
+            </tr>
+        </tbody>
+    </table>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-           </code>
-        </pre>
-
-        <h4># Solution</h4>
-
-        <pre>
-            <code>
-
-           </code>
-        </pre>
-
-        <h4># Comments</h4>
-
-        <pre>
-            <code>
-     </code>
+  SELECT NAME
+  FROM CITY
+  WHERE COUNTRYCODE = 'USA'
+  AND POPULATION > 120000;</code>
         </pre>
 
         <h2>Post:</h2>
@@ -79,7 +88,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-01">2025-01</time>
                 -
-                <a class="postlist-link" href="">HackerRank - </a>
+                <a class="postlist-link" href="">HackerRank - Revising the Select Query II</a>
             </li>
 
         </ul>
@@ -87,6 +96,3 @@
     </main>
 
 </body>
-
-
-<!--// https://notapplicable.dev/ -->

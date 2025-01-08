@@ -29,7 +29,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Title</h1>
+        <h1>HackerRank - Weather Observation Station 3</h1>
 
         <span class="post-data">
             Janeiro - 11/2025
@@ -37,40 +37,59 @@
 
         <h3>Problem:</h3>
 
-        <h4>.</h4>
+        <h4>Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.</h4>
 
-        <h4># Input</h4>
+        <h4>The STATION table is described as follows: </h4>
 
-        <ul>
-            <li>-</li>
-        </ul>
+        <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>VARCHAR2(21)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>VARCHAR2(2)</td>
+            </tr>
+            <tr>
+                <td>LAT_N</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>LAT_W</td>
+                <td>NUMBER</td>
+            </tr>
+        </tbody>
+        </table>
 
-        <h4># Output</h4>
-
-        <ul>
-            <li>-</li>
-        </ul>
+        <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-           </code>
+SELECT DISTINCT CITY
+FROM STATION
+WHERE MOD(ID, 2) = 0;</code>
         </pre>
 
-        <h4># Solution</h4>
+        <h4># Solution_01</h4>
 
         <pre>
             <code>
-
-           </code>
-        </pre>
-
-        <h4># Comments</h4>
-
-        <pre>
-            <code>
-     </code>
+SELECT DISTINCT CITY
+FROM STATION
+WHERE ID % 2 = 0;</code>
         </pre>
 
         <h2>Post:</h2>
@@ -79,7 +98,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-01">2025-01</time>
                 -
-                <a class="postlist-link" href="">HackerRank - </a>
+                <a class="postlist-link" href="">HackerRank - Weather Observation Station 3</a>
             </li>
 
         </ul>
@@ -87,6 +106,3 @@
     </main>
 
 </body>
-
-
-<!--// https://notapplicable.dev/ -->

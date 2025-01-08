@@ -29,7 +29,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Title</h1>
+        <h1>HackerRank - Weather Observation Station 4</h1>
 
         <span class="post-data">
             Janeiro - 11/2025
@@ -37,40 +37,79 @@
 
         <h3>Problem:</h3>
 
-        <h4>.</h4>
+        <h4>Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table. </h4>
 
-        <h4># Input</h4>
+        <h4>The STATION table is described as follows:</h4>
 
-        <ul>
-            <li>-</li>
-        </ul>
+        <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>VARCHAR2(21)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>VARCHAR2(2)</td>
+            </tr>
+            <tr>
+                <td>LAT_N</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>LAT_W</td>
+                <td>NUMBER</td>
+            </tr>
+        </tbody>
+        </table>
 
-        <h4># Output</h4>
+        <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
 
-        <ul>
-            <li>-</li>
-        </ul>
+        <p>
+        For example, if there are three records in the table with CITY values 'New York', 'New York', 'Bengalaru',
+        there are 2 different city names: 'New York' and 'Bengalaru'. The query returns 1, because total number of records - number of unique city names 3 - 2 = 1.
+        </p>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-           </code>
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY)
+FROM STATION;</code>
         </pre>
 
-        <h4># Solution</h4>
+        <h4># Note:</h4>
 
         <pre>
             <code>
+City number
 
-           </code>
-        </pre>
+SELECT COUNT(CITY)
+FROM STATION;
 
-        <h4># Comments</h4>
+Result =  499
 
-        <pre>
-            <code>
-     </code>
+#!----------------!#
+
+City Distinct
+
+SELECT COUNT(DISTINCT CITY)
+FROM STATION;
+
+Result = 486
+
+#!---------------!#
+
+499 - 486 = 13</code>
         </pre>
 
         <h2>Post:</h2>
@@ -79,7 +118,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-01">2025-01</time>
                 -
-                <a class="postlist-link" href="">HackerRank - </a>
+                <a class="postlist-link" href="">HackerRank - Weather Observation Station 4</a>
             </li>
 
         </ul>
@@ -87,6 +126,3 @@
     </main>
 
 </body>
-
-
-<!--// https://notapplicable.dev/ -->
