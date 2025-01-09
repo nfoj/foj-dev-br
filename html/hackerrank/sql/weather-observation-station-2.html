@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Title</h1>
+        <h1>HackerRank - Weather Observation Station 2</h1>
 
         <span class="post-data">
             Janeiro - 11/2025
@@ -39,40 +39,67 @@
 
         <h3>Problem:</h3>
 
-        <h4>.</h4>
+        <h4>Query the following two values from the STATION table: </h4>
 
-        <h4># Input</h4>
+        <h4>The sum of all values in LAT_N rounded to a scale of 2 decimal places.</h4>
 
-        <ul>
-            <li>-</li>
-        </ul>
+        <h4>The sum of all values in LONG_W rounded to a scale of 2 decimal places.</h4>
+
+        <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>VARCHAR2(21)</td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>VARCHAR2(2)</td>
+            </tr>
+            <tr>
+                <td>LAT_N</td>
+                <td>NUMBER</td>
+            </tr>
+            <tr>
+                <td>LAT_W</td>
+                <td>NUMBER</td>
+            </tr>
+        </tbody>
+        </table>        
+
+        <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
 
         <h4># Output</h4>
 
         <ul>
-            <li>-</li>
+            <li>Your results must be in the form:</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-           </code>
+lat lon</code>
         </pre>
 
+        <p>where lat is the sum of all values in LAT_N and lon is the sum of all values in LONG_W. Both results must be rounded to a scale of 2 decimal places.</p>
+        
         <h4># Solution</h4>
 
         <pre>
             <code>
-
-           </code>
-        </pre>
-
-        <h4># Comments</h4>
-
-        <pre>
-            <code>
-     </code>
+SELECT ROUND(SUM(LAT_N), 2),
+ROUND(SUM(LONG_W), 2)
+FROM STATION;</code>
         </pre>
 
         <h2>Post:</h2>
@@ -82,9 +109,9 @@
                 <time class="postlist-date" datetime="2025-01">2025-01</time>
              -
                <a class="postlist-link" href="">HackerRank - </a>
-    </li>
+            </li>
 
-  </ul>
+      </ul>
 
   </main>
 </body>
