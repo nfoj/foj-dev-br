@@ -31,82 +31,67 @@
 
     <main class="container">
 
-        <h1>HackerRank - A Personalized Echo</h1>
+        <h1>HackerRank - Getting started with conditionals</h1>
 
         <span class="post-data">
-            Novembro - 22/2024
+            Janeiro - 25/2025
         </span>
 
         <h3>Problem:</h3>
 
-        <h4>Write a Bash script which accepts name as input and displays the greeting "Welcome (name)".</h4>
+        <h4>Read in one character from STDIN.</h4>
+    
+        <ul>
+            <li>If the character is 'Y' or 'y' display "YES".</li>
+            <li>If the character is 'N' or 'n' display "NO".</li>
+            <li>No other character will be provided as input.</li>
+        </ul>
 
         <h4># Input</h4>
 
         <ul>
-            <li>Dan</li>
+            <li>y</li>
         </ul>
-
+        
         <h4># Output</h4>
 
         <ul>
-            <li>Welcome Dan</li>
+            <li>YES</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    read name
-    echo "Welcome $name"</code>
-        </pre>
-
-        <h4># Comments</h4>
-
-        <pre>
-            <code> 
-    # variable
-    variable=Example
-
-    # echo + text
-    echo "Small test: $variable"
-
-    # output
-    Small test: Example
-
-    --------------------------
-                
-    # read
-    read text
-
-    # echo
-    echo "Welcome $text"
-
-    # output
-    Welcome text
+  read char
   
-    --------------------------
-
-    \a: Alert (historically known as BEL). This generates the default alert sound.
-    \b: Backspace.
-    \c: Abort current output.
-    \e: Escape.
-    \f: Form feed.
-    \n: Newline.
-    \r: Carriage return.
-    \t: Horizontal tab.
-    \v: Vertical tab.
-    \\: Backslash. </code>
+  if [ $char == "Y" ] || [ $char == "y" ]; then
+      echo "YES"
+  elif [ $char == "N" ] || [ $char == "n" ]; then
+      echo "NO"
+  else
+      echo "No other character will be provided as input."
+  fi </code>
         </pre>
 
-        <h2>Post:</h2>
+        <h4># Solution_01</h4>
+        <pre>
+            <code>
+    read i
+  if [ $i = "y" ] || [ $i = "Y" ]; then
+      echo "YES"
+  else
+      echo "NO"
+  fi </code>
+        </pre>
+
+      <h2>Post:</h2>
 
         <ul>
             <li>
-                <time class="postlist-date" datetime="2024-10-01">2024-11</time>
+                <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/hackerrank-linux-loop-and-skip.html">HackerRank -
-                    Looping and Skipping</a>
+                <a class="postlist-link" href="">Hackerrank - </a>
             </li>
 
         </ul>

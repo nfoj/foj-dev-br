@@ -34,18 +34,12 @@
         <h1>HackerRank - Looping and Skipping</h1>
 
         <span class="post-data">
-            Novembro - 22/2024
+            Janeiro - 25/2025
         </span>
 
         <h3>Problem:</h3>
 
         <h4>Your task is to use for loops to display only odd natural numbers from 1 to 99.</h4>
-
-        <h4># Input</h4>
-
-        <ul>
-            <li>-</li>
-        </ul>
 
         <h4># Output</h4>
 
@@ -59,108 +53,32 @@
             <li>99</li>
         </ul>
 
-        <h4># Output</h4>
+        <h4># Solution</h4>
 
         <pre>
             <code>
-    for i in {1..99..2}; do 
-        echo "$i"
-    done </code>
+  for i in {1..99..2}; do 
+      echo "$i"
+  done </code>
         </pre>
 
 
-        <h4># Output</h4>
+        <h4># Solution_01</h4>
         <pre>
             <code>
-    for ((i=1; i<=99; i=i+2)); do
-        echo "$i"
-    done </code>
+  for ((i=1; i<=99; i=i+2)); do
+      echo "$i"
+  done </code>
         </pre>
 
-        <h4># Output</h4>
-
-        <pre>
-            <code>
-    seq 1 2 99 </code>
-        </pre>
-
-        <h4># Comments</h4>
+        <h4># Solution_02</h4>
 
         <pre>
             <code>
-    # Loop in Bash
-    
-    # input
-    for item in [list]
-    do 
-        [command]
-    done
-
-    --------------------------
-    
-    # input
-    for i in ABC DEF GHI JLM
-    do
-        echo "List: $i"
-    done
-
-    # output
-    List: ABC
-    List: DEF
-    List: GHI
-    List: JLM
-
-    --------------------------
-    
-    # input
-    for i in {0..3}
-    do
-        echo "Num: $i"
-    done
-
-    # output
-    Num: 0
-    Num: 1
-    Num: 2
-    Num: 3
-    
-    --------------------------
-    
-    # input
-    for i in {0..20..5}
-    do
-        echo "Num: "
-    done
-
-    # output
-    Num: 0
-    Num: 5
-    Num: 10
-    Num: 15
-    Num: 20
-    
-    --------------------------
-    
-    # input
-    for f in file_{1..3}; do
-        for j in server{1..3}; do
-            echo "Copying file $f to serve $j";
-        done;
-    done
-
-    # output
-    Copying file file_1 to server server_1
-    Copying file file_1 to server server_2
-    Copying file file_1 to server server_3
-    Copying file file_2 to server server_1
-    Copying file file_2 to server server_2
-    Copying file file_2 to server server_3
-    Copying file file_3 to server server_1
-    Copying file file_3 to server server_2
-    Copying file file_3 to server server_3</code>
+  seq 1 2 99 </code>
         </pre>
 
-        <h2>Post:</h2>
+       <h2>Post:</h2>
 
         <ul>
             <li>
