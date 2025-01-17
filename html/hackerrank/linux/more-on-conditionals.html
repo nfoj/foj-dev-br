@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - A Personalized Echo</h1>
+        <h1>HackerRank - More on Conditionals</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
@@ -39,36 +39,90 @@
 
         <h3>Problem:</h3>
 
-        <h4>Write a Bash script which accepts name as input and displays the greeting "Welcome (name)".</h4>
-
-        <h4># Input</h4>
+        <h4>Given three integers (X, Y, and Z) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.</h4>
 
         <ul>
-            <li>Dan</li>
-        </ul>
+            <li>If all three sides are equal, output EQUILATERAL.</li>
+            <li>Otherwise, if any two sides are equal, output ISOSCELES.</li>
+            <li>Otherwise, output SCALENE.</li>   
+         </ul>
+
+        <h4># Input</h4>
+      
+         <ul>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>  
+         </ul>
+      
 
         <h4># Output</h4>
 
         <ul>
-            <li>Welcome Dan</li>
+            <li>SCALENE</li>                        
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  read name
-  echo "Welcome $name"</code>
+  read x
+  read y
+  read z
+  
+  if [ $x == $y ] && [ $y == $z ]; then
+      echo "EQUILATERAL"
+  elif [ $x == $y ] && [ $x != $z ]; then
+      echo "ISOSCELES"
+  elif [ $x == $z ] && [ $x != $y ]; then
+      echo "ISOSCELES"
+  elif [ $y == $z ] && [ $x != $y ]; then
+      echo "ISOSCELES"
+  else
+      echo "SCALENE"
+  fi</code>
+  </pre>
+
+        <h4># Solution_01</h4>
+        <pre>
+            <code>
+  read a
+  read b
+  read c
+  
+  if (( $a == $b && $a == $c )); then
+    echo "EQUILATERAL"
+  elif (( $a == $b || $a == $c || $b == $c)); then
+    echo "ISOSCELES"
+  else
+    echo "SCALENE"
+  fi</code>
         </pre>
 
-         <h2>Post:</h2>
+        <h4># Solution_02</h4>
+
+        <pre>
+            <code>
+  read x
+  read y
+  read z
+  
+  if [ $x == $y ] && [ $x == $z ] && [ $y == $z ]; then
+      echo "EQUILATERAL"
+  elif [ $x != $y ] && [ $x != $z ] && [ $y != $z ]; then
+      echo "SCALENE"
+  else
+      echo "ISOSCELES"
+  fi</code>
+       </pre>
+
+ <h2>Post:</h2>
 
         <ul>
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/hackerrank-linux-loop-and-skip.html">HackerRank -
-                    Looping and Skipping</a>
+                <a class="postlist-link" href="">Hackerrank - </a>
             </li>
 
         </ul>

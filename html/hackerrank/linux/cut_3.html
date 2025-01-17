@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - A Personalized Echo</h1>
+        <h1>HackerRank - Cut #3</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
@@ -39,36 +39,48 @@
 
         <h3>Problem:</h3>
 
-        <h4>Write a Bash script which accepts name as input and displays the greeting "Welcome (name)".</h4>
+        <h4>Display a range of characters starting at the 2nd position of a string and ending at the 7th position (both positions included).</h4>
 
         <h4># Input</h4>
-
-        <ul>
-            <li>Dan</li>
-        </ul>
+      
+          <ul>
+            <li>Hello</li>
+            <li>World</li>
+            <li>How are you</li>   
+         </ul>
+      
 
         <h4># Output</h4>
 
         <ul>
-            <li>Welcome Dan</li>
+            <li>ello</li>
+            <li>orld</li>
+            <li>ow are</li>            
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  read name
-  echo "Welcome $name"</code>
+  cut -c 2-7</code>
+    </pre>
+  
+          <h4># Solution_01</h4>
+        <pre>
+            <code>
+   while read line
+  do
+      echo "$line" | cut -c 2-7;
+  done</code>
         </pre>
 
-         <h2>Post:</h2>
+ <h2>Post:</h2>
 
         <ul>
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/hackerrank-linux-loop-and-skip.html">HackerRank -
-                    Looping and Skipping</a>
+                <a class="postlist-link" href="">Hackerrank - </a>
             </li>
 
         </ul>
