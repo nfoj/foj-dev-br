@@ -31,56 +31,45 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #1</h1>
+        <h1>HackerRank - Tail of a Text File #2</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a given fragment of text, replace all parentheses () with box brackets [].</h3>
-        
+        <h3>Problem: In this challenge, we practice using the tail command to display the last n characters of a text file. Display the last 20 characters of an input file.</h3>
 
         <h4></h4>
 
         <h4># Input</h4>
       
           <ul>
-             <li>int i=(int)5.8</li>
-            <li>(23 + 5)*2</li>
+             <li>New York is a state in the Northeastern and Mid-Atlantic regions of the United States.</li>
+            <li>...</li>
+            <li>Henry Hudson's 1609 voyage marked the beginning of European involvement with the area.</li>
          </ul>
       
         <h4># Output</h4>
 
         <ul>
-         <li>int i=[int]5.8</li>
-         <li>[23 + 5]*2</li>  
+         <li>ent with the area.</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  tr "(" "[" | tr ")" "]"</code>
+  tail -c 20</code>
   </pre>
-
 
       <h4># Solution_01</h4>
 
         <pre>
             <code>
-  tr '()' '[]'</code>
-  </pre>
-
-
-       <h4># Solution_02</h4>
-
-        <pre>
-            <code>
   while read line
   do
-      echo $line | tr "()" "[]";
-  done
-  echo $line | tr "()" "[]";</code>
+    echo "$line"
+  done | tail -c 20</code>
   </pre>
   
   <h2>Post:</h2>

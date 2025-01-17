@@ -31,56 +31,37 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #1</h1>
+        <h1>HackerRank - Sort Command #4</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a given fragment of text, replace all parentheses () with box brackets [].</h3>
-        
+        <h3>Problem: You are given a file of text, where each line contains a number (which may be either an integer or have decimal places). There will be no extra characters other than the number or the newline at the end of each line. Sort the lines in descending order - - such that the first line holds the (numerically) largest number and the last line holds the (numerically) smallest number.</h3>
 
         <h4></h4>
 
         <h4># Input</h4>
       
           <ul>
-             <li>int i=(int)5.8</li>
-            <li>(23 + 5)*2</li>
+             <li>9.1</li>
+            <li>43.7</li>
+            <li>...</li>
          </ul>
       
         <h4># Output</h4>
 
         <ul>
-         <li>int i=[int]5.8</li>
-         <li>[23 + 5]*2</li>  
+         <li>66.6</li>
+         <li>62.1</li>  
+         <li>...</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  tr "(" "[" | tr ")" "]"</code>
-  </pre>
-
-
-      <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-  tr '()' '[]'</code>
-  </pre>
-
-
-       <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-  while read line
-  do
-      echo $line | tr "()" "[]";
-  done
-  echo $line | tr "()" "[]";</code>
+  sort -n</code>
   </pre>
   
   <h2>Post:</h2>

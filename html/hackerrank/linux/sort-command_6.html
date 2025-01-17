@@ -31,56 +31,37 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #1</h1>
+        <h1>HackerRank - 'Sort' command #6</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a given fragment of text, replace all parentheses () with box brackets [].</h3>
-        
+        <h3>Problem: You are given a file of tab separated weather data (TSV). There is no header column in this data file.</h3>
 
         <h4></h4>
 
         <h4># Input</h4>
       
           <ul>
-             <li>int i=(int)5.8</li>
-            <li>(23 + 5)*2</li>
+             <li>Albany, N.Y.    22.2    46.6    71.1    49.3    38.60   136 64.4    57</li>
+            <li>Albuquerque, N.M.   35.7    55.6    78.5    57.3    9.47    60  11.0    64</li>
+            <li>...</li>
          </ul>
       
         <h4># Output</h4>
 
         <ul>
-         <li>int i=[int]5.8</li>
-         <li>[23 + 5]*2</li>  
+         <li>Bismarck, N.D.  10.2    43.3    70.4    45.2    16.84   96  44.3    64</li>
+         <li>Anchorage, Alaska   15.8    36.3    58.4    34.1    16.08   115 70.8    39 / 60</li>  
+         <li>...</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  tr "(" "[" | tr ")" "]"</code>
-  </pre>
-
-
-      <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-  tr '()' '[]'</code>
-  </pre>
-
-
-       <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-  while read line
-  do
-      echo $line | tr "()" "[]";
-  done
-  echo $line | tr "()" "[]";</code>
+  sort -n -k 2 -t $'\t'</code>
   </pre>
   
   <h2>Post:</h2>

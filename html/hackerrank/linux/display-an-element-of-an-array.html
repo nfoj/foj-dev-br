@@ -31,56 +31,43 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #1</h1>
+        <h1>HackerRank - Display an element of an array</h1>
 
         <span class="post-data">
             Janeiro - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a given fragment of text, replace all parentheses () with box brackets [].</h3>
-        
+        <h3>Problem: Given a list of countries, each on a new line, your task is to read them into an array and then display the element indexed at 3. Note that indexing starts from 0.</h3>
 
         <h4></h4>
 
         <h4># Input</h4>
       
           <ul>
-             <li>int i=(int)5.8</li>
-            <li>(23 + 5)*2</li>
+             <li>Namibia</li>
+             <li>Nauru</li>
+             <li>Nepal</li>
+             <li>Netherlands</li>
+             <li>NewZealand</li>
+             <li>Nicaragua</li>
+             <li>Niger</li>
+             <li>Nigeria</li>
+             <li>NorthKorea</li>
+             <li>Norway</li>
          </ul>
       
         <h4># Output</h4>
 
         <ul>
-         <li>int i=[int]5.8</li>
-         <li>[23 + 5]*2</li>  
+         <li>Netherlands</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-  tr "(" "[" | tr ")" "]"</code>
-  </pre>
-
-
-      <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-  tr '()' '[]'</code>
-  </pre>
-
-
-       <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-  while read line
-  do
-      echo $line | tr "()" "[]";
-  done
-  echo $line | tr "()" "[]";</code>
+  mapfile -t array
+  echo "${array[3]}"</code>
   </pre>
   
   <h2>Post:</h2>
