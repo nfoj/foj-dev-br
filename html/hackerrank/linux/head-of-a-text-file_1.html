@@ -1,0 +1,122 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>HackerRank - Linux</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <h1>HackerRank - Head of a Text File #1</h1>
+
+        <span class="post-data">
+            Janeiro - 25/2025
+        </span>
+
+        <h3>Problem:</h3>
+
+        <h4>In this challenge, we practice using the head command to display the first n lines of a text file. Display the first 20 lines of an input file.</h4>
+
+        <h4># Input</h4>
+      
+          <ul>
+             <li>
+                From fairest creatures we desire increase,               
+            </li>
+            
+            <li>
+                That thereby beauty's rose might never die,               
+            </li>
+
+            <li>
+                But as the riper should by time decease,               
+            </li>
+
+            <li>
+                His tender heir might bear his memory:                
+            </li>
+
+            <li>
+                But thou contracted to thine own bright eyes,                
+            </li>           
+         </ul>
+      
+        <h4># Output</h4>
+
+        <ul>
+            <li>
+                From fairest creatures we desire increase,               
+            </li>
+            
+            <li>
+                That thereby beauty's rose might never die,               
+            </li>
+
+            <li>
+                But as the riper should by time decease,               
+            </li>
+
+            <li>
+                His tender heir might bear his memory:                
+            </li>
+
+            <li>
+                But thou contracted to thine own bright eyes,                
+            </li>           
+        </ul>
+
+        <h4># Solution</h4>
+
+        <pre>
+            <code>
+  head -n 20</code>
+  </pre>
+
+       <h4># Solution_01</h4>
+
+        <pre>
+            <code>
+    while read line
+  do
+      echo "$line";
+  done | head -n 20</code>
+  </pre>
+  
+  <h2>Post:</h2>
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2025-25">2025-25</time>
+                -
+                <a class="postlist-link" href="">Hackerrank - </a>
+            </li>
+
+        </ul>
+
+    </main>
+
+</body>
