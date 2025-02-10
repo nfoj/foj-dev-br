@@ -19,4 +19,4 @@ Os artigos e textos escritos seguem sendo feitos com base a abordar alguns temas
 	<img src="img/foj-intro.png" ></a>
 
 <p align="center">
-	<img src="img/foj-rust-print.png" ></a>
+	<img src="img/foj-hackerrank.png" ></a>
