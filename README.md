@@ -6,12 +6,7 @@ Todos os textos são parte dos estudos aprodundados em cada tema, além de pesqu
 
 ## 🗂️ Conteúdos
 Os artigos e textos escritos seguem sendo feitos com base a abordar alguns temas voltados para área de tecnologia:
-- AWS;
-- Desenvolvimento de Jogos - Bevy;
 - Hackerrank;
-- Linux;
-- Rust ;
-- PostgreSQL.
 
 ## ✏️ Página
 
