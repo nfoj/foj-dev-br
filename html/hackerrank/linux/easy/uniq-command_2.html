@@ -34,29 +34,33 @@
         <h1>HackerRank - 'Uniq' Command #2</h1>
 
         <span class="post-data">
-            January - 25/2025
+            April - 25/2025
         </span>
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the uniq command to eliminate consecutive repetitions of a line when a text file is piped through it. Given a text file, count the number of times each line repeats itself. Only consider consecutive repetitions. Display the space separated count and line, respectively. There shouldn't be any leading or trailing spaces. Please note that the uniq -c command by itself will generate the output in a different format than the one expected here.</h4>
+        <h4>In this challenge, we practice using the uniq command to eliminate consecutive repetitions of a line when a
+            text file is piped through it. Given a text file, count the number of times each line repeats itself. Only
+            consider consecutive repetitions. Display the space separated count and line, respectively. There shouldn't
+            be any leading or trailing spaces. Please note that the uniq -c command by itself will generate the output
+            in a different format than the one expected here.</h4>
 
         <h4># Input</h4>
-      
-          <ul>
-             <li>00</li>
+
+        <ul>
+            <li>00</li>
             <li>00</li>
             <li>01</li>
-             <li>01</li>
-             <li>...</li>
-         </ul>
-      
+            <li>01</li>
+            <li>...</li>
+        </ul>
+
         <h4># Output</h4>
 
         <ul>
-         <li>2 00</li>
-         <li>2 01</li>  
-         <li>...</li>
+            <li>2 00</li>
+            <li>2 01</li>
+            <li>...</li>
         </ul>
 
         <h4># Solution</h4>
@@ -64,9 +68,9 @@
         <pre>
             <code>
   uniq -c | cut -c 7-</code>
-  </pre> 
-  
-  <h2>Post:</h2>
+  </pre>
+
+        <h2>Post:</h2>
 
         <ul>
             <li>

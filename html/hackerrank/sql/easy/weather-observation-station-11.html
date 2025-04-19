@@ -34,42 +34,43 @@
         <h1>HackerRank - Weather Observation Station 11</h1>
 
         <span class="post-data">
-            January - 25/2025
+            April - 25/2025
         </span>
 
         <h3>Problem:</h3>
 
-        <h4>Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.</h4>
+        <h4>Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain
+            duplicates.</h4>
 
         <table>
-        <thead>
-            <tr>
-                <th>Field</th>
-                <th>Type</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ID</td>
-                <td>NUMBER</td>
-            </tr>
-            <tr>
-                <td>CITY</td>
-                <td>VARCHAR2(21)</td>
-            </tr>
-            <tr>
-                <td>STATE</td>
-                <td>VARCHAR2(2)</td>
-            </tr>
-            <tr>
-                <td>LAT_N</td>
-                <td>NUMBER</td>
-            </tr>
-            <tr>
-                <td>LAT_W</td>
-                <td>NUMBER</td>
-            </tr>
-        </tbody>
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ID</td>
+                    <td>NUMBER</td>
+                </tr>
+                <tr>
+                    <td>CITY</td>
+                    <td>VARCHAR2(21)</td>
+                </tr>
+                <tr>
+                    <td>STATE</td>
+                    <td>VARCHAR2(2)</td>
+                </tr>
+                <tr>
+                    <td>LAT_N</td>
+                    <td>NUMBER</td>
+                </tr>
+                <tr>
+                    <td>LAT_W</td>
+                    <td>NUMBER</td>
+                </tr>
+            </tbody>
         </table>
 
         <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
@@ -98,8 +99,8 @@ ORDER BY CITY ASC;</code>
         </pre>
 
         <h4># Solution_02</h4>
-      
-         <pre>
+
+        <pre>
             <code>
 SELECT DISTINCT CITY
 FROM STATION

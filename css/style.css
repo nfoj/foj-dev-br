@@ -202,6 +202,14 @@ i {
   color: var(--color-green);
 }
 
+.medium-link {
+  color: var(--color-maroon);
+}
+
+.medium-link:hover {
+  color: var(--color-maroon);
+}
+
 
 .postlist-link {
   text-decoration:underline;
