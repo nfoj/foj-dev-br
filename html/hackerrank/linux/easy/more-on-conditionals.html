@@ -67,54 +67,54 @@
 
         <pre>
             <code>
-  read x
-  read y
-  read z
+    read x
+    read y
+    read z
   
-  if [ $x == $y ] && [ $y == $z ]; then
-      echo "EQUILATERAL"
-  elif [ $x == $y ] && [ $x != $z ]; then
-      echo "ISOSCELES"
-  elif [ $x == $z ] && [ $x != $y ]; then
-      echo "ISOSCELES"
-  elif [ $y == $z ] && [ $x != $y ]; then
-      echo "ISOSCELES"
-  else
-      echo "SCALENE"
-  fi</code>
-  </pre>
+    if [ $x == $y ] && [ $y == $z ]; then
+        echo "EQUILATERAL"
+    elif [ $x == $y ] && [ $x != $z ]; then
+        echo "ISOSCELES"
+    elif [ $x == $z ] && [ $x != $y ]; then
+        echo "ISOSCELES"
+    elif [ $y == $z ] && [ $x != $y ]; then
+        echo "ISOSCELES"
+    else
+        echo "SCALENE"
+    fi</code>
+    </pre>
 
         <h4># Solution_01</h4>
         <pre>
             <code>
-  read a
-  read b
-  read c
+    read a
+    read b
+    read c
   
-  if (( $a == $b && $a == $c )); then
-    echo "EQUILATERAL"
-  elif (( $a == $b || $a == $c || $b == $c)); then
-    echo "ISOSCELES"
-  else
-    echo "SCALENE"
-  fi</code>
+    if (( $a == $b && $a == $c )); then
+        echo "EQUILATERAL"
+    elif (( $a == $b || $a == $c || $b == $c)); then
+        echo "ISOSCELES"
+    else
+        echo "SCALENE"
+    fi</code>
         </pre>
 
         <h4># Solution_02</h4>
 
         <pre>
             <code>
-  read x
-  read y
-  read z
+    read x
+    read y
+    read z
   
-  if [ $x == $y ] && [ $x == $z ] && [ $y == $z ]; then
-      echo "EQUILATERAL"
-  elif [ $x != $y ] && [ $x != $z ] && [ $y != $z ]; then
-      echo "SCALENE"
-  else
-      echo "ISOSCELES"
-  fi</code>
+    if [ $x == $y ] && [ $x == $z ] && [ $y == $z ]; then
+        echo "EQUILATERAL"
+    elif [ $x != $y ] && [ $x != $z ] && [ $y != $z ]; then
+        echo "SCALENE"
+    else
+        echo "ISOSCELES"
+    fi</code>
        </pre>
 
         <h2>Post:</h2>

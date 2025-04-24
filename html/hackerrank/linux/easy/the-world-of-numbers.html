@@ -62,51 +62,51 @@
 
         <pre>
             <code>
-  read a
-  read b
+    read a
+    read b
 
-  echo "$((a + b))"
-  echo "$((a - b))"
-  echo "$((a * b))"
-  echo "$((a / b))" </code>
-  </pre>
+    echo "$((a + b))"
+    echo "$((a - b))"
+    echo "$((a * b))"
+    echo "$((a / b))" </code>
+    </pre>
 
         <h4># Solution_01</h4>
         <pre>
             <code>
-  read a
-  read b
+    read a
+    read b
   
-  echo "$[a+b]"
-  echo "$[a-b]"
-  echo "$[a*b]"
-  echo "$[a/b]" </code>
+    echo "$[a+b]"
+    echo "$[a-b]"
+    echo "$[a*b]"
+    echo "$[a/b]" </code>
         </pre>
 
         <h4># Solution_02</h4>
 
         <pre>
             <code>
-  read a
-  read b
+    read a
+    read b
   
-  echo `expr $a + $b`
-  echo `expr $a - $b`
-  echo `expr $a \* $b`
-  echo `expr $a / $b`</code>
+    echo `expr $a + $b`
+    echo `expr $a - $b`
+    echo `expr $a \* $b`
+    echo `expr $a / $b`</code>
        </pre>
 
         <h4># Solution_03</h4>
 
         <pre>
             <code>
-  read a
-  read b
+    read a
+    read b
   
-  echo `expr $a + $b`
-  echo `expr $a - $b`
-  echo `expr $a \* $b`
-  echo `expr $a / $b`</code>
+    echo `expr $a + $b`
+    echo `expr $a - $b`
+    echo `expr $a \* $b`
+    echo `expr $a / $b`</code>
        </pre>
 
         <h4># Solution_04</h4>
@@ -116,10 +116,10 @@
   read X
   read Y
   
-  for op in '+' '-' '*' '/'
-  do
-      echo "$X $op $Y" | bc
-  done</code>
+    for op in '+' '-' '*' '/'
+    do
+        echo "$X $op $Y" | bc
+    done</code>
      </pre>
 
         <h2>Post:</h2>

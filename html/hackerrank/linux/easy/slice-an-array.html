@@ -68,20 +68,21 @@
 
         <pre>
             <code>
-  mapfile -t array
-  echo "${array[@]:3:5}"</code>
-  </pre>
+    mapfile -t array
+    echo "${array[@]:3:5}"</code>
+    </pre>
 
 
         <h4># Solution_01</h4>
 
         <pre>
               <code>
-  array=() 
-  while read i ; do
-  array+=("$i")
-  done
-  echo "${array[@]:3:5}"</code>
+    array=() 
+    while read i ; do
+        array+=("$i")
+    done
+    
+    echo "${array[@]:3:5}"</code>
   </pre>
 
         <h2>Post:</h2>

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     </header>
 
     <div class="sidebar left-menu" id="leftMenu">
-        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
         <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
     </div>
@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #3</h1>
+        <h1>HackerRank - Awk #2</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,48 +39,44 @@
 
         <h3>Problem:</h3>
 
-        <h4>In a given fragment of text, replace all sequences of multiple spaces with just one space.</h4>
+        <h4>You are given a file with four space separated columns containing the scores of students in three subjects.
+            The first column contains a single character (A-Z), the student identifier. The next three columns have
+            three numbers each. The numbers are between 0 and 100, both inclusive. These numbers denote the scores of
+            the students in English, Mathematics, and Science, respectively.
+        </h4>
+
+        <h4>Your task is to identify whether each of the students has passed or failed.</h4>
+
+        <h4>A student is considered to have passed if (s)he has a score 50 or more in each of the three subjects.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>He llo</li>
-            <li>Wor ld</li>
-            <li>how are you</li>
+            <li>A 25 27 50</li>
+            <li>B 35 37 75</li>
+            <li>C 75 78 80</li>
+            <li>D 99 88 76</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>He llo</li>
-            <li>Wor ld</li>
-            <li>how are you</li>
+            <li>A : Fail</li>
+            <li>B : Fail</li>
+            <li>C : Pass</li>
+            <li>D : Pass</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    tr -s ' '</code>
-    </pre>
-
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    tr -s [:space:]</code>
-    </pre>
-
-
-        <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-    while read line
-    do 
-        echo "$line" | tr -s ' '
-    done</code>
+    awk '{
+        if ($2 < 50 || $3 < 50 || $4 < 50)
+            print $1, ": Fail"
+        else
+            print $1, ": Pass"
+    }'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -89,9 +85,8 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command_1.html">Sort Command #1;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/medium/awk-3.html">Awk #3;</a>
             </li>
-
         </ul>
 
     </main>

@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     </header>
 
     <div class="sidebar left-menu" id="leftMenu">
-        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
         <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
     </div>
@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #3</h1>
+        <h1>HackerRank - Awk #4</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,48 +39,49 @@
 
         <h3>Problem:</h3>
 
-        <h4>In a given fragment of text, replace all sequences of multiple spaces with just one space.</h4>
+        <h4>You are provided a file with four space-separated columns containing the scores of students in three
+            subjects. The first column, contains a single character (A-Z) - the identifier of the student. The next
+            three columns have three numbers (each between 0 and 100, both inclusive) which are the scores of the
+            students in English, Mathematics and Science respectively.
+        </h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>He llo</li>
-            <li>Wor ld</li>
-            <li>how are you</li>
+            <li>A 25 27 50</li>
+            <li>B 35 37 75</li>
+            <li>C 75 78 80</li>
+            <li>D 99 88 76</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>He llo</li>
-            <li>Wor ld</li>
-            <li>how are you</li>
+            <li>A 25 27 50;B 35 37 75</li>
+            <li>C 75 78 80;D 99 88 76</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    tr -s ' '</code>
+    awk '{if (NR%2==1)
+        {
+            ORS=";";
+            print;
+        }
+        else
+        {
+            ORS="\n";
+            print;
+        }
+    }'</code>
     </pre>
-
 
         <h4># Solution_01</h4>
-
         <pre>
             <code>
-    tr -s [:space:]</code>
-    </pre>
-
-
-        <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-    while read line
-    do 
-        echo "$line" | tr -s ' '
-    done</code>
+    awk '{ print; }' | paste -d ';' - -</code>
     </pre>
 
         <h2>Post:</h2>
@@ -89,7 +90,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command_1.html">Sort Command #1;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/medium/grep-1.html">Grep #1;</a>
             </li>
 
         </ul>
