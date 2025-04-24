@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #1</h1>
+        <h1>HackerRank - Sort Command #5</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,48 +39,32 @@
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a
-            given fragment of text, replace all parentheses () with box brackets [].</h4>
+        <h4>You are given a file of text,which contains temperature information about American cities, in TSV
+            (tab-separated) format. The first column is the name of the city and the next four columns are the average
+            temperature in the months of Jan, Feb, March and April (see the sample input). Rearrange the rows of the
+            table in descending order of the values for the average temperature in January.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>int i=(int)5.8</li>
-            <li>(23 + 5)*2</li>
+            <li>Albany, N.Y. 22.2 46.6 71.1 49.3 38.60 136 64.4 57</li>
+            <li>Albuquerque, N.M. 35.7 55.6 78.5 57.3 9.47 60 11.0 64</li>
+            <li>...</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>int i=[int]5.8</li>
-            <li>[23 + 5]*2</li>
+            <li>Austin, Texas 50.2 68.3 84.2 70.6 33.65 85 0.9 62 / 58</li>
+            <li>Baton Rouge, La. 50.1 66.6 81.7 68.1 63.08 110 0.2 52 / 46</li>
+            <li>...</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    tr "(" "[" | tr ")" "]"</code>
-    </pre>
-
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    tr '()' '[]'</code>
-    </pre>
-
-
-        <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-    while read line
-    do
-        echo $line | tr "()" "[]";
-    done
-    echo $line | tr "()" "[]";</code>
+    sort -r -n -k 2 -t $'\t'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -89,7 +73,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/tr-command_2.html">'Tr' Command #2;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command-6.html">Sort Command #6;</a>
             </li>
 
         </ul>

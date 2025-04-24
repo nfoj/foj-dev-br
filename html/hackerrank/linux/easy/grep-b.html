@@ -31,46 +31,39 @@
 
     <main class="container">
 
-        <h1>HackerRank - Tail of a Text File #2</h1>
+        <h1>HackerRank - 'Grep' - B</h1>
 
         <span class="post-data">
             April - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tail command to display the last n characters of a text
-            file. Display the last 20 characters of an input file.</h3>
+        <h3>Problem:</h3>
 
-        <h4></h4>
+        <h4>N credit card numbers. Assume that the credit card numbers will have 4 space separated segments with 4
+            digits each.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>New York is a state in the Northeastern and Mid-Atlantic regions of the United States.</li>
-            <li>...</li>
-            <li>Henry Hudson's 1609 voyage marked the beginning of European involvement with the area.</li>
+            <li>1234 5678 9101 1234</li>
+            <li>2999 5178 9101 2234</li>
+            <li>9999 5628 9201 1232</li>
+            <li>8482 3678 9102 1232</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>ent with the area.</li>
+            <li>1234 5678 9101 1234</li>
+            <li>2999 5178 9101 2234</li>
+            <li>9999 5628 9201 1232</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    tail -c 20</code>
-    </pre>
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    while read line
-    do
-        echo "$line"
-    done | tail -c 20</code>
+    grep '\(\d\)\s*\1'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -79,8 +72,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/tail-of-a-text-file_1.html">Head of a Text
-                    File #1;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/sed-command-3.html">Sed Command #3</a>
             </li>
 
         </ul>

@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Cut #3</h1>
+        <h1>HackerRank - Sort Command #2</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,41 +39,31 @@
 
         <h3>Problem:</h3>
 
-        <h4>Display a range of characters starting at the 2nd position of a string and ending at the 7th position (both
-            positions included).</h4>
+        <h4>In this challenge, we practice using the sort command to sort input in text or TSV formats. Given a text
+            file, order the lines in reverse lexicographical order (i.e. Z-A instead of A-Z).</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>Hello</li>
-            <li>World</li>
-            <li>How are you</li>
+            <li>Dr. Rajendra Prasad January 26, 1950 May 13, 1962</li>
+            <li>Dr. S. Radhakrishnan May 13, 1962 May 13, 1967</li>
+            <li>...</li>
         </ul>
-
 
         <h4># Output</h4>
 
         <ul>
-            <li>ello</li>
-            <li>orld</li>
-            <li>ow are</li>
+            <li>Shri Varahagiri Venkata Giri August 24, 1969 August 24, 1974</li>
+            <li>Shri Neelam Sanjiva Reddy July 25, 1977 July 25, 198</li>
+            <li>...</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    cut -c 2-7</code>
+    sort -r</code>
     </pre>
-
-        <h4># Solution_01</h4>
-        <pre>
-            <code>
-    while read line
-    do
-        echo "$line" | cut -c 2-7;
-    done</code>
-        </pre>
 
         <h2>Post:</h2>
 
@@ -81,7 +71,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut_4.html">Cut #4;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command-3.html">Sort Command #3;</a>
             </li>
 
         </ul>

@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Grep' - A</h1>
+        <h1>HackerRank - Cut #3</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,31 +39,41 @@
 
         <h3>Problem:</h3>
 
-        <h4>Given a text file, which will be piped to your command through STDIN, use grep to display all those lines
-            which contain any of the following words in them: the, that, then and those</h4>
+        <h4>Display a range of characters starting at the 2nd position of a string and ending at the 7th position (both
+            positions included).</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>From fairest creatures we desire increase,</li>
-            <li>That thereby beauty's rose might never die,</li>
-            <li>...</li>
+            <li>Hello</li>
+            <li>World</li>
+            <li>How are you</li>
         </ul>
+
 
         <h4># Output</h4>
 
         <ul>
-            <li>That thereby beauty's rose might never die,</li>
-            <li>But as the riper should by time decease,</li>
-            <li>...</li>
+            <li>ello</li>
+            <li>orld</li>
+            <li>ow are</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    grep -w -i -E "the|that|then|those"</code>
+    cut -c 2-7</code>
     </pre>
+
+        <h4># Solution_01</h4>
+        <pre>
+            <code>
+    while read line
+    do
+        echo "$line" | cut -c 2-7;
+    done</code>
+        </pre>
 
         <h2>Post:</h2>
 
@@ -71,7 +81,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/grep_b.html">'Grep' - B;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut-4.html">Cut #4;</a>
             </li>
 
         </ul>

@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Uniq' Command #2</h1>
+        <h1>HackerRank - 'Sort' command #6</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,27 +39,21 @@
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the uniq command to eliminate consecutive repetitions of a line when a
-            text file is piped through it. Given a text file, count the number of times each line repeats itself. Only
-            consider consecutive repetitions. Display the space separated count and line, respectively. There shouldn't
-            be any leading or trailing spaces. Please note that the uniq -c command by itself will generate the output
-            in a different format than the one expected here.</h4>
+        <h4>You are given a file of tab separated weather data (TSV). There is no header column in this data file.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>00</li>
-            <li>00</li>
-            <li>01</li>
-            <li>01</li>
+            <li>Albany, N.Y. 22.2 46.6 71.1 49.3 38.60 136 64.4 57</li>
+            <li>Albuquerque, N.M. 35.7 55.6 78.5 57.3 9.47 60 11.0 64</li>
             <li>...</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>2 00</li>
-            <li>2 01</li>
+            <li>Bismarck, N.D. 10.2 43.3 70.4 45.2 16.84 96 44.3 64</li>
+            <li>Anchorage, Alaska 15.8 36.3 58.4 34.1 16.08 115 70.8 39 / 60</li>
             <li>...</li>
         </ul>
 
@@ -67,7 +61,7 @@
 
         <pre>
             <code>
-    uniq -c | cut -c 7-</code>
+    sort -n -k 2 -t $'\t'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -76,7 +70,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/uniq-command_3.html">'Uniq' Command #3;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command-7.html">Sort Command #7;</a>
             </li>
 
         </ul>

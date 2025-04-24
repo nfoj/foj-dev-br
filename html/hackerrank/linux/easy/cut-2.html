@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <!-- <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button> -->
         <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
         <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
     </header>
@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Sort Command #4</h1>
+        <h1>HackerRank - Cut #2</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,33 +39,39 @@
 
         <h3>Problem:</h3>
 
-        <h4>You are given a file of text, where each line contains a number (which may be either an integer or have
-            decimal places). There will be no extra characters other than the number or the newline at the end of each
-            line. Sort the lines in descending order - - such that the first line holds the (numerically) largest number
-            and the last line holds the (numerically) smallest number.</h4>
+        <h4>Display the 2nd and 7th character from each line of text.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>9.1</li>
-            <li>43.7</li>
-            <li>...</li>
+            <li>Hello</li>
+            <li>World</li>
+            <li>How are you</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>66.6</li>
-            <li>62.1</li>
-            <li>...</li>
+            <li>e</li>
+            <li>o</li>
+            <li>oe</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    sort -n</code>
+    cut -c 2,7</code>
     </pre>
+
+        <h4># Solution_01</h4>
+        <pre>
+            <code>
+    while read line
+    do
+        echo "$line" | cut -c 2,7;
+    done</code>
+          </pre>
 
         <h2>Post:</h2>
 
@@ -73,7 +79,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command_5.html">Sort Command #5;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut-3.html">Cut #3;</a>
             </li>
 
         </ul>

@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Sort Command #5</h1>
+        <h1>HackerRank - 'Uniq' command #3</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,24 +39,27 @@
 
         <h3>Problem:</h3>
 
-        <h4>You are given a file of text,which contains temperature information about American cities, in TSV
-            (tab-separated) format. The first column is the name of the city and the next four columns are the average
-            temperature in the months of Jan, Feb, March and April (see the sample input). Rearrange the rows of the
-            table in descending order of the values for the average temperature in January.</h4>
+        <h4>Given a text file, count the number of times each line repeats itself (only consider consecutive repetions).
+            Display the count and the line, separated by a space. There shouldn't be leading or trailing spaces. Please
+            note that the uniq -c command by itself will generate the output in a different format. This time, compare
+            consecutive lines in a case insensitive manner. So, if a line X is followed by case variants, the output
+            should count all of them as the same (but display only the form X in the second column).</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>Albany, N.Y. 22.2 46.6 71.1 49.3 38.60 136 64.4 57</li>
-            <li>Albuquerque, N.M. 35.7 55.6 78.5 57.3 9.47 60 11.0 64</li>
+            <li>00</li>
+            <li>00</li>
+            <li>01</li>
+            <li>01</li>
             <li>...</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>Austin, Texas 50.2 68.3 84.2 70.6 33.65 85 0.9 62 / 58</li>
-            <li>Baton Rouge, La. 50.1 66.6 81.7 68.1 63.08 110 0.2 52 / 46</li>
+            <li>2 00</li>
+            <li>2 01</li>
             <li>...</li>
         </ul>
 
@@ -64,7 +67,7 @@
 
         <pre>
             <code>
-    sort -r -n -k 2 -t $'\t'</code>
+    uniq -u</code>
     </pre>
 
         <h2>Post:</h2>
@@ -73,7 +76,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command_6.html">Sort Command #6;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/uniq-command-4.html">'Uniq' Command #4;</a>
             </li>
 
         </ul>

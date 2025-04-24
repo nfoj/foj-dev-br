@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Uniq' command #3</h1>
+        <h1>HackerRank - Cut #6</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,35 +39,33 @@
 
         <h3>Problem:</h3>
 
-        <h4>Given a text file, count the number of times each line repeats itself (only consider consecutive repetions).
-            Display the count and the line, separated by a space. There shouldn't be leading or trailing spaces. Please
-            note that the uniq -c command by itself will generate the output in a different format. This time, compare
-            consecutive lines in a case insensitive manner. So, if a line X is followed by case variants, the output
-            should count all of them as the same (but display only the form X in the second column).</h4>
+        <h4>Print the characters from thirteenth position to the end.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>00</li>
-            <li>00</li>
-            <li>01</li>
-            <li>01</li>
-            <li>...</li>
+            <li>New York is a state in the Northeastern and Mid-Atlantic regions of the United States.</li>
+            <li>New York is the 27th-most extensive, the third-most populous populated of the 50 United States.</li>
+            <li>New York is bordered by New Jersey and Pennsylvania to the south.</li>
+            <li>About one third of all the battles of the Revolutionary War took place in New York.</li>
+            <li>Henry Hudson's 1609 voyage marked the beginning of European involvement with the area.</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>2 00</li>
-            <li>2 01</li>
-            <li>...</li>
+            <li>a state in the Northeastern and Mid-Atlantic regions of the United States.</li>
+            <li>the 27th-most extensive, the third-most populous populated of the 50 United States.</li>
+            <li>bordered by New Jersey and Pennsylvania to the south.</li>
+            <li>ird of all the battles of the Revolutionary War took place in New York.</li>
+            <li>1609 voyage marked the beginning of European involvement with the area.</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    uniq -u</code>
+    cut -c 13-</code>
     </pre>
 
         <h2>Post:</h2>
@@ -76,7 +74,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/uniq-command_4.html">'Uniq' Command #4;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut-7.html">Cut #7;</a>
             </li>
 
         </ul>

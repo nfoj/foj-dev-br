@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Uniq' Command #1</h1>
+        <h1>HackerRank - Head of a Text File #1</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,34 +39,45 @@
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the uniq command to eliminate consecutive repetitions of a line when a
-            text file is piped through it. Given a text file, remove the consecutive repetitions of any line.</h4>
+        <h4>In this challenge, we practice using the head command to display the first n lines of a text file. Display
+            the first 20 lines of an input file.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>00</li>
-            <li>00</li>
-            <li>01</li>
-            <li>01</li>
-            <li>...</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>That thereby beauty's rose might never die,</li>
+            <li>But as the riper should by time decease,</li>
+            <li>His tender heir might bear his memory:</li>
+            <li>But thou contracted to thine own bright eyes,</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>00</li>
-            <li>01</li>
-            <li>00</li>
-            <li>02</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>That thereby beauty's rose might never die,</li>
+            <li>But as the riper should by time decease,</li>
+            <li>His tender heir might bear his memory:</li>
+            <li>But thou contracted to thine own bright eyes,</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    uniq</code>
+    head -n 20</code>
     </pre>
+
+        <h4># Solution_01</h4>
+
+        <pre>
+            <code>
+    while read line 
+    do
+        echo "$line";
+    done | head -n 20</code>
+  </pre>
 
         <h2>Post:</h2>
 
@@ -74,7 +85,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/uniq-command_2.html">'Uniq' Command #2;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/tr-command-2.html">'Tr' Command #2;</a>
             </li>
 
         </ul>

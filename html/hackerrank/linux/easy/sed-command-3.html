@@ -31,16 +31,16 @@
 
     <main class="container">
 
-        <h1>HackerRank - Tail of a Text File #1</h1>
+        <h1>HackerRank - 'Sed' command #3</h1>
 
         <span class="post-data">
             April - 25/2025
         </span>
 
-        <h3>Problem: In this challenge, we practice using the tail command to display the last n lines of a text file.
-            Display the last 20 lines of an input file.</h3>
+        <h3>Problem:</h3>
 
-        <h4></h4>
+        <h4>Given an input file, in each line, highlight all the occurrences of 'thy' by wrapping them up in brace
+            brackets. The search should be case-insensitive.</h4>
 
         <h4># Input</h4>
 
@@ -53,8 +53,8 @@
         <h4># Output</h4>
 
         <ul>
-            <li>Feed'st thy light's flame with self-substantial fuel,</li>
-            <li>Making a famine where abundance lies,</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>That thereby beauty's rose might never die,</li>
             <li>...</li>
         </ul>
 
@@ -62,18 +62,8 @@
 
         <pre>
             <code>
-    tail -n 20</code>
+    sed -e '{s/thy/{&}/ig}'</code>
     </pre>
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    while read line
-    do
-        echo "$line"
-    done | tail -n 20 </code>
-  </pre>
 
         <h2>Post:</h2>
 
@@ -81,7 +71,8 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut_9.html">Cut #9;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/medium/arithmetic-operations.html">Arithmetic
+                    Operations;</a>
             </li>
 
         </ul>

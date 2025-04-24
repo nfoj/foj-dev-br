@@ -20,7 +20,7 @@
     <div class="sidebar left-menu" id="leftMenu">
         <button class="closebtn" onclick="closeLeftMenu()">Close</button>
         <a class="menu-item" href="/index.html">Home</a>
-        <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
+        <a class="menu-item" href="">Linux</a>
     </div>
 
     <div class="sidebar right-menu" id="rightMenu">
@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Tr' Command #2</h1>
+        <h1>HackerRank - Cut #1</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,42 +39,40 @@
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the tr command because it is a useful translation tool in Linux. In a
-            given fragment of text, delete all the lowercase characters a- z.</h4>
+        <h4>Given N lines of input, print the 3rd character from each line as a new line of output. It is guaranteed
+            that each of the n lines of input will have a 3rd character.</h4>
 
         <h4># Input</h4>
 
         <ul>
             <li>Hello</li>
             <li>World</li>
-            <li>how are you</li>
+            <li>How are you</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>H</li>
-            <li>W</li>
+            <li>l</li>
+            <li>r</li>
+            <li>w</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    tr -d "a-z"</code>
+    cut -c 3</code>
     </pre>
 
-
         <h4># Solution_01</h4>
-
         <pre>
             <code>
     while read line
     do
-        echo "$line" | tr -d "a-z"
-    done </code>
-    </pre>
-
+        echo "$line" | cut -c 3;
+    done</code>
+        </pre>
 
         <h2>Post:</h2>
 
@@ -82,7 +80,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/tr-command_3.html">'Tr' Command #3;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut-2.html">Cut #2;</a>
             </li>
 
         </ul>

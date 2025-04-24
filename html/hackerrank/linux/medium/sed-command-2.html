@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     </header>
 
     <div class="sidebar left-menu" id="leftMenu">
-        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
         <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
     </div>
@@ -31,37 +31,43 @@
 
     <main class="container">
 
-        <h1>HackerRank - Middle of a Text File</h1>
+        <h1>HackerRank - Sed Command #2</h1>
 
         <span class="post-data">
             April - 25/2025
         </span>
 
-        <h3>Problem: Display the lines (from line number 12 to 22, both inclusive) of a given text file.</h3>
+        <h3>Problem:</h3>
 
-        <h4></h4>
+        <h4>For each line in a given input file, transform all the occurrences of the word 'thy' with 'your'. The search
+            should be case insensitive, i.e. 'thy', 'Thy', 'tHy' etc. should be transformed to 'your'.
+        </h4>
 
         <h4># Input</h4>
 
         <ul>
             <li>From fairest creatures we desire increase,</li>
-            <li>That thereby beauty's rose might never die,</li>
-            <li>...</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>Shall sum my count, and make my old excuse'</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>And tender churl mak'st waste in niggarding:</li>
-            <li>Pity the world, or else this glutton be,</li>
-            <li>...</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>Shall sum my count, and make my old excuse'</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    head -n 22 | tail -n 11</code>
+    sed -e '{s/thy/your/ig}'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -70,8 +76,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/tail-of-a-text-file-1.html">Tail of a Text
-                    File #1</a>
+                <a class="postlist-link" href="">Sed Command #1;</a>
             </li>
 
         </ul>

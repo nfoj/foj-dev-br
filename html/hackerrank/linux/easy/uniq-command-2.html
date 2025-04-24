@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Sort Command #1</h1>
+        <h1>HackerRank - 'Uniq' Command #2</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,22 +39,27 @@
 
         <h3>Problem:</h3>
 
-        <h4>In this challenge, we practice using the sort command to sort input in text or TSV formats. Given a text
-            file, order the lines in lexicographical order.</h4>
+        <h4>In this challenge, we practice using the uniq command to eliminate consecutive repetitions of a line when a
+            text file is piped through it. Given a text file, count the number of times each line repeats itself. Only
+            consider consecutive repetitions. Display the space separated count and line, respectively. There shouldn't
+            be any leading or trailing spaces. Please note that the uniq -c command by itself will generate the output
+            in a different format than the one expected here.</h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>Dr. Rajendra Prasad January 26, 1950 May 13, 1962</li>
-            <li>Dr. S. Radhakrishnan May 13, 1962 May 13, 1967</li>
+            <li>00</li>
+            <li>00</li>
+            <li>01</li>
+            <li>01</li>
             <li>...</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>Dr. Rajendra Prasad January 26, 1950 May 13, 1962</li>
-            <li>Dr. S. Radhakrishnan May 13, 1962 May 13, 1967</li>
+            <li>2 00</li>
+            <li>2 01</li>
             <li>...</li>
         </ul>
 
@@ -62,7 +67,7 @@
 
         <pre>
             <code>
-    sort -n</code>
+    uniq -c | cut -c 7-</code>
     </pre>
 
         <h2>Post:</h2>
@@ -71,7 +76,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sort-command_2.html">Sort Command #2;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/uniq-command-3.html">'Uniq' Command #3;</a>
             </li>
 
         </ul>

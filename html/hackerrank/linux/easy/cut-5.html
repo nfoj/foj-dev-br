@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Cut #9</h1>
+        <h1>HackerRank - Cut #5</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,8 +39,7 @@
 
         <h3>Problem:</h3>
 
-        <h4>Given a tab delimited file with several columns (tsv format) print the fields from second fields to last
-            field.</h4>
+        <h4>Given a tab delimited file with several columns (tsv format) print the first three fields.</h4>
 
         <h4># Input</h4>
 
@@ -60,40 +59,18 @@
         <h4># Output</h4>
 
         <ul>
-            <li>New York, New York[10] 8,244,910 1 New York-Northern New Jersey-Long Island, NY-NJ-PA MSA 19,015,900 1
-                New York-Newark-Bridgeport, NY-NJ-CT-PA CSA 22,214,083</li>
-            <li>Los Angeles, California 3,819,702 2 Los Angeles-Long Beach-Santa Ana, CA MSA 12,944,801 2 Los
-                Angeles-Long Beach-Riverside, CA CSA 18,081,569</li>
-            <li>Chicago, Illinois 2,707,120 3 Chicago-Joliet-Naperville, IL-IN-WI MSA 9,504,753 3
-                Chicago-Naperville-Michigan City, IL-IN-WI CSA 9,729,825</li>
-            <li>Houston, Texas 2,145,146 4 Dallas-Fort Worth-Arlington, TX MSA 6,526,548 4 Washington-Baltimore-Northern
-                Virginia, DC-MD-VA-WV CSA 8,718,083</li>
-            <li>Philadelphia, Pennsylvania[11] 1,536,471 5 Houston-Sugar Land-Baytown, TX MSA 6,086,538 5
-                Boston-Worcester-Manchester, MA-RI-NH CSA 7,601,061</li>
+            <li>1 New York, New York[10] 8,244,910</li>
+            <li>2 Los Angeles, California 3,819,702</li>
+            <li>3 Chicago, Illinois 2,707,120</li>
+            <li>4 Houston, Texas 2,145,146</li>
+            <li>5 Philadelphia, Pennsylvania[11] 1,536,471</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    cut -f 2-</code>
-    </pre>
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    cut -d $'\t' -f 2-</code>
-    </pre>
-
-        <h4># Solution_02</h4>
-
-        <pre>
-            <code>
-    while read line
-    do
-        echo "$line" | cut -d $'\t'  -f 2-
-    done</code>
+    cut -f 1-3</code>
     </pre>
 
         <h2>Post:</h2>
@@ -102,8 +79,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/tr-command_1.html">Head of a Text File
-                    #1;</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/easy/cut-6.html">Cut #6;</a>
             </li>
 
         </ul>

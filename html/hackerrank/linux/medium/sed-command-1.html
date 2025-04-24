@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     </header>
 
     <div class="sidebar left-menu" id="leftMenu">
-        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <button class="closebtn" onclick="closeLeftMenu()">Fechar</button>
         <a class="menu-item" href="/index.html">Home</a>
         <a class="menu-item" href="/html/hackerrank/linux/hackerrank-linux.html">Linux</a>
     </div>
@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - 'Grep' - B</h1>
+        <h1>HackerRank - Sed Command #1</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,31 +39,35 @@
 
         <h3>Problem:</h3>
 
-        <h4>N credit card numbers. Assume that the credit card numbers will have 4 space separated segments with 4
-            digits each.</h4>
+        <h4>For each line in a given input file, transform the first occurrence of the word 'the' with 'this'. The
+            search and transformation should be strictly case sensitive.
+        </h4>
 
         <h4># Input</h4>
 
         <ul>
-            <li>1234 5678 9101 1234</li>
-            <li>2999 5178 9101 2234</li>
-            <li>9999 5628 9201 1232</li>
-            <li>8482 3678 9102 1232</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>Shall sum my count, and make my old excuse'</li>
         </ul>
 
         <h4># Output</h4>
 
         <ul>
-            <li>1234 5678 9101 1234</li>
-            <li>2999 5178 9101 2234</li>
-            <li>9999 5628 9201 1232</li>
+            <li>From fairest creatures we desire increase,</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>Shall sum my count, and make my old excuse'</li>
         </ul>
 
         <h4># Solution</h4>
 
         <pre>
             <code>
-    grep '\(\d\)\s*\1'</code>
+    sed -e '{s/ the / this /}'</code>
     </pre>
 
         <h2>Post:</h2>
@@ -72,7 +76,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/linux/easy/sed-command_3.html">Sed Command #3</a>
+                <a class="postlist-link" href="/html/hackerrank/linux/medium/sed-command-2.html">Sed Command #2;</a>
             </li>
 
         </ul>
