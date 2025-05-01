@@ -80,33 +80,33 @@
 
         <pre>
             <code>
-SELECT DISTINCT CITY
-FROM STATION
-WHERE RIGHT(LOWER(CITY), 1) NOT IN ('a', 'e', 'i', 'o', 'u')
-  OR  LEFT(LOWER(CITY), 1) NOT IN ('a', 'e', 'i', 'o', 'u')
-ORDER BY CITY ASC;</code>
+    SELECT DISTINCT CITY
+    FROM STATION
+    WHERE RIGHT(LOWER(CITY), 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+      OR  LEFT(LOWER(CITY), 1) NOT IN ('a', 'e', 'i', 'o', 'u')
+    ORDER BY CITY ASC;</code>
         </pre>
 
         <h4># Solution_01</h4>
 
         <pre>
             <code>
-SELECT DISTINCT CITY
-FROM STATION
-WHERE LOWER(SUBSTR(CITY, 1, 1)) NOT IN ('a', 'e', 'i', 'o', 'u')
-   OR LOWER(SUBSTR(CITY, LENGTH(CITY), 1)) NOT IN ('a', 'e', 'i', 'o', 'u')
-ORDER BY CITY ASC;</code>
+    SELECT DISTINCT CITY
+    FROM STATION
+    WHERE LOWER(SUBSTR(CITY, 1, 1)) NOT IN ('a', 'e', 'i', 'o', 'u')
+       OR LOWER(SUBSTR(CITY, LENGTH(CITY), 1)) NOT IN ('a', 'e', 'i', 'o', 'u')
+    ORDER BY CITY ASC;</code>
         </pre>
 
         <h4># Solution_02</h4>
 
         <pre>
             <code>
-SELECT DISTINCT CITY
-FROM STATION
-WHERE SUBSTRING(City,1,1) NOT IN ('a','e','o','i','u')
-   OR SUBSTRING(City,-1) NOT IN ('a','e','o','i','u')
-ORDER BY CITY ASC;</code>
+    SELECT DISTINCT CITY
+    FROM STATION
+    WHERE SUBSTRING(City,1,1) NOT IN ('a','e','o','i','u')
+       OR SUBSTRING(City,-1) NOT IN ('a','e','o','i','u')
+    ORDER BY CITY ASC;</code>
          </pre>
 
         <h2>Post:</h2>

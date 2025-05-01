@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>HackerRank - SQL</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/hackerrank/sql/hackerrank-sql.html">SQL</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <h1>HackerRank - Type of Triangle</h1>
+
+        <span class="post-data">
+            April - 25/2025
+        </span>
+
+        <h3>Problem:</h3>
+
+        <h4>Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.
+            Output one of the following statements for each record in the table:
+        </h4>
+
+        <p>- Equilateral: It's a triangle with 3 sides of equal length.</p>
+        <p>- Isosceles: It's a triangle with 2 sides of equal length.</p>
+        <p>- Scalene: It's a triangle with 3 sides of differing lengths.</p>
+        <p>- Not A Triangle: The given values of A, B, and C don't form a triangle.</p>
+
+        <p>The TRIANGLES table is described as follows:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Integer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Each row in the table denotes the lengths of each of a triangle's three sides.</p>
+
+        <p># Input</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>20</th>
+                    <th>20</th>
+                    <th>20</th>
+                    <th>13</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B</td>
+                    <th>20</th>
+                    <th>20</th>
+                    <td>21</td>
+                    <th>14</th>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <th>23</th>
+                    <th>20</th>
+                    <th>22</th>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4># Output</h4>
+
+        <pre>
+            <code>
+    Isosceles
+    Equilateral
+    Scalene
+    Not A Triangle</code>
+        </pre>
+
+        <h4># Solution</h4>
+
+        <pre>
+            <code>
+    SELECT
+        (CASE
+            WHEN (A + B <= C) OR (B + C <= A) OR (C + A <= B) THEN 'Not A Triangle'
+            WHEN A = B AND B = C THEN 'Equilateral'
+            WHEN A = B OR  B = C OR C = A THEN 'Isosceles'
+            ELSE 'Scalene'
+        END)AS Result
+    FROM TRIANGLES;</code>
+        </pre>
+
+        <h4># Solution_01</h4>
+
+        <pre>
+            <code>
+    SELECT
+        CASE 
+            WHEN (A + B <= C) OR (B + C <= A) OR (C + A <= B) THEN 'Not A Triangle'
+            WHEN A = B AND B = C THEN 'Equilateral'
+            WHEN A = B OR  B = C OR C = A THEN 'Isosceles'
+            WHEN A != B AND B != C AND C!=A THEN 'Scalene'
+        END
+    FROM TRIANGLES;</code>
+        </pre>
+
+        <h4># Solution_02</h4>
+
+        <pre>
+            <code>
+    SELECT
+        if (A + B <= C OR B + C <= A OR C + A <= B,"Not A Triangle",
+        if (A = B AND B = C,"Equilateral",
+        if (A = B OR  B = C OR C = A,"Isosceles","Scalene")))
+    FROM TRIANGLES;</code>
+        </pre>
+
+        <h2>Post:</h2>
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2025-25">2025-25</time>
+                -
+                <a class="postlist-link" href=""></a>
+            </li>
+
+        </ul>
+
+    </main>
+
+</body>

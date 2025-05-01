@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09b0b05ac.js" crossorigin="anonymous"></script>
+    <title>HackerRank - SQL</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button left-button" onclick="openLeftMenu()"><i class="fa-solid fa-bars"></i></button>
+        <a href="https://github.com/nfoj" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <!-- <button class="button right-button" onclick="openRightMenu()">&#9776;</button> -->
+    </header>
+
+    <div class="sidebar left-menu" id="leftMenu">
+        <button class="closebtn" onclick="closeLeftMenu()">Close</button>
+        <a class="menu-item" href="/index.html">Home</a>
+        <a class="menu-item" href="/html/hackerrank/sql/hackerrank-sql.html">SQL</a>
+    </div>
+
+    <div class="sidebar right-menu" id="rightMenu">
+        <button class="closebtn" class="closebtnleft" onclick="closeRightMenu()">× Close</button>
+        <a href="#">X</a>
+
+    </div>
+
+    <main class="container">
+
+        <h1>HackerRank - Employee Name</h1>
+
+        <span class="post-data">
+            April - 25/2025
+        </span>
+
+        <h3>Problem:</h3>
+
+        <h4>Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in
+            alphabetical order.
+        </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Column</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>employee_id</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td>months</td>
+                    <td>Integer</td>
+                </tr>
+                <tr>
+                    <td>salary</td>
+                    <td>Integer</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>where employee_id is an employee's ID number, name is their name, months is the total number of months
+            they've been working for the company, and salary is their monthly salary.
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>employee_id</th>
+                    <th>name</th>
+                    <th>months</th>
+                    <th>salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12228</td>
+                    <td>Rose</td>
+                    <td>15</td>
+                    <td>1968</td>
+                </tr>
+                <tr>
+                    <td>33645</td>
+                    <td>Angela</td>
+                    <td>1</td>
+                    <td>3443</td>
+                </tr>
+                <tr>
+                    <td>45692</td>
+                    <td>Frank</td>
+                    <td>17</td>
+                    <td>1608</td>
+                </tr>
+                <tr>
+                    <td>56118</td>
+                    <td>Patrick</td>
+                    <td>7</td>
+                    <td>1345</td>
+                </tr>
+                <tr>
+                    <td>59725</td>
+                    <td>Lisa</td>
+                    <td>11</td>
+                    <td>2330</td>
+                </tr>
+                <tr>
+                    <td>74197</td>
+                    <td>Kimberly</td>
+                    <td>16</td>
+                    <td>4372</td>
+                </tr>
+                <tr>
+                    <td>78454</td>
+                    <td>Bonnie</td>
+                    <td>8</td>
+                    <td>1771</td>
+                </tr>
+                <tr>
+                    <td>83565</td>
+                    <td>Michael</td>
+                    <td>6</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>98607</td>
+                    <td>Todd</td>
+                    <td>5</td>
+                    <td>3396</td>
+                </tr>
+                <tr>
+                    <td>99989</td>
+                    <td>Joe</td>
+                    <td>9</td>
+                    <td>3573</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4># Output</h4>
+
+        <pre>
+            <code>
+    Angela
+    .
+    .
+    .
+    Todd</code>
+        </pre>
+
+        <h4># Solution</h4>
+
+        <pre>
+            <code>
+    SELECT NAME
+    FROM EMPLOYEE ORDER BY NAME ASC;</code>
+        </pre>
+
+        <h2>Post:</h2>
+
+        <ul>
+            <li>
+                <time class="postlist-date" datetime="2025-25">2025-25</time>
+                -
+                <a class="postlist-link" href=""></a>
+            </li>
+
+        </ul>
+
+    </main>
+
+</body>

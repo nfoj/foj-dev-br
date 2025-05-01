@@ -31,7 +31,7 @@
 
     <main class="container">
 
-        <h1>HackerRank - Weather Observation Station 8</h1>
+        <h1>HackerRank - Revising Aggregations - Averages</h1>
 
         <span class="post-data">
             April - 25/2025
@@ -39,8 +39,7 @@
 
         <h3>Problem:</h3>
 
-        <h4>Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first
-            and last characters. Your result cannot contain duplicates.</h4>
+        <h4>Query the average population of all cities in CITY where District is California.</h4>
 
         <table>
             <thead>
@@ -55,57 +54,32 @@
                     <td>NUMBER</td>
                 </tr>
                 <tr>
-                    <td>CITY</td>
-                    <td>VARCHAR2(21)</td>
+                    <td>Name</td>
+                    <td>VARCHAR2(17)</td>
                 </tr>
                 <tr>
-                    <td>STATE</td>
-                    <td>VARCHAR2(2)</td>
+                    <td>COUNTRYCODE</td>
+                    <td>VARCHAR2(3)</td>
                 </tr>
                 <tr>
-                    <td>LAT_N</td>
-                    <td>NUMBER</td>
+                    <td>DISTRICT</td>
+                    <td>VARCHAR2(20)</td>
                 </tr>
                 <tr>
-                    <td>LAT_W</td>
+                    <td>POPULATION</td>
                     <td>NUMBER</td>
                 </tr>
             </tbody>
         </table>
 
-        <p>where LAT_N is the northern latitude and LONG_W is the western longitude.</p>
-
         <h4># Solution</h4>
 
         <pre>
             <code>
-    SELECT DISTINCT CITY
-    FROM STATION
-    WHERE RIGHT(LOWER(CITY), 1) IN ('a', 'e', 'i', 'o', 'u')
-     AND  LEFT(LOWER(CITY), 1) IN ('a', 'e', 'i', 'o', 'u')
-    ORDER BY CITY ASC;</code>
+    SELECT AVG(population)
+    FROM CITY
+    WHERE DISTRICT='California';</code>
         </pre>
-
-        <h4># Solution_01</h4>
-
-        <pre>
-            <code>
-    SELECT DISTINCT CITY
-    FROM STATION
-    WHERE LOWER(SUBSTR(CITY, 1, 1)) IN ('a', 'e', 'i', 'o', 'u')
-      AND LOWER(SUBSTR(CITY, LENGTH(CITY), 1)) IN ('a', 'e', 'i', 'o', 'u')
-    ORDER BY CITY ASC;</code>
-        </pre>
-
-        <h4># Solution_02</h4>
-        <pre>
-         <code>
-    SELECT DISTINCT CITY
-    FROM STATION
-    WHERE SUBSTRING(City,1,1) IN ('a','e','o','i','u')
-      AND SUBSTRING(City,-1) IN ('a','e','o','i','u')
-    ORDER BY City ASC;</code>
-       </pre>
 
         <h2>Post:</h2>
 
@@ -113,8 +87,7 @@
             <li>
                 <time class="postlist-date" datetime="2025-25">2025-25</time>
                 -
-                <a class="postlist-link" href="/html/hackerrank/sql/easy/weather-observation-station-9.html">Weather
-                    Observation Station 9;</a>
+                <a class="postlist-link" href=""></a>
             </li>
 
         </ul>
